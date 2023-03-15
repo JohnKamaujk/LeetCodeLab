@@ -9,13 +9,13 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 
 |  #  |  Solution  |  Tags  |  Difficulty  |  Remark |
 | --- | --- | --- | --- | --- |
-|  0001  |  [Two Sum](/solution/0000-0099/0001.Two%20Sum/README_EN.md)  |  `Array`,`Hash Table`  |  Easy  |    |
+|  0001  |  [Two Sum](/arrays/twoSum.js)  |  `Array`,`Hash Table`  |  Easy  |    |
 |  0002  |  [Add Two Numbers](/solution/0000-0099/0002.Add%20Two%20Numbers/README_EN.md)  |  `Recursion`,`Linked List`,`Math`  |  Medium  |    |
 |  0003  |  [Longest Substring Without Repeating Characters](/solution/0000-0099/0003.Longest%20Substring%20Without%20Repeating%20Characters/README_EN.md)  |  `Hash Table`,`String`,`Sliding Window`  |  Medium  |    |
 |  0004  |  [Median of Two Sorted Arrays](/solution/0000-0099/0004.Median%20of%20Two%20Sorted%20Arrays/README_EN.md)  |  `Array`,`Binary Search`,`Divide and Conquer`  |  Hard  |    |
 |  0005  |  [Longest Palindromic Substring](/solution/0000-0099/0005.Longest%20Palindromic%20Substring/README_EN.md)  |  `String`,`Dynamic Programming`  |  Medium  |    |
 |  0006  |  [Zigzag Conversion](/solution/0000-0099/0006.Zigzag%20Conversion/README_EN.md)  |  `String`  |  Medium  |    |
-|  0007  |  [Reverse Integer](/solution/0000-0099/0007.Reverse%20Integer/README_EN.md)  |  `Math`  |  Medium  |    |
+|  0007  |  [Reverse Integer](/strings/reverse.js)  |  `Math`  |  Medium  |    |
 |  0008  |  [String to Integer (atoi)](/solution/0000-0099/0008.String%20to%20Integer%20%28atoi%29/README_EN.md)  |  `String`  |  Medium  |    |
 |  0009  |  [Palindrome Number](/solution/0000-0099/0009.Palindrome%20Number/README_EN.md)  |  `Math`  |  Easy  |    |
 |  0010  |  [Regular Expression Matching](/solution/0000-0099/0010.Regular%20Expression%20Matching/README_EN.md)  |  `Recursion`,`String`,`Dynamic Programming`  |  Hard  |    |
@@ -34,4 +34,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0023  |  [Merge k Sorted Lists](/solution/0000-0099/0023.Merge%20k%20Sorted%20Lists/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort`  |  Hard  |    |
 |  0024  |  [Swap Nodes in Pairs](/solution/0000-0099/0024.Swap%20Nodes%20in%20Pairs/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
 |  0025  |  [Reverse Nodes in k-Group](/solution/0000-0099/0025.Reverse%20Nodes%20in%20k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
-|  0026  |  [Remove Duplicates from Sorted Array](/solution/0000-0099/0026.Remove%20Duplicates%20from%20Sorted%20Array/README_EN.md)  |  `Array`,`Two Pointers`  |  Easy  |    |
+|  0026  |  [Remove Duplicates from Sorted Array](/arrays/removeDuplicates.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
