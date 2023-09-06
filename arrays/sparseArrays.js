@@ -27,3 +27,27 @@ function matchingStrings(strings, queries) {
   return result;
 }
 
+function hasPairWithSum(nums, target) {
+    let left = 0;             // Pointer starting from the beginning
+    let right = nums.length - 1; // Pointer starting from the end
+    
+    while (left < right) {
+        const sum = nums[left] + nums[right];
+        
+        if (sum === target) {
+            return true; // Pair found, return true
+        } else if (sum < target) {
+            left++; // Move the left pointer to increase the sum
+        } else {
+            right--; // Move the right pointer to decrease the sum
+        }
+    }
+    
+    return false; // No pair found, return false
+}
+
+const nums = [1, 2, 4, 6, 8, 9, 14, 15];
+const target = 56;
+
+const result = hasPairWithSum(nums, target);
+console.log(result); // Output: true (4 + 9 = 13)tput: true (4 + 9 = 13)
