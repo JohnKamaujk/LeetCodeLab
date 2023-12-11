@@ -21,7 +21,7 @@ var transpose = function (matrix) {
   const col = matrix[0].length;
   // Create Transpose Matrix
   const output = new Array(col).fill(0).map(() => new Array(row).fill(0));
-  // Insert In Transpose Matrix
+  // Insert in Transpose Matrix
   for (let i = 0; i < row; i++) {
     for (let j = 0; j < col; j++) {
       ans[j][i] = matrix[i][j];
