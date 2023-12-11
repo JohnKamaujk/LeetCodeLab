@@ -19,7 +19,7 @@ Output: [[1,4],[2,5],[3,6]]
 var transpose = function (matrix) {
   const row = matrix.length;
   const col = matrix[0].length;
-  // Create Transpose Matrix
+  // Create transpose Matrix
   const output = new Array(col).fill(0).map(() => new Array(row).fill(0));
   // Insert in Transpose Matrix
   for (let i = 0; i < row; i++) {
