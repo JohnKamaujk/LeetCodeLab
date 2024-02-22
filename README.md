@@ -16,12 +16,12 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0005  |  [Longest Palindromic Substring](/solution/0000-0099/0005.Longest%20Palindromic%20Substring/README_EN.md)  |  `String`,`Dynamic Programming`  |  Medium  |    |
 |  0006  |  [Zigzag Conversion](/solution/0000-0099/0006.Zigzag%20Conversion/README_EN.md)  |  `String`  |  Medium  |    |
 |  0007  |  [Reverse Integer](/strings/reverse.js)  |  `Math`  |  Medium  |    |
-|  0008  |  [String to Integer (atoi)](/solution/0000-0099/0008.String%20to%20Integer%20%28atoi%29/README_EN.md)  |  `String`  |  Medium  |    |
+|  0008  |  [String to Integer (atoi)](/strings/atoi.js)  |  `String`  |  Medium  |    |
 |  0009  |  [Palindrome Number](/solution/0000-0099/0009.Palindrome%20Number/README_EN.md)  |  `Math`  |  Easy  |    |
 |  0010  |  [Regular Expression Matching](/solution/0000-0099/0010.Regular%20Expression%20Matching/README_EN.md)  |  `Recursion`,`String`,`Dynamic Programming`  |  Hard  |    |
 |  0011  |  [Container With Most Water](/solution/0000-0099/0011.Container%20With%20Most%20Water/README_EN.md)  |  `Greedy`,`Array`,`Two Pointers`  |  Medium  |    |
 |  0012  |  [Integer to Roman](/solution/0000-0099/0012.Integer%20to%20Roman/README_EN.md)  |  `Hash Table`,`Math`,`String`  |  Medium  |    |
-|  0013  |  [Roman to Integer](/solution/0000-0099/0013.Roman%20to%20Integer/README_EN.md)  |  `Hash Table`,`Math`,`String`  |  Easy  |    |
+|  0013  |  [Roman to Integer](/maths/romanToInt.js)  |  `Hash Table`,`Math`,`String`  |  Easy  |    |
 |  0014  |  [Longest Common Prefix](/solution/0000-0099/0014.Longest%20Common%20Prefix/README_EN.md)  |  `Trie`,`String`  |  Easy  |    |
 |  0015  |  [3Sum](/solution/0000-0099/0015.3Sum/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0016  |  [3Sum Closest](/solution/0000-0099/0016.3Sum%20Closest/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
@@ -35,3 +35,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0024  |  [Swap Nodes in Pairs](/solution/0000-0099/0024.Swap%20Nodes%20in%20Pairs/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
 |  0025  |  [Reverse Nodes in k-Group](/solution/0000-0099/0025.Reverse%20Nodes%20in%20k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
 |  0026  |  [Remove Duplicates from Sorted Array](/arrays/removeDuplicates.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
+|  0026  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
