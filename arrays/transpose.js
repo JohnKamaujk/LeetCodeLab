@@ -24,7 +24,7 @@ var transpose = function (matrix) {
   // Insert in Transpose Matrix
   for (let i = 0; i < row; i++) {
     for (let j = 0; j < col; j++) {
-      ans[j][i] = matrix[i][j];
+      output[j][i] = matrix[i][j];
     }
   }
 
