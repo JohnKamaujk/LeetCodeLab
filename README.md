@@ -10,7 +10,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  #  |  Solution  |  Tags  |  Difficulty  |  Remark |
 | --- | --- | --- | --- | --- |
 |  0001  |  [Two Sum](/arrays/twoSum.js)  |  `Array`,`Hash Table`  |  Easy  |    |
-|  0002  |  [Add Two Numbers](/solution/0000-0099/0002.Add%20Two%20Numbers/README_EN.md)  |  `Recursion`,`Linked List`,`Math`  |  Medium  |    |
+|  0002  |  [Add Two Numbers](/maths/addTwoNumbers,js)  |  `Recursion`,`Linked List`,`Math`  |  Medium  |    |
 |  0003  |  [Longest Substring Without Repeating Characters](/solution/0000-0099/0003.Longest%20Substring%20Without%20Repeating%20Characters/README_EN.md)  |  `Hash Table`,`String`,`Sliding Window`  |  Medium  |    |
 |  0004  |  [Median of Two Sorted Arrays](/solution/0000-0099/0004.Median%20of%20Two%20Sorted%20Arrays/README_EN.md)  |  `Array`,`Binary Search`,`Divide and Conquer`  |  Hard  |    |
 |  0005  |  [Longest Palindromic Substring](/solution/0000-0099/0005.Longest%20Palindromic%20Substring/README_EN.md)  |  `String`,`Dynamic Programming`  |  Medium  |    |
