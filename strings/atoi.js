@@ -31,9 +31,9 @@ var myAtoi = function (s) {
   }
   while (i < str.length) {
     let value = str.charCodeAt(i) - 48;
-    if (value > 9 || value < 0) break; //if NAN
-    if (result > 2147483647 / 10 || result > (2147483647 - value) / 10) {
-      return isPositive ? 2147483647 : -2147483648;
+    if (value > 9 || value < 0) break;
+    if (result > 2 ** 31 - 1 || result > (2 ** 31 - 1 - value) / 10) {
+      return isPositive ? 2 ** 31 - 1 : -(2 ** 31);
     } else {
       result = result * 10 + value;
     }
@@ -42,4 +42,3 @@ var myAtoi = function (s) {
 
   return isPositive ? result : -result;
 };
-
