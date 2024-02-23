@@ -33,7 +33,6 @@ var letterCombinations = function (digits) {
         array.push(map[firstNumber][i] + otherNumberLetters[j]);
       }
     }
-
     return array;
   };
 
