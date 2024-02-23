@@ -18,10 +18,11 @@
  */
 var myAtoi = function (s) {
   let str = s.trim();
-  if (!str) return 0; //'+75efgh4' '-23645kl' '596' 'a2345667' '0234kl'
-  let isPositive = 1;
+  if (!str) return 0;
+  let isPositive = 1; 
   let result = 0;
   let i = 0;
+  // Check for leading '+' or '-' sign
   if (str[i] === "+") {
     isPositive = 1;
     i++;
@@ -30,8 +31,9 @@ var myAtoi = function (s) {
     i++;
   }
   while (i < str.length) {
-    let value = str.charCodeAt(i) - 48;
-    if (value > 9 || value < 0) break;
+    let value = str.charCodeAt(i) - 48; // Convert character to integer value
+    if (value > 9 || value < 0) break; // Stop if non-numeric character encountered
+    // Check for overflow
     if (result > 2 ** 31 - 1 || result > (2 ** 31 - 1 - value) / 10) {
       return isPositive ? 2 ** 31 - 1 : -(2 ** 31);
     } else {
@@ -39,6 +41,5 @@ var myAtoi = function (s) {
     }
     i++;
   }
-
   return isPositive ? result : -result;
 };
