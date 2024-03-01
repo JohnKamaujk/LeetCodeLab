@@ -37,3 +37,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0026  |  [Remove Duplicates from Sorted Array](/arrays/removeDuplicates.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
 |  0026  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
 |  0029  |  [Divide Two Integers](/maths/divide.js)  |  `Math`,`Bit Manipulation`  |  Medium  |    |
+|  0035  |  [Search Insert Position](/arrays/searchInsert.js)  |  `Array`,`Binary Search`  |  Easy  |    |
