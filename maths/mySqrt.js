@@ -22,7 +22,7 @@ var mySqrt = function (x) {
   let i = 1;
 
   while (i * i <= x) {
-    if ((i * i) % x == 0) {
+    if ((i * i) === x) {
       return i;
     }
     i += 1;
