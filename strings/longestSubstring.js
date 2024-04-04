@@ -21,10 +21,10 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 * @return {number}
 */
 var lengthOfLongestSubstring = function (s) {
-  let result = 0; 3
+  let result = 0;
   const hashMap = {};
-  let i = 0; 2
-  let j = 0; 
+  let i = 0;
+  let j = 0;
   while (j < s.length) {
     let char = s[j];
     // If a duplicate is found, update i to our stored next valid position
