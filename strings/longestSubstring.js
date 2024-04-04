@@ -21,19 +21,21 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 * @return {number}
 */
 var lengthOfLongestSubstring = function (s) {
-  let result = 0;
-  const hashMap = {};
-  let i = 0;
-  let j = 0;
-  while (j < s.length) {
-    let char = s[j];
-    // If a duplicate is found, update i to our stored next valid position
-    if (hashMap.hasOwnProperty(char)) {
-      i = Math.max(hashMap[char], i);
+  let charMap = {};
+  let maxLength = 0;
+  let start = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    const char = s[i];
+    // If current character has been seen in the current substring
+    if (charMap[char] >= start) {
+      // Move the start of the substring after the last occurrence of the current character
+      start = charMap[char] + 1;
     }
-    result = Math.max(result, j - i + 1);
-    // Store the next index for this character, as this will be the next valid position to de-duplicate
-    hashMap[char] = j + 1;
+
+    charMap[char] = i; // Update the last index of the current character
+    maxLength = Math.max(maxLength, i - start + 1); // Calculate the length of the current substring and update maxLength if needed
   }
-  return result;
+
+  return maxLength;
 };
