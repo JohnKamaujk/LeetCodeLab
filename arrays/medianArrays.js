@@ -16,6 +16,28 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 * @param {number[]} nums2
 * @return {number}
 */
-var findMedianSortedArrays = function(nums1, nums2) {
-    
+var findMedianSortedArrays = function (nums1, nums2) {
+  let mergedLength = nums1.length + nums2.length;
+  let index1 = 0;
+  let index2 = 0;
+  let merged = [];
+
+  for (let i = 0; i < mergedLength; i++) {
+    if (nums1[index1] <= nums2[index2] || nums2.length === index2) {
+      merged.push(nums1[index1]);
+      index1 += 1;
+    } else {
+      merged.push(nums2[index2]);
+      index2 += 1;
+    }
+  }
+
+  if (mergedLength % 2 === 0) {
+    let middleRight = merged[mergedLength / 2];
+    let middleLeft = merged[mergedLength / 2 - 1];
+    return (middleRight + middleLeft) / 2;
+  } else {
+    return merged[Math.floor(mergedLength / 2)];
+  }
 };
+
