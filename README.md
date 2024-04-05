@@ -12,7 +12,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0001  |  [Two Sum](/arrays/twoSum.js)  |  `Array`,`Hash Table`  |  Easy  |    |
 |  0002  |  [Add Two Numbers](/maths/addTwoNumbers,js)  |  `Recursion`,`Linked List`,`Math`  |  Medium  |    |
 |  0003  |  [Longest Substring Without Repeating Characters](/strings/longestSubstring.js)  |  `Hash Table`,`String`,`Sliding Window`  |  Medium  |    |
-|  0004  |  [Median of Two Sorted Arrays](/solution/0000-0099/0004.Median%20of%20Two%20Sorted%20Arrays/README_EN.md)  |  `Array`,`Binary Search`,`Divide and Conquer`  |  Hard  |    |
+|  0004  |  [Median of Two Sorted Arrays](/arrays/medianArrays.js)  |  `Array`,`Binary Search`,`Divide and Conquer`  |  Hard  |    |
 |  0005  |  [Longest Palindromic Substring](/solution/0000-0099/0005.Longest%20Palindromic%20Substring/README_EN.md)  |  `String`,`Dynamic Programming`  |  Medium  |    |
 |  0006  |  [Zigzag Conversion](/solution/0000-0099/0006.Zigzag%20Conversion/README_EN.md)  |  `String`  |  Medium  |    |
 |  0007  |  [Reverse Integer](/maths/reverse.js)  |  `Math`  |  Medium  |    |
