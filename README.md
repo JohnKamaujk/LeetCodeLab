@@ -1,6 +1,6 @@
 # LeetCode
 
-[中文文档](/solution/README.md)
+[Leetcode 解决方案](/README.md)
 
 ## Solutions
 
