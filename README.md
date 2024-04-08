@@ -42,3 +42,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0069  |  [Sqrt(x)](/maths/mySqrt.js)  |  `Math`,`Binary Search`  |  Easy  |    |
 |  0083  |  [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)  |  `Linked List`  |  Easy  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
+|  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
