@@ -43,7 +43,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0058  |  [Length Of Last Word](/strings/lengthOfLastWord.js)  |  `String` |  Easy  |    |
 |  0069  |  [Sqrt(x)](/maths/mySqrt.js)  |  `Math`,`Binary Search`  |  Easy  |    |
 |  0083  |  [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)  |  `Linked List`  |  Easy  |    |
-|  0151  |  [Reverse Words in a String](/strings/reverseString.js)  |  `Two Pointers`, `Strings`  |  Medium  |    |
+|  0151  |  [Reverse Words in a String](/strings/reverseWords.js)  |  `Two Pointers`, `Strings`  |  Medium  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
 |  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
