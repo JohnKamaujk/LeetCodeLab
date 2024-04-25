@@ -21,4 +21,17 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 * @param {string} s
 * @return {string}
 */
-var reverseWords = function (s) {};
+var reverseWords = function (s) {
+  const strArray = s
+    .trim()
+    .split(" ")
+    .filter((e) => e !== "");
+  let left = 0;
+  let right = strArray.length - 1;
+  while (left < right) {
+    [strArray[left], strArray[right]] = [strArray[right], strArray[left]];
+    left++;
+    right--;
+  }
+  return strArray.join(" ");
+};
