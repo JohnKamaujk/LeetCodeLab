@@ -25,9 +25,3 @@ var majorityElement = function (nums) {
 
   return result;
 };
-
-console.log(majorityElement([2, 2, 1, 1, 1, 2, 2]));
-//find size of array
-//math floor  half its size
-//use a hashmap(obj to track frequency)
-//return > than half
