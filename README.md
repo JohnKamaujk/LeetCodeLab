@@ -47,4 +47,5 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0169  |  [Majority Element](/arrays/majorityElement.js)  |  `Array`, `Hash Table`, `Sorting`, `Divide and Conquer`, `Counting`  |  Easy  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
 |  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0231  |  [Power of Two](/maths/isPowerTwo.js)  |  `Math`, `Recursion`, `Bit Manipulation`  |  Easy  |    |
 |  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
