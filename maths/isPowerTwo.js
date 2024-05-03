@@ -20,14 +20,15 @@ Output: false
 * @return {boolean}
 */
 var isPowerOfTwo = function (n) {
-  if (n === 1) return true;
-
-  let power = 1;
-  while (n >= 2 ** power) {
-    if (2 ** power === n) {
+  let i = 0;
+  const powerTwo = (n, i) => {
+    if (Math.pow(2, i) == n) {
       return true;
+    } else if (Math.pow(2, i) > n) {
+      return false;
+    } else {
+      return powerTwo(n, i + 1);
     }
-    power += 1;
-  }
-  return false;
+  };
+  return powerTwo(n, i);
 };
