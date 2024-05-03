@@ -13,4 +13,12 @@ Input: num = 0
 Output: 0
  
 Constraints:
-0 <= num <= 231 - 1 */
+0 <= num <= 231 - 1
+
+* @param {number} num
+* @return {number}
+*/
+var addDigits = function (num) {
+  if (num < 10) return num;
+  return addDigits((num % 10) + Math.floor(num / 10));
+};
