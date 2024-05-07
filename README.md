@@ -23,7 +23,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0012  |  [Integer to Roman](/solution/0000-0099/0012.Integer%20to%20Roman/README_EN.md)  |  `Hash Table`,`Math`,`String`  |  Medium  |    |
 |  0013  |  [Roman to Integer](/maths/romanToInt.js)  |  `Hash Table`,`Math`,`String`  |  Easy  |    |
 |  0014  |  [Longest Common Prefix](/strings/longestCommonPrefix.js)  |  `Trie`,`String`  |  Easy  |    |
-|  0015  |  [3Sum](/solution/0000-0099/0015.3Sum/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
+|  0015  |  [3Sum](/arrays/threeSum.js)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0016  |  [3Sum Closest](/solution/0000-0099/0016.3Sum%20Closest/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0017  |  [Letter Combinations of a Phone Number](/solution/0000-0099/0017.Letter%20Combinations%20of%20a%20Phone%20Number/README_EN.md)  |  `Hash Table`,`String`,`Backtracking`  |  Medium  |    |
 |  0018  |  [4Sum](/solution/0000-0099/0018.4Sum/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
