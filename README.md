@@ -46,6 +46,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0151  |  [Reverse Words in a String](/strings/reverseWords.js)  |  `Two Pointers`, `Strings`  |  Medium  |    |
 |  0169  |  [Majority Element](/arrays/majorityElement.js)  |  `Array`, `Hash Table`, `Sorting`, `Divide and Conquer`, `Counting`  |  Easy  |    |
 |  0175  |  [Combine Two Tables](/database/combine_tables.sql)  |  `Database` |  Easy  |    |
+|  0181  |  [Employees Earning More Than Their Managers](/database/employees_earning_more.sql)  |  `Database`  |  Easy  |    |
 |  0182  |  [Duplicate Emails](/database/duplicate_emails.sql)  |  `Database`  |  Easy  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
 |  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
