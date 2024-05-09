@@ -53,4 +53,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0231  |  [Power of Two](/maths/isPowerTwo.js)  |  `Math`, `Recursion`, `Bit Manipulation`  |  Easy  |    |
 |  0258  |  [Add Digits](/maths/addDigits.js)  |  `Math`, `Simulation`, `Number Theory`  |  Easy  |    |
 |  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
-|  3075  |  [Maximize Happiness of Selected Children](/arrays/countStudents.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
+|  3075  |  [Maximize Happiness of Selected Children](/arrays/maximumHappinessSum.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
