@@ -43,6 +43,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0058  |  [Length Of Last Word](/strings/lengthOfLastWord.js)  |  `String` |  Easy  |    |
 |  0069  |  [Sqrt(x)](/maths/mySqrt.js)  |  `Math`,`Binary Search`  |  Easy  |    |
 |  0083  |  [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)  |  `Linked List`  |  Easy  |    |
+|  0136  |  [Single Number](/arrays/singleNumber.js)  |  `Array`, `Bit Manipulation`  |  Easy  |    |
 |  0151  |  [Reverse Words in a String](/strings/reverseWords.js)  |  `Two Pointers`, `Strings`  |  Medium  |    |
 |  0169  |  [Majority Element](/arrays/majorityElement.js)  |  `Array`, `Hash Table`, `Sorting`, `Divide and Conquer`, `Counting`  |  Easy  |    |
 |  0175  |  [Combine Two Tables](/database/combine_tables.sql)  |  `Database` |  Easy  |    |
