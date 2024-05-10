@@ -5,7 +5,7 @@
 
 
 class Solution:
-    def remove_duplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums: List[int]) -> int:
         unique = 1
         for i in range(len(nums)-1):
             if nums[i] != nums[i+1]:
