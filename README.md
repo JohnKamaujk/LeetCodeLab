@@ -31,7 +31,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0020  |  [Valid Parentheses](/solution/0000-0099/0020.Valid%20Parentheses/README_EN.md)  |  `Stack`,`String`  |  Easy  |    |
 |  0021  |  [Merge Two Sorted Lists](/solution/0000-0099/0021.Merge%20Two%20Sorted%20Lists/README_EN.md)  |  `Recursion`,`Linked List`  |  Easy  |    |
 |  0022  |  [Generate Parentheses](/solution/0000-0099/0022.Generate%20Parentheses/README_EN.md)  |  `String`,`Dynamic Programming`,`Backtracking`  |  Medium  |    |
-|  0023  |  [Merge k Sorted Lists](/solution/0000-0099/0023.Merge%20k%20Sorted%20Lists/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort`  |  Hard  |    |
+|  0023  |  [Merge k Sorted Lists](/solution/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort`  |  Hard  |    |
 |  0024  |  [Swap Nodes in Pairs](/solution/0000-0099/0024.Swap%20Nodes%20in%20Pairs/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
 |  0025  |  [Reverse Nodes in k-Group](/solution/0000-0099/0025.Reverse%20Nodes%20in%20k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
 |  0026  |  [Remove Duplicates from Sorted Array](/arrays/removeDuplicates.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
