@@ -26,7 +26,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0015  |  [3Sum](/arrays/threeSum.js)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0016  |  [3Sum Closest](/solution/0000-0099/0016.3Sum%20Closest/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0017  |  [Letter Combinations of a Phone Number](/strings/lettersCombination.js)  |  `Hash Table`,`String`,`Backtracking`  |  Medium  |    |
-|  0018  |  [4Sum](/solution/0000-0099/0018.4Sum/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
+|  0018  |  [4Sum](/solution/0018.4Sum/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0019  |  [Remove Nth Node From End of List](/solution/0000-0099/0019.Remove%20Nth%20Node%20From%20End%20of%20List/README_EN.md)  |  `Linked List`,`Two Pointers`  |  Medium  |    |
 |  0020  |  [Valid Parentheses](/solution/0000-0099/0020.Valid%20Parentheses/README_EN.md)  |  `Stack`,`String`  |  Easy  |    |
 |  0021  |  [Merge Two Sorted Lists](/solution/0000-0099/0021.Merge%20Two%20Sorted%20Lists/README_EN.md)  |  `Recursion`,`Linked List`  |  Easy  |    |
