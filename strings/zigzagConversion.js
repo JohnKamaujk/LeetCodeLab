@@ -28,4 +28,28 @@ Output: "A"
  * @param {number} numRows
  * @return {string}
  */
-var convert = function (s, numRows) {};
+var convert = function (s, numRows) {
+  if (numRows == 1 || numRows >= s.length) return s;
+
+  let idx = 0;
+  let d = 1;
+  let rows = [];
+
+  for (let i = 0; i < numRows; i++) {
+    rows.push([]);
+  }
+
+  for (const char of s) {
+    rows[idx].push(char);
+    if (idx === 0) {
+      d = 1;
+    } else if (idx === numRows - 1) {
+      d = -1;
+    }
+    idx += d;
+  }
+
+  const result = rows.map((subArray) => subArray.join("")).join("");
+
+  return result;
+};
