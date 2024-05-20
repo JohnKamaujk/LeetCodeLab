@@ -18,7 +18,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0007  |  [Reverse Integer](/maths/reverse.js)  |  `Math`  |  Medium  |    |
 |  0008  |  [String to Integer (atoi)](/strings/atoi.js)  |  `String`  |  Medium  |    |
 |  0009  |  [Palindrome Number](/README_EN.md)  |  `Math`  |  Easy  |    |
-|  0010  |  [Regular Expression Matching](/solution/0000-0099/0010.Regular%20Expressio/README_EN.md)  |  `Recursion`,`String`,`Dynamic Programming`  |  Hard  |    |
+|  0010  |  [Regular Expression Matching](/solution/10.Regular%20Expressio/README_EN.md)  |  `Recursion`,`String`,`Dynamic Programming`  |  Hard  |    |
 |  0011  |  [Container With Most Water](/so/README_EN.md)  |  `Greedy`,`Array`,`Two Pointers`  |  Medium  |    |
 |  0012  |  [Integer to Roman](/README_EN.md)  |  `Hash Table`,`Math`,`String`  |  Medium  |    |
 |  0013  |  [Roman to Integer](/maths/romanToInt.js)  |  `Hash Table`,`Math`,`String`  |  Easy  |    |
