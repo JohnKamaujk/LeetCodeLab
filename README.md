@@ -33,7 +33,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0022  |  [Generate Parentheses](/solution/0000-0099/0022.Generate%20Parentheses/README_EN.md)  |  `String`,`Dynamic Programming`,`Backtracking`  |  Medium  |    |
 |  0023  |  [Merge k Sorted Lists](/solution/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort`  |  Hard  |    |
 |  0024  |  [Swap Nodes in Pairs](/solution/0000-0099/%20Nodes%20in%20Pairs/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
-|  0025  |  [Reverse Nodes in k-Group](/solution/0000-0099/0025.Reverse%20Nodes%20in%20k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
+|  0025  |  [Reverse Nodes in k-Group](/solution/0000-0099/00%20Nodes%20in%20k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
 |  0026  |  [Remove Duplicates from Sorted Array](/arrays/removeDuplicates.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
 |  0026  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
 |  0029  |  [Divide Two Integers](/maths/divide.js)  |  `Math`,`Bit Manipulation`  |  Medium  |    |
