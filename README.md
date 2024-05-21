@@ -42,6 +42,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0050  |  [Pow(x, n)](/maths/myPow.js)  |  `Math`,`Recursion`  |  Medium  |    |
 |  0058  |  [Length Of Last Word](/strings/lengthOfLastWord.js)  |  `String` |  Easy  |    |
 |  0069  |  [Sqrt(x)](/maths/mySqrt.js)  |  `Math`,`Binary Search`  |  Easy  |    |
+|  0078  |  [Subsets](/arrays/subset.js)  |  `Array`,`Backtracking`,`Bit Manipulation`  |  Medium  |    |
 |  0083  |  [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)  |  `Linked List`  |  Easy  |    |
 |  0136  |  [Single Number](/arrays/singleNumber.js)  |  `Array`, `Bit Manipulation`  |  Easy  |    |
 |  0151  |  [Reverse Words in a String](/strings/reverseWords.js)  |  `Two Pointers`, `Strings`  |  Medium  |    |
