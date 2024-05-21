@@ -27,7 +27,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0016  |  [3Sum Closest](/solution/0Closest/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
 |  0017  |  [Letter Combinations of a Phone Number](/strings/lettersCombination.js)  |  `Hash Table`,`String`,`Backtracking`  |  Medium  |    |
 |  0018  |  [4Sum](/solution/README_EN.md)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
-|  0019  |  [Remove Nth Node From End of List](/solution/0000-0099/README_EN.md)  |  `Linked List`,`Two Pointers`  |  Medium  |    |
+|  0019  |  [Remove Nth Node From End of List](/solution99/README_EN.md)  |  `Linked List`,`Two Pointers`  |  Medium  |    |
 |  0020  |  [Valid Parentheses](/solution/ts/README_EN.md)  |  `Stack`,`String`  |  Easy  |    |
 |  0021  |  [Merge Two Sorted Lists](/arrays/mergeSortedLists.js)  |  `Recursion`,`Linked List`  |  Easy  |    |
 |  0022  |  [Generate Parentheses](/solution/Parentheses/README_EN.md)  |  `String`,`Dynamic Programming`,`Backtracking`  |  Medium  |    |
