@@ -42,12 +42,3 @@ var subsets = function (nums) {
   backtrack([], 0);
   return result;
 };
-
-console.log(subsets([1, 2]));
-//[ 1, 2, 3, 5, 7, 8 ]
-//remove duplicates
-//start by declaring result [], push an empty array
-//loop through the array, add each element , as I move
-//first element then second element then combine the two before moving to third
-//combining the three before moving to forth ,
-//combining the four before moving to fifth
