@@ -30,7 +30,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0019  |  [Remove Nth Node From End of List](/solution99/README_EN.md)  |  `Linked List`,`Two Pointers`  |  Medium  |    |
 |  0020  |  [Valid Parentheses](/solution/ts/README_EN.md)  |  `Stack`,`String`  |  Easy  |    |
 |  0021  |  [Merge Two Sorted Lists](/arrays/mergeSortedLists.js)  |  `Recursion`,`Linked List`  |  Easy  |    |
-|  0022  |  [Generate Parentheses](/solution/Parentheses/README_EN.md)  |  `String`,`Dynamic Programming`,`Backtracking`  |  Medium  |    |
+|  0022  |  [Generate Parentheses](Parentheses/README_EN.md)  |  `String`,`Dynamic Programming`,`Backtracking`  |  Medium  |    |
 |  0023  |  [Merge k Sorted Lists](/solution/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort`  |  Hard  |    |
 |  0024  |  [Swap Nodes in Pairs](/solutio/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
 |  0025  |  [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
