@@ -20,7 +20,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0009  |  [Palindrome Number](/README_EN.md)  |  `Math`  |  Easy  |    |
 |  0010  |  [Regular Expression Matching](/README_EN.md)  |  `Recursion`,`String`,`Dynamic Programming`  |  Hard  |    |
 |  0011  |  [Container With Most Water](/ME_EN.md)  |  `Greedy`,`Array`,`Two Pointers`  |  Medium  |    |
-|  0012  |  [Integer to Roman](/maths/)  |  `Hash Table`,`Math`,`String`  |  Medium  |    |
+|  0012  |  [Integer to Roman](/maths/intToRoman.js)  |  `Hash Table`,`Math`,`String`  |  Medium  |    |
 |  0013  |  [Roman to Integer](/maths/romanToInt.js)  |  `Hash Table`,`Math`,`String`  |  Easy  |    |
 |  0014  |  [Longest Common Prefix](/strings/longestCommonPrefix.js)  |  `Trie`,`String`  |  Easy  |    |
 |  0015  |  [3Sum](/arrays/threeSum.js)  |  `Array`,`Two Pointers`,`Sorting`  |  Medium  |    |
