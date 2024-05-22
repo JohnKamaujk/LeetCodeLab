@@ -50,4 +50,38 @@ Explanation:
 * @param {number} num
 * @return {string}
 */
-var intToRoman = function (num) {};
+var intToRoman = function (num) {
+        if (num < 1 || num > 3999) {
+          throw new Error("Input must be between 1 and 3999");
+        }
+
+        // Decimal values for Roman numerals and their corresponding symbols
+        const values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+        const numerals = [
+          "M",
+          "CM",
+          "D",
+          "CD",
+          "C",
+          "XC",
+          "L",
+          "XL",
+          "X",
+          "IX",
+          "V",
+          "IV",
+          "I",
+        ];
+
+        let result = "";
+
+        // Loop through the values to build the Roman numeral
+        for (let i = 0; i < values.length; i++) {
+          while (num >= values[i]) {
+            result += numerals[i]; // Append the Roman numeral symbol
+            num -= values[i]; // Subtract the value from the remaining number
+          }
+        }
+
+        return result;
+};
