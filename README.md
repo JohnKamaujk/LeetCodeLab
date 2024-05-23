@@ -50,6 +50,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0175  |  [Combine Two Tables](/database/combine_tables.sql)  |  `Database` |  Easy  |    |
 |  0181  |  [Employees Earning More Than Their Managers](/database/employees_earning_more.sql)  |  `Database`  |  Easy  |    |
 |  0182  |  [Duplicate Emails](/database/duplicate_emails.sql)  |  `Database`  |  Easy  |    |
+|  0183  |  [Customers Who Never Order](/database/customer_who_never_order.sql)  |  `Database`  |  Easy  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
 |  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0231  |  [Power of Two](/maths/isPowerTwo.js)  |  `Math`, `Recursion`, `Bit Manipulation`  |  Easy  |    |
