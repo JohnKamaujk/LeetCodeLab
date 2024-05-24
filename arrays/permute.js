@@ -15,4 +15,21 @@ Output: [[1]]
 * @param {number[]} nums
 * @return {number[][]}
 */
-var permute = function (nums) {};
+var permute = function (nums) {
+  const result = [];
+  const backtrack = (curr) => {
+    if (curr.length === nums.length) {
+      result.push([...curr]);
+      return;
+    }
+
+    for (const n of nums) {
+      if (!curr.includes(n)) {
+        backtrack([...curr, n]);
+      }
+    }
+  };
+
+  backtrack([]);
+  return result;
+};
