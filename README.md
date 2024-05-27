@@ -42,6 +42,9 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0046  |  [Permutations](/arrays/permute.js)  |  `Array`,`Backtracking`  |  Medium  |    |
 |  0050  |  [Pow(x, n)](/maths/myPow.js)  |  `Math`,`Recursion`  |  Medium  |    |
 |  0058  |  [Length Of Last Word](/strings/lengthOfLastWord.js)  |  `String` |  Easy  |    |
+|  0023  |  [Merge k Sorted Lists](/solution/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort`  |  Hard  |    |
+|  0024  |  [Swap Nodes in Pairs](/solutio/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
+|  0025  |  [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
 |  0069  |  [Sqrt(x)](/maths/mySqrt.js)  |  `Math`,`Binary Search`  |  Easy  |    |
 |  0078  |  [Subsets](/arrays/subset.js)  |  `Array`,`Backtracking`,`Bit Manipulation`  |  Medium  |    |
 |  0083  |  [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)  |  `Linked List`  |  Easy  |    |
