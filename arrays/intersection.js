@@ -16,4 +16,8 @@ Explanation: [4,9] is also accepted.
 * @param {number[]} nums2
 * @return {number[]}
 */
-var intersection = function (nums1, nums2) {};
+var intersection = function (nums1, nums2) {
+  const unique1 = [...new Set(nums1)];
+  const unique2 = [...new Set(nums2)];
+  return unique1.filter((num) => unique2.includes(num));
+};
