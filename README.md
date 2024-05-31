@@ -59,6 +59,11 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0183  |  [Customers Who Never Order](/database/customer_who_never_order.sql)  |  `Database`  |  Easy  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
 |  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0201  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0202  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0203  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0204  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0231  |  [Power of Two](/maths/isPowerTwo.js)  |  `Math`, `Recursion`, `Bit Manipulation`  |  Easy  |    |
 |  0258  |  [Add Digits](/maths/addDigits.js)  |  `Math`, `Simulation`, `Number Theory`  |  Easy  |    |
 |  0349  |  [Intersection of Two Arrays](/arrays/intersection.js)  |  `Array`, `Hash Table`, `Two POinters`, `Binary SEarch`, `Sorting`  |  Easy  |    |
