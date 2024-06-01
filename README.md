@@ -62,7 +62,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0200  |  [Number of Islands](/arrnds.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0201  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0202  |  [Number of Islands](/ars.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
-|  0203  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
+|  0203  |  [Number of Islands](slands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0204  |  [Number of Islands](/ds.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0231  |  [Power of Two](/maths/isPowerTwo.js)  |  `Math`, `Recursion`, `Bit Manipulation`  |  Easy  |    |
 |  0258  |  [Add Digits](/maths/addDigits.js)  |  `Math`, `Simulation`, `Number Theory`  |  Easy  |    |
