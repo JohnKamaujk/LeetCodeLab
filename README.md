@@ -59,7 +59,6 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0183  |  [Customers Who Never Order](/database/customer_who_never_order.sql)  |  `Database`  |  Easy  |    |
 |  0193  |  [Valid Phone Numbers](/shell/valid_phone.sh)  |  `Shell`  |  Easy  |    |
 |  0200  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
-|  1791  |  [Find Center of Star Graph](/graph/findCenter.js)  |  `Graph` |  Medium  |     |
 |  0201  |  [Number of Islands](/arrays/numIslands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0202  |  [Number of Islands](/ars.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
 |  0203  |  [Number of Islands](slands.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Medium  |    |
@@ -87,4 +86,5 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1208  |  [Get Equal Substrings Within Budget](/strings/equalSubstring.js)  |  `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`  |  Medium  |    |
 |  1219  |  [Path with Maximum Gold](/arrays/getMaximumGold.js)  |  `Array`,`Backtracking`,`Matrix`  |  Medium  |    |
 |  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
+|  1791  |  [Find Center of Star Graph](/graph/findCenter.js)  |  `Graph` |  Medium  |    |
 |  3075  |  [Maximize Happiness of Selected Children](/arrays/maximumHappinessSum.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
