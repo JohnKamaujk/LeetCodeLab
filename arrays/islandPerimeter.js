@@ -21,7 +21,6 @@ Output: 4
 * @param {number[][]} grid
 * @return {number}
 */
-
 var islandPerimeter = function (grid) {
   let totalPerimeter = 0;
   let overlapPerimeter = 0;
