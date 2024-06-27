@@ -81,6 +81,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0231  |  [Power of Two](/maths/isPowerTwo.js)  |  `Math`, `Recursion`, `Bit Manipulation`  |  Easy  |    |
 |  0258  |  [Add Digits](/maths/addDigits.js)  |  `Math`, `Simulation`, `Number Theory`  |  Easy  |    |
 |  0349  |  [Intersection of Two Arrays](/arrays/intersection.js)  |  `Array`, `Hash Table`, `Two POinters`, `Binary SEarch`, `Sorting`  |  Easy  |    |
+|  0463  |  [Island Perimeter](/arrays/islandPerimeter.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Easy  |    |
 |  1208  |  [Get Equal Substrings Within Budget](/strings/equalSubstring.js)  |  `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`  |  Medium  |    |
 |  1219  |  [Path with Maximum Gold](/arrays/getMaximumGold.js)  |  `Array`,`Backtracking`,`Matrix`  |  Medium  |    |
 |  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
