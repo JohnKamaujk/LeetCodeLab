@@ -34,10 +34,11 @@ var islandPerimeter = function (grid) {
       if (grid[i][j] === 1) {
         totalPerimeter += 1;
       }
-      //
+      //horizontal land overlapping
       if (j < grid[i].length - 1 && grid[i][j] === 1 && grid[i][j + 1] === 1) {
         overlapPerimeter++;
       }
+      //vertical land overlapping
       if (i < grid.length - 1 && grid[i][j] === 1 && grid[i + 1][j] === 1) {
         overlapPerimeter++;
       }
