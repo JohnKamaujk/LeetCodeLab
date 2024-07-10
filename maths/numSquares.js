@@ -12,4 +12,22 @@ Example 2:
 Input: n = 13
 Output: 2
 Explanation: 13 = 4 + 9.
+
+* @param {number} n
+* @return {number}
 */
+var numSquares = function (n) {
+  //array to store the minimum number of perfectquares for each number from 0 to n
+  let dp = new Array(n + 1).fill(Infinity);
+  dp[0] = 0; // Base case: 0 can be represented by 0 perfect squares
+
+  for (let i = 1; i <= n; i++) {
+    // Check every perfect square number less than or equal to i
+    for (let j = 1; j * j <= i; j++) {
+      // Update the dp array
+      dp[i] = Math.min(dp[i], dp[i - j * j] + 1);
+    }
+  }
+
+  return dp[n];
+};
