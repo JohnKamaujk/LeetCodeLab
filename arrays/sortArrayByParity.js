@@ -15,6 +15,17 @@ Output: [0]
 * @param {number[]} nums
 * @return {number[]}
 */
-var sortArrayByParity = function(nums) {
-    
+var sortArrayByParity = function (nums) {
+  if (nums.length === 1) return nums;
+  let result = [];
+  for (const num of nums) {
+    if (num % 2 === 0) {
+      //add to the beginning
+      result.unshift(num);
+    } else {
+      //add to the end
+      result.push(num);
+    }
+  }
+  return result;
 };
