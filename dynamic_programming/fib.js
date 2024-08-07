@@ -23,4 +23,17 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 * @param {number} n
 * @return {number}
 */
-var fib = function (n) {};
+var fib = function (n) {
+  if (n == 0) return 0;
+  if (n == 1) return 1;
+
+  let n1 = 0;
+  let n2 = 1;
+
+  for (let i = 2; i <= n; i++) {
+    let n3 = n1 + n2;
+    n1 = n2;
+    n2 = n3;
+  }
+  return n2;
+};
