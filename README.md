@@ -87,4 +87,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  1791  |  [Find Center of Star Graph](/graph/findCenter.js)  |  `Graph` |  Medium  |    |
 |  3075  |  [Maximize Happiness of Selected Children](/arrays/maximumHappinessSum.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
 |  1219  |  [Path with Maximum Gold](/arrays/getMaximumGold.js)  |  `Array`,`Backtracking`,`Matrix`  |  Medium  |    |
-|  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
+
