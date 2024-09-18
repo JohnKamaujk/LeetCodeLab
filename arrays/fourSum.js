@@ -18,3 +18,4 @@ Output: [[2,2,2,2]]
 * @param {number} target
 * @return {number[][]}
 */
+var fourSum = function (nums, target) {};
