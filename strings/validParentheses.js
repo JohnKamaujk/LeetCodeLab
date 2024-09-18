@@ -48,5 +48,3 @@ var isValid = function (s) {
 
   return stack.length === 0;
 };
-
-console.log(isValid("()[]{}"));
