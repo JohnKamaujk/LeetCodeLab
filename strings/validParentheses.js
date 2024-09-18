@@ -27,3 +27,26 @@ Output: true
 * @param {string} s
 * @return {boolean}
 */
+var isValid = function (s) {
+  let mapParentheses = {
+    ")": "(",
+    "}": "{",
+    "]": "[",
+  };
+
+  let stack = [];
+
+  for (let char of s) {
+    if (mapParentheses[char]) {
+      if (stack.pop() !== mapParentheses[char]) {
+        return false;
+      }
+    } else {
+      stack.push(char);
+    }
+  }
+
+  return stack.length === 0;
+};
+
+console.log(isValid("()[]{}"));
