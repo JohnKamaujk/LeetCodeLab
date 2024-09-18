@@ -80,8 +80,6 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0349  |  [Intersection of Two Arrays](/arrays/intersection.js)  |  `Array`, `Hash Table`, `Two POinters`, `Binary Search`, `Sorting`  |  Easy  |    |
 |  0463  |  [Island Perimeter](/arrays/islandPerimeter.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Easy  |    |
 |  0509  |  [Fibonacci Number](/dynamic_programming/fib.js)  |  `Array`, `Dynamic Programming`, `Breadth-First Search`, `Matrix`  |  Easy  |    |
-|  0463  |  [Island Perimeter](/arrays/islandPerimeter.js)  |  `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`  |  Easy  |    |
-|  0509  |  [Fibonacci Number](/dynamic_programming/fib.js)  |  `Array`, `Dynamic Programming`, `Breadth-First Search`, `Matrix`  |  Easy  |    |
 |  0905  |  [Sort Array By Parity](/arrays/sortArrayByParity.js)  |  `Array`, `Two Pointers`,`Sorting`  |  Easy  |    |
 |  1208  |  [Get Equal Substrings Within Budget](/strings/equalSubstring.js)  |  `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`  |  Medium  |    |
 |  1219  |  [Path with Maximum Gold](/arrays/getMaximumGold.js)  |  `Array`,`Backtracking`,`Matrix`  |  Medium  |    |
