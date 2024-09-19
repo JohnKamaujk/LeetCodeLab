@@ -10,6 +10,9 @@
 # Input: matrix = [[1,2,3],[4,5,6]]
 # Output: [[1,4],[2,5],[3,6]]
 
+from typing import List
+
+
 class Solution:
     def transpose(self, matrix:List[List[int]])-> List[List[int]]:
         output = []

@@ -12,6 +12,9 @@
 # It does not matter what you leave beyond the returned k (hence they are underscores
 
 
+from typing import List
+
+
 class Solution:
     def removeElement(self, nums: List[int], val: int)-> int:
         start_index = 0

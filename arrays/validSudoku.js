@@ -16,13 +16,3 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 * @param {number} val
 * @return {number}
 */
-var removeElement = function (nums, val) {
-  let startIndex = 0;
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== val) {
-      nums[startIndex] = nums[i];
-      startIndex++;
-    }
-  }
-  return startIndex;
-};
