@@ -49,6 +49,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0025  |  [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
 |  0023  |  [Merge k Sorted Lists](/solution/README_EN.md)  |  `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)` |  Hard  |    |
 |  0025  |  [Reverse Nodes in k-Group](/solution/_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
+|  0036  |  [Valid Sudoku](/solution/_EN.md)  |  `Array`,`Hash Table`,`Matrix`  |  Medium  |    |
 |  0069  |  [Sqrt(x)](/maths/mySqrt.js)  |  `Math`,`Binary Search`  |  Easy  |    |
 |  0078  |  [Subsets](/arrays/subset.js)  |  `Array`,`Backtracking`,`Bit Manipulation`  |  Medium  |    |
 |  0083  |  [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)  |  `Linked List`  |  Easy  |    |
