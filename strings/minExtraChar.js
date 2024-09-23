@@ -17,4 +17,15 @@ Explanation: We can break s in two substrings: "hello" from index 3 to 7 and "wo
 * @param {string[]} dictionary
 * @return {number}
 */
-var minExtraChar = function (s, dictionary) {};
+var minExtraChar = function (s, dictionary) {
+  const dp = [0];
+  for (let i = 1; i <= s.length; i++) {
+    dp.push(dp[i - 1] + 1);
+    for (const word of dictionary) {
+      if (i >= word.length && s.slice(i - word.length, i) == word) {
+        dp[i] = Math.min(dp[i], dp[i - word.length]);
+      }
+    }
+  }
+  return dp[s.length];
+};
