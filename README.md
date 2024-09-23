@@ -35,8 +35,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0024  |  [Swap Nodes in Pairs](/solutio/README_EN.md)  |  `Recursion`,`Linked List`  |  Medium  |    |
 |  0025  |  [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)  |  `Recursion`,`Linked List`  |  Hard  |    |
 |  0026  |  [Remove Duplicates from Sorted Array](/arrays/removeDuplicates.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
-|  0026  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
-|  0026  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
+|  0027  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
+|  0028  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
 |  0026  |  [Remove ELement from an Array](/arrays/removeElemenet.js)  |  `Array`,`Two Pointers`  |  Easy  |    |
 |  0029  |  [Divide Two Integers](/maths/divide.js)  |  `Math`,`Bit Manipulation`  |  Medium  |    |
 |  0035  |  [Search Insert Position](/arrays/searchInsert.js)  |  `Array`,`Binary Search`  |  Easy  |    |
