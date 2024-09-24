@@ -38,5 +38,3 @@ var groupAnagrams = function (strs) {
 
   return Object.values(hashMap);
 };
-
-console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
