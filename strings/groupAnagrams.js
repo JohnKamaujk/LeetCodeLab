@@ -23,4 +23,20 @@ Output: [["a"]]
 * @param {string[]} strs
 * @return {string[][]}
 */
-var groupAnagrams = function (strs) {};
+var groupAnagrams = function (strs) {
+  const sortStr = (str) => str.split("").sort().join("");
+
+  let hashMap = new Map();
+
+  for (const str of strs) {
+    let sortedStr = sortStr(str);
+    if (!hashMap[sortedStr]) {
+      hashMap[sortedStr] = [];
+    }
+    hashMap[sortedStr].push(str);
+  }
+
+  return Object.values(hashMap);
+};
+
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
