@@ -29,4 +29,27 @@ For index i = 4, there are 3 distinct elements in the prefix and no elements in 
 * @param {number[]} nums
 * @return {number[]}
 */
-var distinctDifferenceArray = function (nums) {};
+var distinctDifferenceArray = function (nums) {
+  const n = nums.length;
+  const prefix = new Array(n);
+  const suffix = new Array(n);
+  let set;
+
+  set = new Set();
+  for (let i = 0; i < n; i++) {
+    set.add(nums[i]);
+    prefix[i] = set.size;
+  }
+
+  set = new Set();
+  for (let i = n - 1; i >= 0; i--) {
+    suffix[i] = set.size;
+    set.add(nums[i]);
+  }
+
+  const result = new Array(n);
+  for (let i = 0; i < n; i++) {
+    result[i] = prefix[i] - suffix[i];
+  }
+  return result;
+};
