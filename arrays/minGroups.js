@@ -23,6 +23,19 @@ Explanation: None of the intervals overlap, so we can put all of them in one gro
 * @param {number[][]} intervals
 * @return {number}
 */
-var minGroups = function(intervals) {
-    
+var minGroups = function (intervals) {
+  let starting = intervals.map((interval) => interval[0]).sort((a, b) => a - b);
+  let ending = intervals.map((interval) => interval[1]).sort((a, b) => a - b);
+
+  let result = 0;
+  let endIdx = 0;
+  for (let i = 0; i < intervals.length; i++) {
+    if (starting[i] <= ending[endIdx]) {
+      result++;
+    } else {
+      endIdx++;
+    }
+  }
+
+  return result;
 };
