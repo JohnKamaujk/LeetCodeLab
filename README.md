@@ -88,7 +88,6 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  0905  |  [Sort Array By Parity](/arrays/sortArrayByParity.js)  |  `Array`, `Two Pointers`,`Sorting`  |  Easy  |    |
 |  1208  |  [Get Equal Substrings Within Budget](/strings/equalSubstring.js)  |  `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`  |  Medium  |    |
 |  1219  |  [Path with Maximum Gold](/arrays/getMaximumGold.js)  |  `Array`,`Backtracking`,`Matrix`  |  Medium  |    |
-|  1219  |  [Path with Maximum Gold](/arrays/getMaximumGold.js)  |  `Array`,`Backtracking`,`Matrix`  |  Medium  |    |
 |  1700  |  [Number of Students Unable to Eat Lunch](/arrays/countStudents.js)  |  `Array`,`Stack`,`Queue`,`Simulation`  |  Easy  |    |
 |  1791  |  [Find Center of Star Graph](/graph/findCenter.js)  |  `Graph` |  Medium  |    |
 |  2406  |  [Divide Intervals Into Minimum Number of Groups](/arrays/minGroups.js)  |  `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum` |  Medium  |    |
