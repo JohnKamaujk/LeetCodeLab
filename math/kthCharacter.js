@@ -53,9 +53,3 @@ var kthCharacter = function (k) {
   return string.charAt(k - 1);
 };
 
-console.log(kthCharacter(5));
-// have an array of all alphabets
-// have a string a
-// loop k times as you concatenate; then find index as you add
-// index of K
-//abbcbccd
