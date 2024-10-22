@@ -30,7 +30,7 @@ Output: "c"
 
 * @param {number} k
 * @return {character}
-*/
+/** Brute force solution
 var kthCharacter = function (k) {
   const alphabets = [...Array(26)].map((_, i) => String.fromCharCode(i + 97));
 
@@ -52,4 +52,19 @@ var kthCharacter = function (k) {
 
   return string.charAt(k - 1);
 };
+*/
 
+var kthCharacter = function (k) {
+  let flips = 0; // Variable to count the number of flips (set bits in binary representation)
+  let num = k - 1; // We use k-1 because we are counting flips from 0 up to k-1
+
+  // Loop to count how many set bits (1s) are in the binary representation of num
+  while (num > 0) {
+    flips += num & 1; // Increment flips if the least significant bit is 1
+    num = num >> 1; // Shift right to process the next bit
+  }
+
+  // The number of flips determines how far we move in the alphabet from 'a'
+  // For 0 flips, it's 'a', 1 flip is 'b', and so on
+  return String.fromCharCode("a".charCodeAt(0) + flips); // Return the character based on the number of flips
+};
