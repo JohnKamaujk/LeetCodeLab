@@ -93,7 +93,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2406  |  [Divide Intervals Into Minimum Number of Groups](/arrays/minGroups.js)  |  `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum` |  Medium  |    |
 |  2670  |  [Find the Distinct Difference Array](/arrays/distinctDifferenceArray.js)  |  `Array`,`Hash Table` |  Easy  |    |
 |  2707  |  [Extra Characters in a String](/strings/minExtraChar.js)  |  `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie` |  Medium  |    |
-|  3034  |  [Find the K-th Character in String Game I](/math/kthCharacter.js)  |  `Math`,`Bit Manipulation`,`Recursion`  |  Easy  |    |
+|  3034  |  [Find the K-th Character in String Game I](/math/kthCharacter.js)  |  `Math`,`Bit Manipulation`,`Recursion`, `Simulation`  |  Easy  |    |
 |  3075  |  [Maximize Happiness of Selected Children](/arrays/maximumHappinessSum.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
 
 
