@@ -31,6 +31,31 @@ Output: "c"
 * @param {number} k
 * @return {character}
 */
-var kthCharacter = function(k) {
-    
+var kthCharacter = function (k) {
+  const alphabets = [...Array(26)].map((_, i) => String.fromCharCode(i + 97));
+
+  let string = "a";
+
+  while (string.length <= k) {
+    let str_arr = string.split("");
+    for (let i = 0; i < str_arr.length; i++) {
+      let index = alphabets.indexOf(str_arr[i]);
+      let char;
+      if (index === 25) {
+        char = alphabets[0];
+      } else {
+        char = alphabets[index + 1];
+      }
+      string += char;
+    }
+  }
+
+  return string.charAt(k - 1);
 };
+
+console.log(kthCharacter(5));
+// have an array of all alphabets
+// have a string a
+// loop k times as you concatenate; then find index as you add
+// index of K
+//abbcbccd
