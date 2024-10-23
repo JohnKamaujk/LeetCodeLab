@@ -30,6 +30,7 @@ Output: "c"
 
 * @param {number} k
 * @return {character}
+
 /** Brute force solution
 var kthCharacter = function (k) {
   const alphabets = [...Array(26)].map((_, i) => String.fromCharCode(i + 97));
