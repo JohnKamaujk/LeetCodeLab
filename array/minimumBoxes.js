@@ -22,6 +22,18 @@ Explanation: We will need to use all the boxes.
 * @param {number[]} capacity
 * @return {number}
 */
-var minimumBoxes = function(apple, capacity) {
-    
+var minimumBoxes = function (apple, capacity) {
+  let total = apple.reduce((acc, curr) => acc + curr, 0);
+  let sorted_capacity = capacity.sort((a, b) => b - a);
+  let boxes = 0;
+
+  for (let i = 0; i < sorted_capacity.length; i++) {
+    if (total > 0) {
+      total = total - sorted_capacity[i];
+      boxes += 1;
+    } else {
+      break;
+    }
+  }
+  return boxes;
 };
