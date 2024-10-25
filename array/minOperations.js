@@ -28,6 +28,14 @@ Explanation: only a single element of nums is greater than or equal to 9 so we n
 * @param {number} k
 * @return {number}
 */
-var minOperations = function(nums, k) {
-    
+var minOperations = function (nums, k) {
+  let i = 0;
+  let count = 0;
+  while (i < nums.length) {
+    if (nums[i] < k) {
+      count += 1;
+    }
+    i += 1;
+  }
+  return count;
 };
