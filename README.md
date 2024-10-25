@@ -95,6 +95,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 |  2707  |  [Extra Characters in a String](/strings/minExtraChar.js)  |  `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie` |  Medium  |    |
 |  3034  |  [Find the K-th Character in String Game I](/math/kthCharacter.js)  |  `Math`,`Bit Manipulation`,`Recursion`, `Simulation`  |  Easy  |    |
 |  3065  |  [Minimum Operations to Exceed Threshold Value](/array/minOperations.js)  |  `Array` |  Easy  |    |
+|  3074  |  [Apple Redistribution into Boxes](/array/minimumBoxes.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
 |  3075  |  [Maximize Happiness of Selected Children](/arrays/maximumHappinessSum.js)  |  `Array`,`Greedy`,`Sorting`  |  Medium  |    |
 
 
