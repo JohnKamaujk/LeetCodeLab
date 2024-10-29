@@ -16,9 +16,34 @@ Example 2:
 Input: num = 7
 Output: false
 
- * @param {number} num
- * @return {boolean}
- */
-var checkPerfectNumber = function(num) {
-    
+* @param {number} num
+* @return {boolean}
+*/
+
+var checkPerfectNumber = function (num) {
+  if (num === 1) return false;
+  let left = 2;
+  let right = Math.floor(num / 2);
+  let sum = 1;
+
+  while (left < right) {
+    if (num % left === 0) {
+      sum += left;
+      sum += num / left;
+      right = num / left;
+    }
+    left++;
+  }
+
+  return sum === num;
 };
+
+
+//use two pointers
+// start with the divisor 1  but exclude  it's pair i.e the number it's self
+//left pointer start at 2
+//right pointer start at number/2
+//loop as long as left < right, check if num % left == 0 then
+//increment sum = 1 += left
+//then decrement right to /= left
+// increment left
