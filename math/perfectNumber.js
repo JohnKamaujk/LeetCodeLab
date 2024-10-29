@@ -24,7 +24,7 @@ var checkPerfectNumber = function (num) {
   if (num === 1) return false;
   let left = 2;
   let right = Math.floor(num / 2);
-  let sum = 1;
+  let sum = 1; //one is always a divisor for every no.
 
   while (left < right) {
     if (num % left === 0) {
