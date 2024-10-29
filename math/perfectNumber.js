@@ -37,13 +37,3 @@ var checkPerfectNumber = function (num) {
 
   return sum === num;
 };
-
-
-//use two pointers
-// start with the divisor 1  but exclude  it's pair i.e the number it's self
-//left pointer start at 2
-//right pointer start at number/2
-//loop as long as left < right, check if num % left == 0 then
-//increment sum = 1 += left
-//then decrement right to /= left
-// increment left
