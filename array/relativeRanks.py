@@ -15,6 +15,6 @@ class Solution:
                 dic[value] = str(index+1)
         
         for scre in score:
-            output.append(dic[sce])
+            output.append(dic[scre])
 
         return output
