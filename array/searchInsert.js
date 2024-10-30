@@ -14,12 +14,12 @@ Output: 1
 Example 3:
 Input: nums = [1,3,5,6], target = 7
 Output: 4
+
+
+* @param {number[]} nums
+* @param {number} target
+* @return {number}
 */
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number}
- */
 var searchInsert = function (nums, target) {
   let left = 0;
   let right = nums.length - 1;
