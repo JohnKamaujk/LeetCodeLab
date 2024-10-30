@@ -62,13 +62,13 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0184 | [Duplicate Emails](/database/duplicate_emails.sql)                                 | `Database`                                                              | Easy       |        |
 | 0185 | [Customers Who Never Order](/database/customer_who_never_order.sql)                | `Database`                                                              | Easy       |        |
 | 0193 | [Valid Phone Numbers](/shell/valid_phone.sh)                                       | `Shell`                                                                 | Easy       |        |
-| 0200 | [Number of Islands](/array/numIslands.js)                                          | `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`        | Medium     |        |
+| 0200 | [Number of Islands](/array/numIslands.js)                                          | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Medium     |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
 | 0258 | [Add Digits](/math/addDigits.js)                                                   | `Math`, `Simulation`, `Number Theory`                                   | Easy       |        |
 | 0279 | [Perfect Squares](/math/numSquares.js)                                             | `Math`, `Dynamic Programming`,`Breadth-First Search`                    | Medium     |        |
 | 0349 | [Intersection of Two Array](/array/intersection.js)                                | `Array`, `Hash Table`, `Two POinters`, `Binary Search`, `Sorting`       | Easy       |        |
 | 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
-| 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap`                                              | Easy       |        |
+| 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap(Priority Queue)`                                              | Easy       |        |
  0507 | [Perfect Number](/math/perfectNumber.js)                                           | `Math`                                                                  |Easy       |        |
 | 0509 | [Fibonacci Number](/dynamic_programming/fib.js)                                    | `Array`, `Dynamic Programming`, `Breadth-First Search`, `Matrix`        | Easy       |        |
 | 0905 | [Sort Array By Parity](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
