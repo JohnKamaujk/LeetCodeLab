@@ -82,8 +82,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0258 | [Add Digits](/math/addDigits.js)                                                   | `Math`, `Simulation`, `Number Theory`                                   | Easy       |        |
 | 0279 | [Perfect Squares](/math/numSquares.js)                                             | `Math`, `Dynamic Programming`,`Breadth-First Search`                    | Medium     |        |
 | 0349 | [Intersection of Two Array](/array/intersection.js)                                | `Array`, `Hash Table`, `Two POinters`, `Binary Search`, `Sorting`       | Easy       |        |
-| 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, ``Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
-| 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap`                                              Easy       |        |
+| 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
+| 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap`                                              | Easy       |        |
  0507 | [Perfect Number](/math/perfectNumber.js)                                           | `Math`                                                                  |Easy       |        |
 | 0509 | [Fibonacci Number](/dynamic_programming/fib.js)                                    | `Array`, `Dynamic Programming`, `Breadth-First Search`, `Matrix`        | Easy       |        |
 | 0905 | [Sort Array By Parity](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
