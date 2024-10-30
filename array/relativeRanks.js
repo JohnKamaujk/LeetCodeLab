@@ -22,6 +22,22 @@ Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
 * @param {number[]} score
 * @return {string[]}
 */
-var findRelativeRanks = function(score) {
-    
+var findRelativeRanks = function (score) {
+  let sortedScores = [...score].sort((a, b) => b - a);
+  let map = new Map();
+
+  sortedScores.forEach((score, index) => {
+    if (index === 0) {
+      map.set(score, "Gold Medal");
+    } else if (index === 1) {
+      map.set(score, "Silver Medal");
+    } else if (index === 2) {
+      map.set(score, "Bronze Medal");
+    } else {
+      map.set(score, `${index + 1}`);
+    }
+  });
+  return score.map((scre) => map.get(scre));
 };
+
+console.log(findRelativeRanks([5, 4, 3, 2, 1]));
