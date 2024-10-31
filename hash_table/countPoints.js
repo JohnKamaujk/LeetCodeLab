@@ -35,6 +35,16 @@ Only one ring is given. Thus, no rods have all three colors.
 * @param {string} rings
 * @return {number}
 */
-var countPoints = function(rings) {
-    
+var countPoints = function (rings) {
+  let count = 0;
+
+  for (let i = 0; i < 10; i++) {
+    if (
+      rings.includes(`B${i}`) &&
+      rings.includes(`G${i}`) & rings.includes(`R${i}`)
+    ) {
+      count += 1;
+    }
+  }
+  return count;
 };
