@@ -19,16 +19,16 @@ Output: true
 * @return {boolean}
 */
 var uniqueOccurrences = function (arr) {
-  let frequency = {};
+  const freqMap = new Map();
 
-  for (let i = 0; i < arr.length; i++) {
-    if (!frequency[arr[i]]) {
-      frequency[arr[i]] = 1;
+  arr.forEach((num) => {
+    if (freqMap.get(num)) {
+      freqMap.set(num, freqMap.get(num) + 1);
     } else {
-      frequency[arr[i]] = frequency[arr[i]] += 1;
+      freqMap.set(num, 1);
     }
-  }
+  });
 
-  let occurence = Object.values(frequency);
+  let occurence = [...freqMap.values()];
   return new Set(occurence).size == occurence.length;
 };
