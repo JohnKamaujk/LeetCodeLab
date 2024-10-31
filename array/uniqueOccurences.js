@@ -18,6 +18,17 @@ Output: true
 * @param {number[]} arr
 * @return {boolean}
 */
-var uniqueOccurrences = function(arr) {
-    
+var uniqueOccurrences = function (arr) {
+  let frequency = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!frequency[arr[i]]) {
+      frequency[arr[i]] = 1;
+    } else {
+      frequency[arr[i]] = frequency[arr[i]] += 1;
+    }
+  }
+
+  let occurence = Object.values(frequency);
+  return new Set(occurence).size == occurence.length;
 };
