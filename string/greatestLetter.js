@@ -25,6 +25,33 @@ There is no letter that appears in both lower and upper case.
 * @param {string} s
 * @return {string}
 */
-var greatestLetter = function(s) {
-    
+var greatestLetter = function (s) {
+  let array = [];
+
+  for (let i = 0; i < s.length; i++) {
+    let charCode = s.charCodeAt(i);
+    let otherCode;
+
+    if (charCode < 97) {
+      otherCode = charCode + 32;
+    } else {
+      otherCode = charCode - 32;
+    }
+
+    if (s.includes(String.fromCharCode(otherCode))) {
+      if (otherCode <= 90) {
+        array.push(otherCode);
+      } else {
+        array.push(charCode);
+      }
+    }
+  }
+  array.sort((a, b) => b - a);
+  if (array.length === 0) {
+    return "";
+  } else {
+    return String.fromCharCode(array[0]);
+  }
 };
+
+console.log(greatestLetter("lEeTcOdE"));
