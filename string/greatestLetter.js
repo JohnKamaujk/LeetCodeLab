@@ -26,10 +26,23 @@ There is no letter that appears in both lower and upper case.
 * @return {string}
 */
 var greatestLetter = function (s) {
-  for (let i = 0; i < 26; i++) {
-    let low = String.fromCharCode(122 - i);
-    let up = String.fromCharCode(90 - i);
-    if (s.includes(up) && s.includes(low)) return up;
+  let candidateLetters = new Set();
+
+  for (let i = 0; i < s.length; i++) {
+    let currentChar = s[i];
+    let oppositeCaseChar =
+      currentChar === currentChar.toUpperCase()
+        ? currentChar.toLowerCase()
+        : currentChar.toUpperCase();
+
+    if (s.includes(oppositeCaseChar)) {
+      candidateLetters.add(currentChar.toUpperCase());
+    }
   }
-  return "";
+
+  if (candidateLetters.size === 0) {
+    return "";
+  }
+
+  return Array.from(candidateLetters).sort().pop();
 };
