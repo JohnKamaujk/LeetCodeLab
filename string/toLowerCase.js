@@ -16,5 +16,15 @@ Output: "lovely"
 * @return {string}
 */
 var toLowerCase = function (s) {
-  return s.toLowerCase();
+  let low = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s.charCodeAt(i) >= 65 && s.charCodeAt(i) <= 122) {
+      s.charCodeAt(i) <= 90
+        ? (low += String.fromCharCode(s.charCodeAt(i) + 32))
+        : (low += s[i]);
+    } else {
+      low += s[i];
+    }
+  }
+  return low;
 };
