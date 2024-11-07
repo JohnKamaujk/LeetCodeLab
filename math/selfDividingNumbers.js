@@ -18,6 +18,27 @@ Output: [48,55,66,77]
 * @param {number} right
 * @return {number[]}
 */
-var selfDividingNumbers = function(left, right) {
-    
+var selfDividingNumbers = function (left, right) {
+  let output = [];
+  for (let i = left; i <= right; i++) {
+    let digits = [];
+    let curr_num = i;
+
+    while (curr_num > 0) {
+      let last_digit = curr_num % 10;
+      curr_num = Math.floor(curr_num / 10);
+      digits.push(last_digit);
+    }
+    for (let j = 0; j < digits.length; j++) {
+      if (i % digits[j] !== 0) {
+        break;
+      }
+      if (j == digits.length - 1) {
+        output.push(i);
+      }
+    }
+  }
+  return output;
 };
+
+console.log(selfDividingNumbers(1, 20));
