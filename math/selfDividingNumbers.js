@@ -29,13 +29,9 @@ var selfDividingNumbers = function (left, right) {
       curr_num = Math.floor(curr_num / 10);
       digits.push(last_digit);
     }
-    for (let j = 0; j < digits.length; j++) {
-      if (i % digits[j] !== 0) {
-        break;
-      }
-      if (j == digits.length - 1) {
-        output.push(i);
-      }
+
+    if (digits.every((digit) => i % digit == 0)) {
+      output.push(i);
     }
   }
   return output;
