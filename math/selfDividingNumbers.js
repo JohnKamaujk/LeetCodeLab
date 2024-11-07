@@ -19,22 +19,23 @@ Output: [48,55,66,77]
 * @return {number[]}
 */
 var selfDividingNumbers = function (left, right) {
-  let output = [];
+  let result = [];
+
   for (let i = left; i <= right; i++) {
-    let digits = [];
-    let curr_num = i;
+    let currentNumber = i;
+    let isSelfDividing = true;
 
-    while (curr_num > 0) {
-      let last_digit = curr_num % 10;
-      curr_num = Math.floor(curr_num / 10);
-      digits.push(last_digit);
+    while (currentNumber > 0) {
+      let currentDigit = currentNumber % 10;
+      if (currentDigit === 0 || i % currentDigit !== 0) {
+        isSelfDividing = false;
+        break;
+      }
+      currentNumber = Math.floor(currentNumber / 10);
     }
 
-    if (digits.every((digit) => i % digit == 0)) {
-      output.push(i);
-    }
+    if (isSelfDividing) result.push(i);
   }
-  return output;
-};
 
-console.log(selfDividingNumbers(1, 20));
+  return result;
+};
