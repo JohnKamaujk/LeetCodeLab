@@ -13,6 +13,22 @@ Output: "rM gniD"
 * @param {string} s
 * @return {string}
 */
-var reverseWords = function(s) {
-    
+var reverseWords = function (s) {
+  let wordsArray = s.split(" ");
+  let output = [];
+
+  for (let i = 0; i < wordsArray.length; i++) {
+    let wordArray = wordsArray[i].split("");
+    let left = 0;
+    let right = wordArray.length - 1;
+
+    while (left < right) {
+      [wordArray[left], wordArray[right]] = [wordArray[right], wordArray[left]];
+      left++;
+      right--;
+    }
+    let word = wordArray.join("");
+    output.push(word);
+  }
+  return output.join(" ");
 };
