@@ -20,6 +20,18 @@ The digit product of 16 is 6, which is divisible by 3, making it the smallest nu
 * @param {number} t
 * @return {number}
 */
-var smallestNumber = function(n, t) {
-    
+var smallestNumber = function (n, t) {
+  while (product(n) % t != 0) {
+    n += 1;
+  }
+  return n;
+};
+
+const product = (num) => {
+  let product = 1;
+  while (num > 1) {
+    product = product * (num % 10);
+    num = Math.floor(num % 10);
+  }
+  return product;
 };
