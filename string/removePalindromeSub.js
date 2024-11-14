@@ -27,6 +27,17 @@ Remove palindromic subsequence "baab" then "b".
 * @param {string} s
 * @return {number}
 */
-var removePalindromeSub = function(s) {
-    
+var removePalindromeSub = function (s) {
+  let mid = Math.floor(s.length / 2);
+  let left = 0;
+  let right = s.length - 1;
+
+  while (left < mid) {
+    if (s[left] !== s[right]) {
+      return 2;
+    }
+    left++;
+    right--;
+  }
+  return 1;
 };
