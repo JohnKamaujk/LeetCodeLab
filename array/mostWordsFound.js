@@ -27,7 +27,9 @@ var mostWordsFound = function (sentences) {
   let count = 0;
   for (let i = 0; i < sentences.length; i++) {
     let wordsCount = sentences[i].split(" ").length;
-    count = Math.max(count, wordsCount);
+    if (wordsCount > count) {
+      count = wordsCount;
+    }
   }
   return count;
 };
