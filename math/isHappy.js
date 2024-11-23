@@ -36,16 +36,11 @@ var isHappy = function (n) {
   }
 
   let seen = new Set();
-  seen.add(n);
 
-  let sum = add_digits(n);
-
-  while (sum != 1) {
-    if (seen.has(sum)) return false;
-    seen.add(sum)
-    sum = add_digits(sum);
+  while (n != 1) {
+    if (seen.has(n)) return false;
+    seen.add(n);
+    n = add_digits(n);
   }
   return true;
 };
-
-console.log(isHappy(18));
