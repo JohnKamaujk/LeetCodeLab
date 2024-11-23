@@ -42,6 +42,7 @@ var isHappy = function (n) {
 
   while (sum != 1) {
     if (seen.has(sum)) return false;
+    seen.add(sum)
     sum = add_digits(sum);
   }
   return true;
