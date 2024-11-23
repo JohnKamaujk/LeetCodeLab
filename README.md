@@ -63,6 +63,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0185 | [Customers Who Never Order](/database/customer_who_never_order.sql)                | `Database`                                                              | Easy       |        |
 | 0193 | [Valid Phone Numbers](/shell/valid_phone.sh)                                       | `Shell`                                                                 | Easy       |        |
 | 0200 | [Number of Islands](/array/numIslands.js)                                          | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Medium     |        |
+| 0202 | [Happy NUmber](/math/isHappy.js)                                                | `Hash table`, `Math`, `Two Pointers`                                   | Medium     |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
 | 0258 | [Add Digits](/math/addDigits.js)                                                   | `Math`, `Simulation`, `Number Theory`                                   | Easy       |        |
 | 0279 | [Perfect Squares](/math/numSquares.js)                                             | `Math`, `Dynamic Programming`,`Breadth-First Search`                    | Medium     |        |
