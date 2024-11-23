@@ -21,4 +21,30 @@ Example 2:
 Input: n = 2
 Output: false
 
+* @param {number} n
+* @return {boolean}
 */
+var isHappy = function (n) {
+  function add_digits(num) {
+    let result = 0;
+    while (num >= 1) {
+      let digit = num % 10;
+      result += digit * digit;
+      num = Math.floor(num / 10);
+    }
+    return result;
+  }
+
+  let seen = new Set();
+  seen.add(n);
+
+  let sum = add_digits(n);
+
+  while (sum != 1) {
+    if (seen.has(sum)) return false;
+    sum = add_digits(sum);
+  }
+  return true;
+};
+
+console.log(isHappy(18));
