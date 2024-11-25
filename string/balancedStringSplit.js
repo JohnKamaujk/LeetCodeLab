@@ -25,6 +25,20 @@ Explanation: s can be split into "LLLLRRRR".
 * @param {string} s
 * @return {number}
 */
-var balancedStringSplit = function(s) {
-    
+var balancedStringSplit = function (s) {
+  let lCount = 0;
+  let rCount = 0;
+  let subCount = 0;
+  for (const char of s) {
+    if (char === "L") {
+      lCount += 1;
+    } else {
+      rCount += 1;
+    }
+
+    if (lCount === rCount) {
+      subCount += 1;
+    }
+  }
+  return subCount;
 };
