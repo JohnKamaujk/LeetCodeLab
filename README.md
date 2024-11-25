@@ -79,6 +79,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1207 | [Unique Number of Occurrences](/array/uniqueOccurences.js)                   | `Array`,`Hash Table`,                                                     | Easy     |        |
 | 1208 | [Get Equal Substrings Within Budget](/string/equalSubstring.js)                   | `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`                | Medium     |        |
 | 1219 | [Path with Maximum Gold](/array/getMaximumGold.js)                                 | `Array`,`Backtracking`,`Matrix`                                         | Medium     |        |
+| 1221 | [Split a String in Balanced Strings](/string/balancedStringSplit.js)                | `String`,`Greedy`,`Counting`                                         | Easy          |        |
 | 1700 | [Number of Students Unable to Eat Lunch](/array/countStudents.js)                  | `Array`,`Stack`,`Queue`,`Simulation`                                    | Easy       |        |
 | 1791 | [Find Center of Star Graph](/graph/findCenter.js)                                  | `Graph`                                                                 | Medium     |        |
 | 2114 | [Maximum Number of Words Found in Sentences](/array/mostWordsFound.js)       |       `Array`, `String`                                                         | Easy     |        |
