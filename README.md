@@ -91,7 +91,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3065 | [Minimum Operations to Exceed Threshold Value](/array/minOperations.js)            | `Array`                                                                 | Easy       |        |
 | 3074 | [Apple Redistribution into Boxes](/array/minimumBoxes.js)                          | `Array`,`Greedy`,`Sorting`                                              | Medium     |        |
 | 3075 | [Maximize Happiness of Selected Children](/array/maximumHappinessSum.js)           | `Array`,`Greedy`,`Sorting`                                              | Medium     |        |
-| 3309 | [Maximum Possible Number by Binary Concatenation](/array/maximumHappinessSum.js)    | `Array`,`Bit Manipulation`,`Enumeration`        
+| 3309 | [Maximum Possible Number by Binary Concatenation](/array/maximumHappinessSum.js)    | `Array`,`Bit Manipulation`,`Enumeration`        | Easy     |        |
 | 3318 | [Find X-Sum of All K-Long Subarrays I](/array/findXSum.js)                        | `Array`, `Hash Table`, `Sliding Window`, `Heap`                         | Easy     |        |
 | 3340 | [Check Balanced String](/string/isBalanced.js)                                 | `String`                                                                | Easy     |        |
 | 3345 | [Smallest Divisible Digit Product I](/string/isBalanced.js)                         | `Math`                                                                | Easy     |        |
