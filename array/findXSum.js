@@ -30,12 +30,6 @@ Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
 * @param {number} x
 * @return {number[]}
 */
-/**
- * @param {number[]} nums
- * @param {number} k
- * @param {number} x
- * @return {number[]}
- */
 var findXSum = function (nums, k, x) {
   return nums
     .map((_, i) => {
