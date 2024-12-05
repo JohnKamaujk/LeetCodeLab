@@ -30,6 +30,36 @@ Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
 * @param {number} x
 * @return {number[]}
 */
-var findXSum = function(nums, k, x) {
-    
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @param {number} x
+ * @return {number[]}
+ */
+var findXSum = function (nums, k, x) {
+  let result = [];
+
+  for (let i = 0; i <= nums.length - k; i++) {
+    let temp_arr = [...nums].slice(i, i + k);
+    let count = {};
+
+    for (let j = 0; j < temp_arr.length; j++) {
+      const num = temp_arr[j];
+      count[num] = (count[num] || 0) + 1;
+    }
+
+    console.log(count);
+
+    const sum = Object.entries(count)
+      .sort((a, b) => {
+        if (b[1] !== a[1]) return b[1] - a[1];
+        return b[0] - a[0];
+      })
+      .slice(0, x)
+      .reduce((prev, curr) => prev + curr[0] * curr[1], 0);
+
+    result.push(sum);
+  }
+
+  return result;
 };
