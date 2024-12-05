@@ -36,21 +36,27 @@ Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
  * @param {number} x
  * @return {number[]}
  */
-function getTopX(arr, x) {
-  const frequency = arr.reduce((h, c) => ((h[c] = h[c] + 1 || 1), h), {});
-  const uq = [...new Set(arr)];
-
-  const sorted = uq.sort((a, b) =>
-    frequency[a] !== frequency[b] ? frequency[b] - frequency[a] : b - a
-  );
-  return sorted.slice(0, x).reduce((total, n) => total + n * frequency[n], 0);
-}
-
 var findXSum = function (nums, k, x) {
-  const res = [];
-  for (let i = 0; i <= nums.length - k; i++) {
-    const subarr = nums.slice(i, k + i);
-    res.push(getTopX(subarr, x));
-  }
-  return res;
+  return nums
+    .map((_, i) => {
+      if (i > nums.length - k) return null;
+
+      const window = nums.slice(i, i + k);
+      const frequencyMap = window.reduce((map, num) => {
+        map[num] = (map[num] || 0) + 1;
+        return map;
+      }, {});
+
+      const uniqueNumbers = Array.from(new Set(window));
+      uniqueNumbers.sort((a, b) =>
+        frequencyMap[b] !== frequencyMap[a]
+          ? frequencyMap[b] - frequencyMap[a]
+          : b - a
+      );
+
+      return uniqueNumbers
+        .slice(0, x)
+        .reduce((sum, num) => sum + num * frequencyMap[num], 0);
+    })
+    .filter((sum) => sum !== null);
 };
