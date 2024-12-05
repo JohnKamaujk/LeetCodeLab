@@ -36,30 +36,21 @@ Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
  * @param {number} x
  * @return {number[]}
  */
+function getTopX(arr, x) {
+  const frequency = arr.reduce((h, c) => ((h[c] = h[c] + 1 || 1), h), {});
+  const uq = [...new Set(arr)];
+
+  const sorted = uq.sort((a, b) =>
+    frequency[a] !== frequency[b] ? frequency[b] - frequency[a] : b - a
+  );
+  return sorted.slice(0, x).reduce((total, n) => total + n * frequency[n], 0);
+}
+
 var findXSum = function (nums, k, x) {
-  let result = [];
-
+  const res = [];
   for (let i = 0; i <= nums.length - k; i++) {
-    let temp_arr = [...nums].slice(i, i + k);
-    let count = {};
-
-    for (let j = 0; j < temp_arr.length; j++) {
-      const num = temp_arr[j];
-      count[num] = (count[num] || 0) + 1;
-    }
-
-    console.log(count);
-
-    const sum = Object.entries(count)
-      .sort((a, b) => {
-        if (b[1] !== a[1]) return b[1] - a[1];
-        return b[0] - a[0];
-      })
-      .slice(0, x)
-      .reduce((prev, curr) => prev + curr[0] * curr[1], 0);
-
-    result.push(sum);
+    const subarr = nums.slice(i, k + i);
+    res.push(getTopX(subarr, x));
   }
-
-  return result;
+  return res;
 };
