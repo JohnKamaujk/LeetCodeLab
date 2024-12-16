@@ -17,4 +17,12 @@ Output: false
 * @param {string} word
 * @return {boolean}
 */
-var detectCapitalUse = function (word) {};
+var detectCapitalUse = function (word) {
+  let wordLetters = word.split("");
+  return (
+    wordLetters.every((letter) => letter.toUpperCase() == letter) ||
+    wordLetters.every((letter) => letter.toLowerCase() == letter) ||
+    (wordLetters[0] == wordLetters[0].toUpperCase() &&
+      wordLetters.slice(1).every((letter) => letter.toLowerCase() == letter))
+  );
+};
