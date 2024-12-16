@@ -72,6 +72,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap(Priority Queue)`                                              | Easy       |        |
  0507 | [Perfect Number](/math/perfectNumber.js)                                           | `Math`                                                                  |Easy       |        |
 | 0509 | [Fibonacci Number](/dynamic_programming/fib.js)                                    | `Array`, `Dynamic Programming`, `Breadth-First Search`, `Matrix`        | Easy       |        |
+| 0520 | [Detect Capital](/string/detectCapital.js)                                    | `String`,                                                               | Easy       |        |
 | 0557 | [Reverse Words in a String III](/string/reverseWordsString.js)                      | `String`, `Two Pointers`                                                | Easy       |        |
 | 0709 | [To Lower Case](/string/toLowerCase.js)                                     | `String`                                                                | Easy       |        |
 | 0728 | [Self Dividing Numbers](/math/selfDividingNumbers.js)                       | `Math`                                                                | Easy       |        |
