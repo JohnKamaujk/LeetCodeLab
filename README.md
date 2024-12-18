@@ -49,7 +49,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0025 | [Reverse Nodes in k-Group](/solution/_EN.md)                                       | `Recursion`,`Linked List`                                               | Hard       |        |
 | 0036 | [Valid Sudoku](/solution/_EN.md)                                                   | `Array`,`Hash Table`,`Matrix`                                           | Medium     |        |
 | 0049 | [Group Anagrams](/string/groupAnagrams.js)                                        | `Array`,`Hash Table`,`String`, `Sorting`                                | Medium     |        |
-| 0069 | [Sqrt(x)](/math/mySqrt.js)                                                         | `Math`,`Binary Search`                                                  | Easy       |        |
+| 0067 | [Add Binary](/math/addBinary.js)                                                 | `Math`,`Binary Search`                                                  | Easy       |        |
+| 0069 | [Sqrt(x)](/math/mySqrt.js)                                                         | `Math`, `Sring`, `Bit Manipulation`, `Simulation`                       | Easy       |        |
 | 0078 | [Subsets](/array/subset.js)                                                        | `Array`,`Backtracking`,`Bit Manipulation`                               | Medium     |        |
 | 0083 | [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)             | `Linked List`                                                           | Easy       |        |
 | 0136 | [Single Number](/array/singleNumber.js)                                            | `Array`, `Bit Manipulation`                                             | Easy       |        |
