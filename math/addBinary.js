@@ -30,4 +30,3 @@ var addBinary = function (a, b) {
   return result.join("");
 };
 
-console.log(addBinary("11", "1"))
