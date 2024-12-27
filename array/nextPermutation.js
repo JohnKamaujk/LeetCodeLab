@@ -27,36 +27,39 @@ Output: [1,5,1]
 * @return {void} Do not return anything, modify nums in-place instead.
 */
 var nextPermutation = function (nums) {
-  for (let i = nums.length - 1; i >= 0; i--) {
-    if (nums[i] < nums[i + 1]) {
-      const large = nextLarge(i);
-      swap(i, large);
-      reverse(i + 1);
-      return;
+  let n = nums.length;
+
+  // Step 1: Find the first decreasing element from the end
+  let i = n - 2;
+  while (i >= 0 && nums[i] >= nums[i + 1]) {
+    i--;
+  }
+
+  // Step 2: If such an element is found, swap with the next larger element
+  if (i >= 0) {
+    let j = n - 1;
+    while (nums[j] <= nums[i]) {
+      j--;
     }
+    swap(nums, i, j);
   }
 
-  // If there is no next permutation reverse the arr
-  nums.reverse();
+  // Step 3: Reverse the portion after the swap point
+  reverse(nums, i + 1);
 
-  function swap(i, j) {
-    [nums[i], nums[j]] = [nums[j], nums[i]];
+  // Helper function to swap two elements
+  function swap(arr, i, j) {
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
 
-  function reverse(idx) {
-    let start = idx,
-      end = nums.length - 1;
-
+  // Helper function to reverse from a given index to the end
+  function reverse(arr, start) {
+    let end = arr.length - 1;
     while (start < end) {
-      swap(start, end);
+      swap(arr, start, end);
       start++;
       end--;
     }
   }
-
-  function nextLarge(idx) {
-    for (let i = nums.length - 1; i > idx; i--) {
-      if (nums[i] > nums[idx]) return i;
-    }
-  }
 };
+
