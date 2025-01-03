@@ -19,6 +19,19 @@ Output: 1
 * @param {number[]} height
 * @return {number}
 */
-var maxArea = function(height) {
-    
+var maxArea = function (height) {
+  let maximumArea = 0;
+  for (let i = 0; i < height.length; i++) {
+    for (let j = i + 1; j < height.length; j++) {
+      let length = Math.min(height[i], height[j]);
+      let width = j - i;
+      let area = length * width;
+
+      maximumArea = Math.max(maximumArea, area);
+    }
+  }
+
+  return maximumArea;
 };
+
+console.log(maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]));
