@@ -20,18 +20,24 @@ Output: 1
 * @return {number}
 */
 var maxArea = function (height) {
+  let left = 0;
+  let right = height.length - 1;
   let maximumArea = 0;
-  for (let i = 0; i < height.length; i++) {
-    for (let j = i + 1; j < height.length; j++) {
-      let length = Math.min(height[i], height[j]);
-      let width = j - i;
-      let area = length * width;
 
-      maximumArea = Math.max(maximumArea, area);
+  while (left < right) {
+    let length = Math.min(height[left], height[right]);
+    let width = right - left;
+    let area = length * width;
+
+    maximumArea = Math.max(maximumArea, area);
+
+    // Move the pointer pointing to the shorter line
+    if (height[left] < height[right]) {
+      left++;
+    } else {
+      right--;
     }
   }
 
   return maximumArea;
 };
-
-console.log(maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]));
