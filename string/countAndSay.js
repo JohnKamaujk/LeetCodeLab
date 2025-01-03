@@ -27,6 +27,51 @@ This is the base case.
 * @param {number} n
 * @return {string}
 */
-var countAndSay = function(n) {
-    
+// var countAndSay = function (n) {
+//   const mapper = (num) => {
+//     let map = new Map();
+//     for (let i = 0; i < num.length; i++) {
+//       map.set(num[i], map.get(num[i]) ? map.get(num[i]) + 1 : 0);
+//     }
+//     return mapper;
+//   };
+// };
+
+const digitFrequencyMapper = (num) => {
+  let result = [];
+  let count = 1;
+
+  for (let i = 0; i < num.length; i++) {
+    // If next digit is the same, increment the count
+    if (num[i] === num[i + 1]) {
+      count++;
+    } else {
+      // Push the digit and its frequency as a pair
+      result.push([parseInt(num[i]), count]);
+      // Reset count for the next digit
+      count = 1;
+    }
+  }
+
+  return result;
 };
+
+const concatenate = (arr) => {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    let substr = arr[i][1].toString() + arr[i][0].toString();
+    str += substr;
+  }
+
+  return str;
+};
+console.log(digitFrequencyMapper("223314444411"));
+console.log(
+  concatenate([
+    [2, 2],
+    [3, 2],
+    [1, 1],
+    [4, 5],
+    [1, 2],
+  ])
+);
