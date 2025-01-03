@@ -38,6 +38,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0028 | [Remove ELement from an Array](/array/removeElemenet.js)                           | `Array`,`Two Pointers`                                                  | Easy       |        |
 | 0029 | [Divide Two Integers](/math/divide.js)                                             | `Math`,`Bit Manipulation`                                               | Medium     |        |
 | 0035 | [Search Insert Position](/array/searchInsert.js)                                   | `Array`,`Binary Search`                                                 | Easy       |        |
+| 0038 | [Count And Say](/string/countAndSay.js)                                             | `String`                                                              | Medium       |        |
 | 0039 | [Combination Sum](/array/combinationSum.js)                                        | `Array`,`Backtracking`                                                  | Medium     |        |
 | 0046 | [Permutations](/array/permute.js)                                                  | `Array`,`Backtracking`                                                  | Medium     |        |
 | 0050 | [Pow(x, n)](/math/myPow.js)                                                        | `Math`,`Recursion`                                                      | Medium     |        |
