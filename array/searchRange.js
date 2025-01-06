@@ -17,4 +17,10 @@ Example 3:
 Input: nums = [], target = 0
 Output: [-1,-1]
  
+* @param {number[]} nums
+* @param {number} target
+* @return {number[]}
 */
+var searchRange = function(nums, target) {
+    
+};
