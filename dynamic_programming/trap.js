@@ -11,22 +11,22 @@ Input: height = [4,2,0,3,2,5]
 Output: 9
 */
 
-var trap = function (height) {
-  let i = 0;
-  let left_max = height[0];
-  let sum = 0;
-  let j = height.length - 1;
-  let right_max = height[j];
-  while (i < j) {
-    if (left_max <= right_max) {
-      sum += left_max - height[i];
-      i++;
-      left_max = Math.max(left_max, height[i]);
+function trap(heights) {
+  let maxArea = 0;
+  let left = 0,
+    right = heights.length - 1;
+  let maxLeft = heights[left],
+    maxRight = heights[right];
+  while (left < right) {
+    if (maxLeft < maxRight) {
+      left++;
+      maxLeft = Math.max(maxLeft, heights[left]);
+      maxArea += maxLeft - heights[left];
     } else {
-      sum += right_max - height[j];
-      j--;
-      right_max = Math.max(right_max, height[j]);
+      right--;
+      maxRight = Math.max(maxRight, heights[right]);
+      maxArea += maxRight - heights[right];
     }
   }
-  return sum;
-};
+  return maxArea;
+}
