@@ -46,7 +46,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0023 | [Merge k Sorted Lists](/solution/README_EN.md)                                     | `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort` | Hard       |        |
 | 0024 | [Swap Nodes in Pairs](/solutio/README_EN.md)                                       | `Recursion`,`Linked List`                                               | Medium     |        |
 | 0025 | [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)                | `Recursion`,`Linked List`                                               | Hard       |        |
-| 0023 | [Merge k Sorted Lists](/solution/README_EN.md)                                     | `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`              | Hard       |        |
+| 0023 | [Merge k Sorted Lists](/linked_list/mergeKLists%20.js)                              | `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`              | Hard       |        |
 | 0025 | [Reverse Nodes in k-Group](/solution/_EN.md)                                       | `Recursion`,`Linked List`                                               | Hard       |        |
 0031 | [Next Permutation](/array/nextPermutation.js)                                       | `Array`,`Two Pointers`                                                 | Medium      |        |
 0034 | [Find First and Last Position of Element in Sorted Array](/array/searchRange.js)         | `Array`,`Binary Search`                                  | Medium      |        |
