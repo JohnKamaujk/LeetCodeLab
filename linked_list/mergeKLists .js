@@ -52,4 +52,20 @@ var mergeKLists = function (lists) {
 
     return dummy.next;
   }
+
+  if (!lists.length) return null;
+
+  while (lists.length > 1) {
+    let mergedLists = [];
+
+    for (let i = 0; i < lists.length; i += 2) {
+      let list1 = lists[i];
+      let list2 = i + 1 < lists.length ? lists[i + 1] : null;
+      mergedLists.push(mergeTwoLists(list1, list2));
+    }
+
+    lists = mergedLists;
+  }
+
+  return lists[0];
 };
