@@ -34,30 +34,58 @@ Output: true
 * @return {boolean}
 */
 var isScramble = function (s1, s2) {
-  return helper(s1, s2, {});
-};
+  function checkScramble(s1, start1, end1, s2, start2, end2, memo = {}) {
+    const length = end1 - start1;
 
-var helper = function (s1, s2, dp) {
-  if (dp[s1 + s2] != undefined || dp[s2 + s1] != undefined) {
-    return dp[s1 + s2];
-  } else if (s1 == s2) {
-    return true;
-  } else if (s1.length != s2.length) {
-    return false;
-  } else if (s1.length <= 1) {
-    return s1 == s2;
-  }
-  for (let i = 1; i < s1.length; i++) {
-    if (
-      (helper(s1.slice(0, i), s2.slice(0, i), dp) &&
-        helper(s1.slice(i), s2.slice(i), dp)) ||
-      (helper(s1.slice(0, i), s2.slice(s1.length - i), dp) &&
-        helper(s1.slice(i), s2.slice(0, s1.length - i), dp))
-    ) {
-      dp[s1 + s2] = true;
-      return true;
+    // Generate a unique key for memoization using indices of substrings
+    const key = 1e9 * start1 + 1e6 * end1 + 1e3 * start2 + 1 * end2;
+
+    // If this key is already in memo, return the cached result
+    if (key in memo) {
+      return memo[key];
     }
+
+    let charCodeSum = 0;
+
+    // Check if the character frequencies match between the two substrings
+    for (let i = 0; i < length; i++) {
+      charCodeSum +=
+        s1.charCodeAt(start1 + i) ** 2 - s2.charCodeAt(start2 + i) ** 2;
+    }
+
+    // If the character sum differs, the strings cannot be scrambled versions of each other
+    if (charCodeSum !== 0) {
+      return (memo[key] = false);
+    }
+
+    // Base case: when the length of the substrings is 1, they are scrambled if they match
+    if (length === 1) {
+      return (memo[key] = s1[start1] === s2[start2]);
+    }
+
+    // Try splitting the substring at every possible position
+    for (let i = 1; i < length; i++) {
+      // Case 1: Substrings are not swapped
+      if (
+        checkScramble(s1, start1, start1 + i, s2, start2, start2 + i, memo) &&
+        checkScramble(s1, start1 + i, end1, s2, start2 + i, end2, memo)
+      ) {
+        return (memo[key] = true);
+      }
+
+      // Case 2: Substrings are swapped
+      if (
+        checkScramble(s1, start1, start1 + i, s2, end2 - i, end2, memo) &&
+        checkScramble(s1, start1 + i, end1, s2, start2, end2 - i, memo)
+      ) {
+        return (memo[key] = true);
+      }
+    }
+
+    // If no valid scramble found, cache the result as false
+    return (memo[key] = false);
   }
-  dp[s1 + s2] = false;
-  return false;
+
+  // Initial call to checkScramble with the whole strings
+  return checkScramble(s1, 0, s1.length, s2, 0, s2.length);
 };
