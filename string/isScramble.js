@@ -53,7 +53,6 @@ var isScramble = function (s1, s2) {
         s1.charCodeAt(start1 + i) ** 2 - s2.charCodeAt(start2 + i) ** 2;
     }
 
-    // If the character sum differs, the strings cannot be scrambled versions of each other
     if (charCodeSum !== 0) {
       return (memo[key] = false);
     }
@@ -86,6 +85,5 @@ var isScramble = function (s1, s2) {
     return (memo[key] = false);
   }
 
-  // Initial call to checkScramble with the whole strings
   return checkScramble(s1, 0, s1.length, s2, 0, s2.length);
 };
