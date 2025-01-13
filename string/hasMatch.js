@@ -30,4 +30,15 @@ The substrings "u", "uc", and "uck" match the pattern.
 * @param {string} p
 * @return {boolean}
 */
-var hasMatch = function (s, p) {};
+var hasMatch = function (s, p) {
+  // Split the pattern `p` into two parts: prefix `a` and suffix `b` around `*`
+  const [a, b] = p.split("*");
+
+  // Find the first occurrence of the prefix `a` and the last occurrence of the suffix `b` in the string `s`
+  const [i, j] = [s.indexOf(a), s.lastIndexOf(b)];
+
+  // Return true if:
+  // - The prefix `a` exists in `s` (i >= 0)
+  // - The suffix `b` exists in `s` and its position is after the position of prefix `a` (j >= i + a.length)
+  return i >= 0 && j >= i + a.length;
+};
