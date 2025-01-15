@@ -36,6 +36,16 @@ Hence, [-1,-1] is returned.
 * @param {number} valueDifference
 * @return {number[]}
 */
-var findIndices = function(nums, indexDifference, valueDifference) {
-    
+var findIndices = function (nums, indexDifference, valueDifference) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      let absIdxDiff = Math.abs(i - j);
+      let absValDiff = Math.abs(nums[i] - nums[j]);
+      if (absIdxDiff >= indexDifference && absValDiff >= valueDifference) {
+        return [i, j];
+      }
+    }
+  }
+
+  return [-1, -1];
 };
