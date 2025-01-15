@@ -103,4 +103,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3340 | [Check Balanced String](/string/isBalanced.js)                                 | `String`                                                                | Easy     |        |
 | 3345 | [Smallest Divisible Digit Product I](/string/isBalanced.js)                         | `Math`                                                                | Easy     |        |
 | 3407 | [Substring Matching Pattern](/string/hasMatch.js)                                   | `String`, `String Matching`                                               | Easy     |        |
-
+| 3421 | [Find Students Who Improved](/database/find_students_who_improved.sql)              | `Sql`,                                                                    | Easy     |        |
