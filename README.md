@@ -94,6 +94,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2406 | [Divide Intervals Into Minimum Number of Groups](/array/minGroups.js)              | `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum`           | Medium     |        |
 | 2670 | [Find the Distinct Difference Array](/array/distinctDifferenceArray.js)            | `Array`,`Hash Table`                                                    | Easy       |        |
 | 2707 | [Extra Characters in a String](/string/minExtraChar.js)                           | `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie`          | Medium     |        |
+| 2903 | [Find Indices With Index and Value Difference I](/array/findIndices.js)            | `Array`, `Two Pointers`                                                   | Easy     |        |
 | 3034 | [Find the K-th Character in String Game I](/math/kthCharacter.js)                  | `Math`,`Bit Manipulation`,`Recursion`, `Simulation`                     | Easy       |        |
 | 3065 | [Minimum Operations to Exceed Threshold Value](/array/minOperations.js)            | `Array`                                                                 | Easy       |        |
 | 3074 | [Apple Redistribution into Boxes](/array/minimumBoxes.js)                          | `Array`,`Greedy`,`Sorting`                                              | Medium     |        |
