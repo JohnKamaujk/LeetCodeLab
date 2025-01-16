@@ -16,6 +16,24 @@ Explanation: Number 9 is repeated and number 5 is missing so the answer is [9,5]
 * @param {number[][]} grid
 * @return {number[]}
 */
-var findMissingAndRepeatedValues = function(grid) {
-    
+var findMissingAndRepeatedValues = function (grid) {
+  const len = grid.length;
+  const count = new Array(len * len + 1).fill(0);
+
+  for (let i = 0; i < len; i++) {
+    for (let j = 0; j < len; j++) {
+      count[grid[i][j]]++;
+    }
+  }
+
+  let repeated = -1;
+  let missing = -1;
+  const lenNums = len * len;
+  for (let num = 1; num <= lenNums; num++) {
+    if (count[num] === 2) repeated = num;
+    if (count[num] === 0) missing = num;
+    if (repeated != -1 && missing != -1) return [repeated, missing];
+  }
+
+  return [repeated, missing];
 };
