@@ -24,7 +24,6 @@ var scoreOfString = function (s) {
   for (let i = 0; i < s.length; i++) {
     if (i < s.length - 1) {
       let difference = Math.abs(s.charCodeAt(i) - s.charCodeAt(i + 1));
-      console.log(difference);
       sum += difference;
     }
   }
