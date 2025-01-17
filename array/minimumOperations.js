@@ -24,18 +24,24 @@ To make the 2nd column strictly increasing, we can apply 2 operations on grid[1]
 * @return {number}
 */
 var minimumOperations = function (grid) {
-  let op = 0; // Initialize operations counter
-  for (let i = 0; i < grid[0].length; i++) {
-    // Iterate through each column
-    for (let j = 1; j < grid.length; j++) {
-      // Iterate through each row starting from the second
-      if (grid[j - 1][i] >= grid[j][i]) {
-        // If the column value is not strictly increasing
-        let increment = grid[j - 1][i] - grid[j][i] + 1; // Calculate the required increment
-        grid[j][i] += increment; // Update the grid to make it strictly increasing
-        op += increment; // Add the increment to the operations count
-      }
+  let res = 0,
+    min,
+    idx;
+  const dp = new Array(10),
+    m = grid.length,
+    n = grid[0].length;
+  for (let c = 0; c < n; c++) {
+    for (let i = 0; i < 10; i++) {
+      dp[i] = (i === idx ? min : res) + m;
+    }
+    for (let r = 0; r < m; r++) {
+      dp[grid[r][c]]--;
+    }
+    res = min = Infinity;
+    for (let i = 0; i < 10; i++) {
+      if (dp[i] < res) (min = res), (res = dp[i]), (idx = i);
+      else min = Math.min(dp[i], min);
     }
   }
-  return op; // Return the total operations
+  return res;
 };
