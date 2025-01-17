@@ -34,17 +34,17 @@ So, the answer is 2.
 * @return {number}
 */
 var countTestedDevices = function (batteryPercentages) {
-  let ans = 0;
+  let count = 0;
   for (let i = 0; i < batteryPercentages.length; i++) {
     if (batteryPercentages[i] == 0) {
       continue;
     }
-    ans += 1;
+    count += 1;
     for (let j = i + 1; j < batteryPercentages.length; j++) {
       if (batteryPercentages[j] > 0) {
         batteryPercentages[j]--;
       }
     }
   }
-  return ans;
+  return count;
 };
