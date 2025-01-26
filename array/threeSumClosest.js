@@ -23,18 +23,50 @@ Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).
 * @return {number}
 */
 var threeSumClosest = function (nums, target) {
+  let res = Infinity;
   nums.sort((a, b) => a - b);
-  let closest = Infinity;
-  for (let i = 0; i < nums.length - 2; i++) {
+
+  for (let i = 0; i <= nums.length - 3; i++) {
+    if (i > 0 && nums[i] === nums[i - 1]) continue; // Skip duplicates
+
     let left = i + 1;
-    right = nums.length - 1;
+    let right = nums.length - 1;
+
+    // Early exit if the smallest sum is already greater than the target
+    if (nums[i] + nums[left] + nums[left + 1] > target) {
+      if (
+        Math.abs(nums[i] + nums[left] + nums[left + 1] - target) <
+        Math.abs(res - target)
+      ) {
+        res = nums[i] + nums[left] + nums[left + 1];
+      }
+      break;
+    }
+
+    // Continue if the largest sum is smaller than the target
+    if (nums[i] + nums[right] + nums[right - 1] < target) {
+      if (
+        Math.abs(nums[i] + nums[right] + nums[right - 1] - target) <
+        Math.abs(res - target)
+      ) {
+        res = nums[i] + nums[right] + nums[right - 1];
+      }
+      continue;
+    }
+
     while (left < right) {
-      let localSum = nums[i] + nums[left] + nums[right];
-      if (Math.abs(localSum - target) < Math.abs(closest - target))
-        closest = localSum;
-      if (localSum > target) right--;
-      else left++;
+      let sum = nums[right] + nums[left] + nums[i];
+      if (sum === target) return target; // Exact match found
+      if (Math.abs(target - sum) < Math.abs(target - res)) {
+        res = sum;
+      }
+      if (sum < target) {
+        left++;
+      } else {
+        right--;
+      }
     }
   }
-  return closest;
+  return res;
 };
+
