@@ -17,4 +17,11 @@ Example 2:
 Input: nums = [0,0,0], target = 1
 Output: 0
 Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).
- */
+
+* @param {number[]} nums
+* @param {number} target
+* @return {number}
+*/
+var threeSumClosest = function(nums, target) {
+    
+};
