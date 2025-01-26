@@ -43,6 +43,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0046 | [Permutations](/array/permute.js)                                                  | `Array`,`Backtracking`                                                  | Medium     |        |
 | 0050 | [Pow(x, n)](/math/myPow.js)                                                        | `Math`,`Recursion`                                                      | Medium     |        |
 | 0058 | [Length Of Last Word](/strings/lengthOfLastWord.js)                                | `String`                                                                | Easy       |        |
+| 0062 | [Unique Paths](/math/uniquePaths.js)                 | `Math`, `Dynamic Programming`, `Combinatorics`                                                        | Medium      |        |
 | 0023 | [Merge k Sorted Lists](/solution/README_EN.md)                                     | `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort` | Hard       |        |
 | 0024 | [Swap Nodes in Pairs](/solutio/README_EN.md)                                       | `Recursion`,`Linked List`                                               | Medium     |        |
 | 0025 | [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)                | `Recursion`,`Linked List`                                               | Hard       |        |
