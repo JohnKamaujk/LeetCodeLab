@@ -14,4 +14,15 @@ Output: 99
 * @param {number[]} nums
 * @return {number}
 */
-var singleNumber = function (nums) {};
+var singleNumber = function (nums) {
+  const map = new Map();
+  for (let i = 0; i < sortedNums.length; i++) {
+    if (map.has(nums[i])) {
+      map.set(nums[i], map.get(nums[i]) + 1);
+    } else {
+      map.set(nums[i], 1);
+    }
+  }
+  const arr = Array.from(map);
+  return arr.find((num) => num[1] === 1)[0];
+};
