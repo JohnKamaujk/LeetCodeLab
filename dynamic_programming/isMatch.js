@@ -20,4 +20,11 @@ Example 3:
 Input: s = "ab", p = ".*"
 Output: true
 Explanation: ".*" means "zero or more (*) of any character (.)".
+
+* @param {string} s
+* @param {string} p
+* @return {boolean}
 */
+var isMatch = function(s, p) {
+    
+};
