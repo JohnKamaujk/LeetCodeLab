@@ -31,7 +31,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0021 | [Merge Two Sorted Lists](/array/mergeSortedLists.js)                               | `Recursion`,`Linked List`                                               | Easy       |        |
 | 0022 | [Generate Parentheses](/string/generateParenthesis.js)                            | `String`,`Dynamic Programming`,`Backtracking`                           | Medium     |        |
 | 0023 | [Merge k Sorted Lists](/solution/README_EN.md)                                     | `Linked List`,`Divide and Conquer`,`Heap (Priority Queue)`,`Merge Sort` | Hard       |        |
-| 0024 | [Swap Nodes in Pairs](/solutio/README_EN.md)                                       | `Recursion`,`Linked List`                                               | Medium     |        |
+| 0024 | [Swap Nodes in Pairs](/linked_list/swapPairs.js)                                    | `Recursion`,`Linked List`                                               | Medium     |        |
 | 0025 | [Reverse Nodes in k-Group](/solution/0000-0090k-Group/README_EN.md)                | `Recursion`,`Linked List`                                               | Hard       |        |
 | 0026 | [Remove Duplicates from Sorted Array](/array/removeDuplicates.js)                  | `Array`,`Two Pointers`                                                  | Easy       |        |
 | 0027 | [Remove ELement from an Array](/array/removeElemenet.js)                           | `Array`,`Two Pointers`                                                  | Easy       |        |
