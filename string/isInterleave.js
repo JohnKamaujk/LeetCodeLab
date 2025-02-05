@@ -29,4 +29,29 @@ Output: true
 * @param {string} s3
 * @return {boolean}
 */
-var isInterleave = function (s1, s2, s3) {};
+var isInterleave = function (s1, s2, s3) {
+  const m = s1.length;
+  const n = s2.length;
+  const p = s3.length;
+
+  const dp = Array(m + 1)
+    .fill()
+    .map(() => Array(n + 1).fill(-1));
+
+  const interleave = (i, j, k) => {
+    if (k === p) {
+      return i === m && j === n;
+    }
+    if (dp[i][j] !== -1) return dp[i][j];
+    let res = false;
+    if (i < m && s1[i] === s3[k]) {
+      res = interleave(i + 1, j, k + 1);
+    }
+    if (!res && j < n && s2[j] === s3[k]) {
+      res = interleave(i, j + 1, k + 1);
+    }
+    return (dp[i][j] = res);
+  };
+
+  return interleave(0, 0, 0);
+};
