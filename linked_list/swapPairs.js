@@ -27,4 +27,32 @@ Output: [2,1,3]
 * @param {ListNode} head
 * @return {ListNode}
 */
-var swapPairs = function (head) {};
+var swapPairs = function (head) {
+  if (!head || !head.next) return head; //handle empty and single node LL
+
+  let prev = head;
+  let curr = head.next;
+  let after = head.next.next;
+
+  head = head.next; //set head to be 2nd node KEY!
+
+  while (true) {
+    curr.next = prev;
+
+    //handle 2 and 3 node LL and return
+    if (!after || !after.next) {
+      //connect 1-null or 1-3 based on 2 or 3 node LL
+      prev.next = after;
+      return head;
+    }
+
+    //if len > 3
+
+    prev.next = after.next; //connect 1-4
+
+    //go to next adjacent pair
+    prev = after;
+    curr = after.next;
+    after = after.next.next;
+  }
+};
