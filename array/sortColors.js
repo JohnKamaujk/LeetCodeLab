@@ -16,4 +16,21 @@ Output: [0,1,2]
 * @param {number[]} nums
 * @return {void} Do not return anything, modify nums in-place instead.
 */
-var sortColors = function (nums) {};
+var sortColors = function (nums) {
+  let count0 = 0,
+    count1 = 0,
+    count2 = 0;
+
+  for (const num of nums) {
+    if (num === 0) {
+      count0++;
+    } else if (num === 1) {
+      count1++;
+    } else {
+      count2++;
+    }
+  }
+  nums.fill(0, 0, count0);
+  nums.fill(1, count0, count0 + count1);
+  nums.fill(2, count0 + count1);
+};
