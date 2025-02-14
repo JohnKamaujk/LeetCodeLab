@@ -56,6 +56,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0049 | [Group Anagrams](/string/groupAnagrams.js)                                        | `Array`,`Hash Table`,`String`, `Sorting`                                | Medium     |        |
 | 0067 | [Add Binary](/math/addBinary.js)                                                 | `Math`,`Binary Search`                                                  | Easy       |        |
 | 0069 | [Sqrt(x)](/math/mySqrt.js)                                                         | `Math`, `Sring`, `Bit Manipulation`, `Simulation`                       | Easy       |        |
+| 0075 | [Sort Colors](/math/mySqrt.js)                                                      | `Array`, `Two Pointers`, `Sorting`                                    | Medium       |        |
 | 0078 | [Subsets](/array/subset.js)                                                        | `Array`,`Backtracking`,`Bit Manipulation`                               | Medium     |        |
 | 0083 | [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)             | `Linked List`                                                           | Easy       |        |
 | 0087 | [Scramble String](/string/isScramble.js)                                   | `String`, `Dynamic Programming`                                         | Easy       |        |
