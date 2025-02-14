@@ -22,34 +22,39 @@ Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
 */
 var restoreIpAddresses = function (s) {
   let ans = [];
-  // if length is greater than 12 that means str cannot be divided in 4 part
-  // if length is less than 4 means not able to generate 4 parts
+
+  // Check if the string length is valid to form an IP address
   if (s.length > 12 || s.length < 4) return [];
 
+  /**
+   * Recursive function to generate all possible IP addresses
+   * @param {number} start - The starting index for the current substring
+   * @param {string[]} substrings - The current list of substrings
+   */
   function backtrack(start, substrings) {
-    // we have 4 parts of string
-    if (substrings.length == 4) {
-      let strAddress = [...substrings].join(".");
-      // strAddress is of length s + 3(dot) & comparing it with s.length + 3 dots
-      // also means that we have reached the end of string & considered all numbers from string s
-      if (strAddress.length == s.length + 3) {
+    // If we have 4 parts, check if it's a valid IP address
+    if (substrings.length === 4) {
+      // Join the substrings with '.' and check if the length matches
+      let strAddress = substrings.join(".");
+      if (strAddress.length === s.length + 3) {
         ans.push(strAddress);
         return;
       }
     }
-    // i = start becoz we have to move to nect index every time
+
+    // Iterate over the remaining characters in the string
     for (let i = start; i < s.length; i++) {
       let temp = s.substring(start, i + 1);
-      // temp should be less than 255
-      if (Number(temp) <= 255) {
-        // temp[0] ==0 means that any part of ip cannot have leading zero
-        // & if so we will not consider that as valid part & move to next index
-        if (temp[0] == 0 && temp.length >= 2) continue;
+
+      // Check if the current substring is a valid part of an IP address
+      if (Number(temp) <= 255 && (temp[0] !== "0" || temp.length === 1)) {
+        // Recursively call the backtrack function with the updated substrings
         backtrack(i + 1, [...substrings, temp]);
       }
     }
   }
 
+  // Start the backtracking process
   backtrack(0, []);
   return ans;
 };
