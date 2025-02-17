@@ -16,4 +16,22 @@ Output: 12
 * @param {number[][]} grid
 * @return {number}
 */
-var minPathSum = function (grid) {};
+var minPathSum = function (grid) {
+  if (!grid || grid.length === 0 || grid[0].length === 0) return 0; // Handle empty grid edge case
+
+  let rows = grid.length,
+    cols = grid[0].length;
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      if (row === 0 && col === 0) continue; // Skip the starting cell
+
+      let fromLeft = col > 0 ? grid[row][col - 1] : Infinity; // Value from the left cell
+      let fromTop = row > 0 ? grid[row - 1][col] : Infinity; // Value from the top cell
+
+      grid[row][col] += Math.min(fromLeft, fromTop); // Update the cell with the minimum path sum
+    }
+  }
+
+  return grid[rows - 1][cols - 1]; // Return the bottom-right cell value (min path sum)
+};
