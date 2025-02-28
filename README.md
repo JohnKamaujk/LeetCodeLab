@@ -53,6 +53,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 0034 | [Find First and Last Position of Element in Sorted Array](/array/searchRange.js)         | `Array`,`Binary Search`                                  | Medium      |        |
 | 0036 | [Valid Sudoku](/solution/_EN.md)                                                   | `Array`,`Hash Table`,`Matrix`                                           | Medium     |        |
 | 0040 | [Combination Sum II](/array/combinationSum2.js)         | `Array`,`Backtracking`                                                         | Medium      |        |
+| 0041 | [Smallest Positive NUmber](/array/SmallestPositiveInteger)         | `Array`,`Hash Table`                                                          | Hard               |        |
 | 0042 | [Trapping Rain Water](/dynamic_programming/trap.js)         | `Array`,`Two Pointers`,`Dynamic Programming`, `Stack`, `Monotonic Stack`                      | Hard        |        |
 | 0049 | [Group Anagrams](/string/groupAnagrams.js)                                        | `Array`,`Hash Table`,`String`, `Sorting`                                | Medium     |        |
 | 0064 | [Minimum Sum Path](/array/minPathSum.js)                                        | `Array`,`Dynamic Programming`,`Matrix`                                  | Medium     |        |
