@@ -17,28 +17,32 @@ Example 3:
 Input: nums = [7,8,9,11,12]
 Output: 1
 Explanation: The smallest positive integer 1 is missing.
+
+* Finds the first positive missing number in a given array.
+* 
+* @param {number[]} arr - Input array of integers.
+* @returns {number} The first positive missing number.
 */
 
 function missingNumber(arr) {
-  let n = arr.length;
-
-  // To mark the occurrence of elements
-  let vis = new Array(n).fill(false);
-  for (let i = 0; i < n; i++) {
-    // if element is in range from 1 to n
-    // then mark it as visited
-    if (arr[i] > 0 && arr[i] <= n) vis[arr[i] - 1] = true;
+  if (!Array.isArray(arr)) {
+    throw new Error('Input must be an array.');
   }
 
-  // Find the first element which is unvisited
-  // in the original array
-  for (let i = 1; i <= n; i++) {
-    if (!vis[i - 1]) {
+  const arrayLength = arr.length;
+  const presenceTracker = new Array(arrayLength).fill(false);
+
+  for (let i = 0; i < arrayLength; i++) {
+    if (Number.isInteger(arr[i]) && arr[i] > 0 && arr[i] <= arrayLength) {
+      presenceTracker[arr[i] - 1] = true;
+    }
+  }
+
+  for (let i = 1; i <= arrayLength; i++) {
+    if (!presenceTracker[i - 1]) {
       return i;
     }
   }
 
-  // if all elements from 1 to n are visited
-  // then n+1 will be first positive missing number
-  return n + 1;
+  return arrayLength + 1;
 }
