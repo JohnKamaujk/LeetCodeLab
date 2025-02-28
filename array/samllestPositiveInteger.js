@@ -20,24 +20,25 @@ Explanation: The smallest positive integer 1 is missing.
 */
 
 function missingNumber(arr) {
-  arr.sort((a, b) => a - b);
+  let n = arr.length;
 
-  // ans will hold the current smallest missing number,
-  // initially set to 1
-  let res = 1;
-  for (let i = 0; i < arr.length; i++) {
-    // If we have found 'res' in the array,
-    // 'res' is no longer missing, so increment it
-    if (arr[i] == res) {
-      res++;
-    }
+  // To mark the occurrence of elements
+  let vis = new Array(n).fill(false);
+  for (let i = 0; i < n; i++) {
+    // if element is in range from 1 to n
+    // then mark it as visited
+    if (arr[i] > 0 && arr[i] <= n) vis[arr[i] - 1] = true;
+  }
 
-    // If the current element is larger than 'res',
-    // 'res' cannot be found in the array,
-    // so it is our final answer
-    else if (arr[i] > res) {
-      break;
+  // Find the first element which is unvisited
+  // in the original array
+  for (let i = 1; i <= n; i++) {
+    if (!vis[i - 1]) {
+      return i;
     }
   }
-  return res;
+
+  // if all elements from 1 to n are visited
+  // then n+1 will be first positive missing number
+  return n + 1;
 }
