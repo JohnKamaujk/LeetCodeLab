@@ -19,4 +19,24 @@ Output: "0"
 * @param {string} num2
 * @return {string}
 */
-var addStrings = function (num1, num2) {};
+var addStrings = function (num1, num2) {
+  let i = num1.length - 1;
+  let j = num2.length - 1;
+
+  let sum = [];
+  let carry = 0;
+
+  while (i >= 0 || j >= 0 || carry > 0) {
+    let firstNum = num1[i] || 0;
+    let secondNum = num2[j] || 0;
+    let total = parseInt(firstNum) + parseInt(secondNum) + carry;
+    let remainder = total % 10;
+    sum.push(remainder);
+    carry = total >= 10 ? 1 : 0;
+    j--;
+    i--;
+  }
+  return sum.reverse().join("");
+};
+
+console.log(addStrings("123", "11"));
