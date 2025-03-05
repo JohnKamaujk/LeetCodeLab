@@ -74,7 +74,9 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0183 | [Customers Who Never Order](/database/customer_who_never_order.sql)                | `Database`                                                              | Easy       |        |
 | 0184 | [Duplicate Emails](/database/duplicate_emails.sql)                                 | `Database`                                                              | Easy       |        |
 | 0185 | [Customers Who Never Order](/database/customer_who_never_order.sql)                | `Database`                                                              | Easy       |        |
-| 0193 | [Valid Phone Numbers](/shell/valid_phone.sh)                                       | `Shell`                                                                 | Easy       |        |
+| 0193 | [Valid Phone Numbers](/shell/valid_phone.sh)                                       | 
+`Shell`                                                                 | Easy       |        |
+| 0197 | [Rising Temperature](/database/rising_temperature.sql)                | `Database`                                                              | Easy       |        |
 | 0200 | [Number of Islands](/array/numIslands.js)                                          | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Medium     |        |
 | 0202 | [Happy NUmber](/math/isHappy.js)                                                | `Hash table`, `Math`, `Two Pointers`                                   | Medium     |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
