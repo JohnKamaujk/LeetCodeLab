@@ -80,6 +80,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
 | 0258 | [Add Digits](/math/addDigits.js)                                                   | `Math`, `Simulation`, `Number Theory`                                   | Easy       |        |
 | 0279 | [Perfect Squares](/math/numSquares.js)                                             | `Math`, `Dynamic Programming`,`Breadth-First Search`                    | Medium     |        |
+| 0303 | [Range Sum Query - Immutable](/array/numArray.js)                          | `Array`, `Design`,`Prefix Sum`                                                     | Easy     |        |
 | 0349 | [Intersection of Two Array](/array/intersection.js)                                | `Array`, `Hash Table`, `Two POinters`, `Binary Search`, `Sorting`       | Easy       |        |
 | 0415 | [Add Strings](/string/addStrings.js)                                | `Math`, `String`, `Simulation`                                                  | Easy       |        |
 | 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
