@@ -32,4 +32,36 @@ Output: 5
 * @param {number[]} nums
 * @return {number}
 */
-var maxLength = function (nums) {};
+var maxLength = function (nums) {
+  let maxLen = 0;
+  for (let i = 0; i < nums.length - 1; i++) {
+    let prodVal = (gcdVal = lcmVal = nums[i]);
+
+    for (let j = i + 1; j < nums.length; j++) {
+      prodVal = prod(prodVal, nums[j]);
+      lcmVal = lcm(lcmVal, nums[j]);
+      gcdVal = gcd(gcdVal, nums[j]);
+
+      if (prodVal === lcmVal * gcdVal) maxLen = Math.max(j - i + 1, maxLen);
+    }
+  }
+
+  return maxLen;
+};
+
+function prod(a, b) {
+  return a * b;
+}
+
+function lcm(a, b) {
+  return prod(a, b) / gcd(a, b);
+}
+
+function gcd(a, b) {
+  while (b) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
