@@ -23,4 +23,10 @@ Explanation: Every subsequence of string a is also a subsequence of string b. Si
 * @param {string} b
 * @return {number}
 */
-var findLUSlength = function (a, b) {};
+var findLUSlength = function (a, b) {
+  if (a === b) {
+    return -1;
+  } else {
+    return Math.max(a.length, b.length);
+  }
+};
