@@ -60,6 +60,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0067 | [Add Binary](/math/addBinary.js)                                                 | `Math`,`Binary Search`                                                  | Easy       |        |
 | 0069 | [Sqrt(x)](/math/mySqrt.js)                                                         | `Math`, `Sring`, `Bit Manipulation`, `Simulation`                       | Easy       |        |
 | 0075 | [Sort Colors](/array/sortColors.js)                                                 | `Array`, `Two Pointers`, `Sorting`                                    | Medium       |        |
+| 0077 | [Combinations](/dynamic_programming/combine.js)                            | `BackTracking`                                                        | Medium       |        |
 | 0078 | [Subsets](/array/subset.js)                                                        | `Array`,`Backtracking`,`Bit Manipulation`                               | Medium     |        |
 | 0083 | [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)             | `Linked List`                                                           | Easy       |        |
 | 0087 | [Scramble String](/string/isScramble.js)                                   | `String`, `Dynamic Programming`                                         | Easy       |        |
