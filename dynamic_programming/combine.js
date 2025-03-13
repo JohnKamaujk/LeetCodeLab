@@ -24,7 +24,7 @@ var combine = function (n, k) {
   let subset = [];
 
   const backtrack = (start) => {
-    if (subset.length() === k) {
+    if (subset.length === k) {
       result.push([...subset]);
       return;
     }
