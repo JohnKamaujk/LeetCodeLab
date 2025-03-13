@@ -66,6 +66,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0087 | [Scramble String](/string/isScramble.js)                                   | `String`, `Dynamic Programming`                                         | Easy       |        |
 | 0093 | [Restore IP Addresses](/string/restoreIpAddresses.js)                               | `String`, `Backtracking`                                         | Medium       |        |
 | 0097 | [Interleaving String](/string/isInterleave.js)                                      | `String`, `Dynamic Programming`                                       | Medium       |        |
+| 0100 | [Same Tree](/tree/isSame.js)                          | `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`                                    | Easy      |        |
 | 0136 | [Single Number](/array/singleNumber.js)                                            | `Array`, `Bit Manipulation`                                             | Easy       |        |
 | 0151 | [Reverse Words in a String](/string/reverseWords.js)                              | `Two Pointers`, `Strings`                                               | Medium     |        |
 | 0169 | [Majority Element](/array/majorityElement.js)                                      | `Array`, `Hash Table`, `Sorting`, `Divide and Conquer`, `Counting`      | Easy       |        |
