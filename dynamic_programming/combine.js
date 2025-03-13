@@ -19,4 +19,23 @@ Explanation: There is 1 choose 1 = 1 total combination.
 * @param {number} k
 * @return {number[][]}
 */
-var combine = function (n, k) {};
+var combine = function (n, k) {
+  let result = [];
+  let subset = [];
+
+  const backtrack = (start) => {
+    if (subset.length() === k) {
+      result.push([...subset]);
+      return;
+    }
+    for (let i = start; i <= n; i++) {
+      subset.push(i);
+      backtrack(i + 1);
+      subset.pop();
+    }
+  };
+
+  backtrack(1);
+
+  return result;
+};
