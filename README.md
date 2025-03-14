@@ -64,7 +64,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0078 | [Subsets](/array/subset.js)                                                        | `Array`,`Backtracking`,`Bit Manipulation`                               | Medium     |        |
 | 0083 | [Remove Duplicates from Sorted List](/linked_list/deleteDuplicates.js)             | `Linked List`                                                           | Easy       |        |
 | 0087 | [Scramble String](/string/isScramble.js)                                   | `String`, `Dynamic Programming`                                         | Easy       |        |
-| 0093 | [Restore IP Addresses](/string/restoreIpAddresses.js)                               | `String`, `Backtracking`                                         | Medium       |        |
+| 0093 | [Restore IP Addresses](/string/restoreIpAddresses.js)                               | `String`, `Backtracking`                                              | Medium       |        |
+| 0096 | [Unique Binary Search Trees](/dynamic_programming/numTrees.js)| `Math`, `Dynamic Programming`, `Tree`, `Binary Search Tree`, `Binary Tree`             | Medium       |        |
 | 0097 | [Interleaving String](/string/isInterleave.js)                                      | `String`, `Dynamic Programming`                                       | Medium       |        |
 | 0100 | [Same Tree](/tree/isSame.js)                          | `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`                                    | Easy      |        |
 | 0136 | [Single Number](/array/singleNumber.js)                                            | `Array`, `Bit Manipulation`                                             | Easy       |        |
