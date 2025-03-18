@@ -83,6 +83,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 `Shell`                                                                 | Easy       |        |
 | 0197 | [Rising Temperature](/database/rising_temperature.sql)                | `Database`                                                              | Easy       |        |
 | 0200 | [Number of Islands](/array/numIslands.js)                                          | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Medium     |        |
+| 0206 | [Reverse Linked List](/linked_list/reverseList.js)                                | `Linked List`, `Recursion`                                                | Easy     |        |
 | 0219 | [Contains Duplicate II](/array/containsNearbyDuplicate.js)                          | `Array`, `Hash Table`, `Sliding Window`                                 | Easy       |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
 | 0258 | [Add Digits](/math/addDigits.js)                                                   | `Math`, `Simulation`, `Number Theory`                                   | Easy       |        |
