@@ -15,4 +15,38 @@ Output: "bacd"
 * @param {number} k
 * @return {string}
 */
-var reverseStr = function (s, k) {};
+var reverseStr = function (s, k) {
+  let strArr = s.split("");
+  const k2 = 2 * k;
+
+  for (let i = 0; i < strArr.length - 1; i += k2) {
+    swap(i, Math.min(i + k - 1, arr.length - 1));
+  }
+
+  const swap = (end, start) => {
+    while (start < end) {
+      [strArr[start], strArr[end]] = [strArr[end], strArr[start]];
+      start++;
+      end--;
+    }
+  };
+
+  return strArr.join("");
+};
+
+
+var reverseStr = function (s, k, arr = s.split(""), k2 = k * 2) {
+  for (let i = 0; i < arr.length - 1; i += k2) {
+    swap(i, Math.min(i + k - 1, arr.length - 1));
+  }
+  return arr.join("");
+
+  function swap(start, end) {
+    while (start < end) {
+      [arr[start], arr[end]] = [arr[end], arr[start]];
+      start++;
+      end--;
+    }
+  }
+};
+
