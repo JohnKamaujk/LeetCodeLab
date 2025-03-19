@@ -16,20 +16,21 @@ Output: "bacd"
 * @return {string}
 */
 var reverseStr = function (s, k) {
-  let strArr = s.split("");
-  const k2 = 2 * k;
+  let arr = s.split(""); // Convert string to array for easy manipulation
+  let n = arr.length;    // Get the length of the string
 
-  for (let i = 0; i < strArr.length - 1; i += k2) {
-    swap(i, Math.min(i + k - 1, strArr.length - 1));
-  }
+  for (let i = 0; i < n; i += 2 * k) {
+    let start = i;
+    let end = Math.min(i + k - 1, n - 1); // Ensure end doesn't exceed array length
 
-  function swap(start, end) {
+    // Reverse only the first k characters in this 2k block
     while (start < end) {
-      [strArr[start], strArr[end]] = [strArr[end], strArr[start]];
+      [arr[start], arr[end]] = [arr[end], arr[start]];
       start++;
       end--;
     }
   }
 
-  return strArr.join("");
+  return arr.join(""); // Convert array back to string
 };
+
