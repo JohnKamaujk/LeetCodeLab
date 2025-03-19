@@ -17,7 +17,7 @@ Output: "bacd"
 */
 var reverseStr = function (s, k) {
   let arr = s.split(""); // Convert string to array for easy manipulation
-  let n = arr.length;    // Get the length of the string
+  let n = arr.length; // Get the length of the string
 
   for (let i = 0; i < n; i += 2 * k) {
     let start = i;
@@ -33,4 +33,3 @@ var reverseStr = function (s, k) {
 
   return arr.join(""); // Convert array back to string
 };
-
