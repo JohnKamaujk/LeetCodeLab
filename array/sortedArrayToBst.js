@@ -23,9 +23,10 @@ Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 */
 
 var sortedArrayToBST = function (nums) {
-  if (nums.length == 0) return 0;
+  if (nums.length == 0) return null;
 
   const root = new TreeNode();
+
   const mid = Math.floor(nums.length / 2);
 
   root.val = nums[mid];
