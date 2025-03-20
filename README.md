@@ -96,6 +96,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap(Priority Queue)`                              | Easy       |        |
  0507 | [Perfect Number](/math/perfectNumber.js)                                           | `Math`                                                                  |Easy       |        |
 | 0509 | [Fibonacci Number](/dynamic_programming/fib.js)                                    | `Array`, `Dynamic Programming`, `Breadth-First Search`, `Matrix`        | Easy       |        |
+| 0511 | [Game Play Analysis I](/database/game_play_analysis_I.sql)                                                | `Database`        | Easy       |        |
 | 0520 | [Detect Capital](/string/detectCapital.js)                                    | `String`,                                                               | Easy       |        |
 | 0521 | [Longest Uncommon Subsequence I](/string/findLUSlength.js)                     | `String`,                                                               | Easy       |        |
 | 0541 | [Reverse String II](/string/reverseStr.js)                     | `String`, `Two   Pointers`                                                               | Easy       |        |
