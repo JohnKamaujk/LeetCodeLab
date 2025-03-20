@@ -22,4 +22,15 @@ Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 * @return {TreeNode}
 */
 
-var sortedArrayToBST = function (nums) {};
+var sortedArrayToBST = function (nums) {
+  if (nums.length == 0) return 0;
+
+  const root = new TreeNode();
+  const mid = Math.floor(nums.length / 2);
+
+  root.val = nums[mid];
+  root.left = sortedArrayToBST(nums.slice(0, mid));
+  root.right = sortedArrayToBST(nums.slice(mid + 1));
+
+  return root;
+};
