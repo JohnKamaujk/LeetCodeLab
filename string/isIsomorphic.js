@@ -31,21 +31,23 @@ Output: true
 * @return {boolean}
 */
 var isIsomorphic = function (s, t) {
-  if (s.length() !== t.length) return false;
+  if (s.length !== t.length) return false;
 
-  let mapper = new Map();
+  let mapT = new Map();
+  let mapS = new Map();
 
   for (let i = 0; i < s.length; i++) {
-    if (mapper.get(s[i]) !== undefined) {
-      if (mapper.get(s[i]) !== t[i]) {
-        return false;
-      }
-    } else {
-      mapper.set(s[i], t[i]);
+    if (mapS.has(s[i]) && mapS.get(s[i]) !== t[i]) {
+      return false;
     }
+
+    if (mapT.has(t[i]) && mapT.get(t[i]) !== s[i]) {
+      return false;
+    }
+    mapS.set(s[i], t[i]);
+    mapT.set(t[i], s[i]);
   }
 
   return true;
 };
-
 
