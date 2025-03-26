@@ -31,4 +31,13 @@ Explanation: Since the tree is empty, there are no root-to-leaf paths.
 * @param {number} targetSum
 * @return {boolean}
 */
-var hasPathSum = function (root, targetSum) {};
+var hasPathSum = function (root, targetSum) {
+  if (!root) return false;
+
+  if (!root.left && !root.right && targetSum - root.val === 0) return true;
+
+  return (
+    hasPathSum(root.left, targetSum - root.val) ||
+    hasPathSum(root.right, targetSum - root.val)
+  );
+};
