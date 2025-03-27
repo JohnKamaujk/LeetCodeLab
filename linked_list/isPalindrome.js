@@ -19,4 +19,33 @@ Output: false
 * @return {boolean}
 */
 
-var isPalindrome = function (head) {};
+var isPalindrome = function (head) {
+  let slow = head,
+    fast = head;
+
+  // Find the middle
+  while (fast && fast.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  // Reverse the second half
+  let prev = null;
+  while (slow) {
+    let nextNode = slow.next;
+    slow.next = prev;
+    prev = slow;
+    slow = nextNode;
+  }
+
+  // Compare both halves
+  let firstHalf = head,
+    secondHalf = prev;
+  while (secondHalf) {
+    if (firstHalf.val !== secondHalf.val) return false;
+    firstHalf = firstHalf.next;
+    secondHalf = secondHalf.next;
+  }
+
+  return true;
+};
