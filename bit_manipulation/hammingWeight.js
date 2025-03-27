@@ -25,4 +25,15 @@ The input binary string 1111111111111111111111111111101 has a total of thirty se
 * @param {number} n
 * @return {number}
 */
-var hammingWeight = function (n) {};
+var hammingWeight = function (n) {
+  const binaryStr = n.toString(2);
+  let count = 0;
+
+  for (const bit of binaryStr) {
+    if (bit === "1") {
+      count += 1;
+    }
+  }
+
+  return count;
+};
