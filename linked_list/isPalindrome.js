@@ -20,32 +20,30 @@ Output: false
 */
 
 var isPalindrome = function (head) {
+  // Edge cases: empty list or single node
+  if (!head || !head.next) return true;
+
   let slow = head,
-    fast = head;
+    fast = head,
+    prev = null; // for reversing first half
 
-  // Find the middle
+  // Reverse first half while finding the middle
   while (fast && fast.next) {
-    slow = slow.next;
-    fast = fast.next.next;
-  }
-
-  // Reverse the second half
-  let prev = null;
-  while (slow) {
-    let nextNode = slow.next;
-    slow.next = prev;
+    fast = fast.next.next; // move 2 steps ahead
+    let next = slow.next;
+    slow.next = prev; // reverse link
     prev = slow;
-    slow = nextNode;
+    slow = next;
   }
 
-  // Compare both halves
-  let firstHalf = head,
-    secondHalf = prev;
-  while (secondHalf) {
-    if (firstHalf.val !== secondHalf.val) return false;
-    firstHalf = firstHalf.next;
-    secondHalf = secondHalf.next;
-  }
+  // If odd number of nodes, skip the middle node
+  if (fast) slow = slow.next;
 
-  return true;
+  // Compare reversed first half with second half
+  while (prev && slow) {
+    if (prev.val !== slow.val) return false; // mismatch found
+    prev = prev.next;
+    slow = slow.next;
+  }
+  return true; // palindrome confirmed
 };
