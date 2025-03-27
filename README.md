@@ -92,6 +92,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0206 | [Reverse Linked List](/linked_list/reverseList.js)                                | `Linked List`, `Recursion`                                                | Easy     |        |
 | 0219 | [Contains Duplicate II](/array/containsNearbyDuplicate.js)                          | `Array`, `Hash Table`, `Sliding Window`                                 | Easy       |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
+| 0234 | [Palindrome Linked List](/linked_list/isPalindrome.js)                            | `Linked List`, `Recursion`, `Two Pointers`, `Stack`                     | Easy       |        |
 | 0258 | [Add Digits](/math/addDigits.js)                                                   | `Math`, `Simulation`, `Number Theory`                                   | Easy       |        |
 | 0279 | [Perfect Squares](/math/numSquares.js)                                             | `Math`, `Dynamic Programming`,`Breadth-First Search`                    | Medium     |        |
 | 0303 | [Range Sum Query - Immutable](/array/numArray.js)                          | `Array`, `Design`,`Prefix Sum`                                                     | Easy     |        |
