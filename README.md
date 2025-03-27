@@ -57,6 +57,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0042 | [Trapping Rain Water](/dynamic_programming/trap.js)         | `Array`,`Two Pointers`,`Dynamic Programming`, `Stack`, `Monotonic Stack`                      | Hard        |        |
 | 0049 | [Group Anagrams](/string/groupAnagrams.js)                                        | `Array`,`Hash Table`,`String`, `Sorting`                                | Medium     |        |
 | 0064 | [Minimum Sum Path](/array/minPathSum.js)                                        | `Array`,`Dynamic Programming`,`Matrix`                                  | Medium     |        |
+| 0065 | [Valid Number](/string/isNumber.js)                                        | `String`                                                                  | Hard     |        |
 | 0067 | [Add Binary](/math/addBinary.js)                                                 | `Math`,`Binary Search`                                                  | Easy       |        |
 | 0069 | [Sqrt(x)](/math/mySqrt.js)                                                         | `Math`, `Sring`, `Bit Manipulation`, `Simulation`                       | Easy       |        |
 | 0075 | [Sort Colors](/array/sortColors.js)                                                 | `Array`, `Two Pointers`, `Sorting`                                    | Medium       |        |
