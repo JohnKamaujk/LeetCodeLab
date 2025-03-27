@@ -34,4 +34,7 @@ Output: false
 * @return {boolean}
 */
 
-var isNumber = function (s) {};
+var isNumber = function (s) {
+  const numberRegex = /^[-+]?(\d+\.\d*|\d*\.\d+|\d+)([eE][-+]?\d+)?$/;
+  return numberRegex.test(s);
+};
