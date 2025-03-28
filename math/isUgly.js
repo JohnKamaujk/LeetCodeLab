@@ -24,7 +24,6 @@ Explanation: 14 is not ugly since it includes the prime factor 7.
 
 var isUgly = function (n) {
   if (n < 1) return false;
-  if (n == 1) return true;
 
   while (n > 1) {
     if (n % 2 == 0) {
@@ -37,5 +36,5 @@ var isUgly = function (n) {
       return false;
     }
   }
-  return true;
+  return n == 1;
 };
