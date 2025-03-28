@@ -100,7 +100,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0326 | [Power Of Three](/math/isPowerOfThree.js)                          | `Math`, `Recursion`                                                               | Easy     |        |
 | 0342 | [Power Of Four](/math/isPowerOfFour.js)                          | `Math`, `Recursion`, `Bit Manipulation`                                           | Easy     |        |
 | 0345 | [Reverse Vowels Of A String](/string/reverseVowels.js)                          | `String`, `Two Pointers`                                                  | Easy     |        |
-| 0349 | [Intersection of Two Array](/array/intersection.js)                                | `Array`, `Hash Table`, `Two POinters`, `Binary Search`, `Sorting`       | Easy       |        |
+| 0349 | [Intersection of Two Array](/array/intersection.js)                                | `Array`, `Hash Table`, `Two Pointers`, `Binary Search`, `Sorting`       | Easy       |        |
 | 0415 | [Add Strings](/string/addStrings.js)                                | `Math`, `String`, `Simulation`                                                  | Easy       |        |
 | 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
 | 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap(Priority Queue)`                              | Easy       |        |
