@@ -141,3 +141,4 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3407 | [Substring Matching Pattern](/string/hasMatch.js)                                   | `String`, `String Matching`                                               | Easy     |        |
 | 3411 | [Maximum SubArray With Equal Products](/array/maxLength)  | `Array`, `Math`, `Sliding Window`, `Enumeration`, `Number Theory`                                   | Easy     |        |
 | 3421 | [Find Students Who Improved](/database/find_students_who_improved.sql)              | `Sql`,                                                                    | Easy     |        |
+| 3502 | [Minimum Cost to Reach Every Position](/array/minCosts.js)              | `Array`,                                                                  | Easy     |        |
