@@ -37,4 +37,14 @@ We can swap with person 0 for a cost of 1, then we will be able to reach any pos
 * @param {number[]} cost
 * @return {number[]}
 */
-var minCosts = function (cost) {};
+var minCosts = function (cost) {
+  let costArr = new Array(cost.length).fill(0);
+
+  costArr[0] = cost[0];
+
+  for (let i = 1; i < cost.length; i++) {
+    costArr[i] = Math.min(costArr[i - 1], cost[i]);
+  }
+
+  return costArr;
+};
