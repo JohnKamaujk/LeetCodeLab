@@ -134,6 +134,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3075 | [Maximize Happiness of Selected Children](/array/maximumHappinessSum.js)           | `Array`,`Greedy`,`Sorting`                                              | Medium     |        |
 | 3110 | [Score of a String](/string/scoreOfString.js)    `Array`                                                                 | Easy     |          |
 | 3122 | [Minimum Number of Operations to Satisfy Conditions](/array/minimumOperations.js)    `Array`                                                                 | Easy     |          |
+| 3216 | [Lexicographically Smallest String After a Swap](/string/getSmallesString.js)    `String`, `Greedy`                                                      | Easy     |          |
 | 3309 | [Maximum Possible Number by Binary Concatenation](/array/maximumHappinessSum.js)    | `Array`,`Bit Manipulation`,`Enumeration`        | Easy     |        |
 | 3318 | [Find X-Sum of All K-Long Subarrays I](/array/findXSum.js)                        | `Array`, `Hash Table`, `Sliding Window`, `Heap`                         | Easy     |        |
 | 3340 | [Check Balanced String](/string/isBalanced.js)                                 | `String`                                                                | Easy     |        |
