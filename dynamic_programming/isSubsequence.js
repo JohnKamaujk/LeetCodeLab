@@ -19,19 +19,16 @@ Output: false
 */
 
 var isSubsequence = function (s, t) {
-  const sIndex = 0;
-  const tIndex = 0;
+  if (!s && !t) return true;
+  let sIndex = 0;
 
-  while (tIndex < t.length) {
+  for (let tIndex = 0; tIndex < t.length; tIndex++) {
     if (s[sIndex] === t[tIndex]) {
       sIndex++;
     }
-
     if (sIndex === s.length) {
       return true;
     }
-
-    tIndex++;
   }
   return false;
 };
