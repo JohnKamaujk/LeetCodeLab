@@ -23,10 +23,10 @@ There is no need to perform a swap because s is already the lexicographically sm
 * @return {string}
 */
 var getSmallestString = function (s) {
-  for (let i = 0; i < s.length; i++) {
+  for (let i = 0; i < s.length - 1; i++) {
     if (s[i] > s[i + 1]) {
       // Check if the next character exists and has the same parity
-      if (i + 1 < s.length && s[i] % 2 === s[i + 1] % 2) {
+      if (s[i] % 2 === s[i + 1] % 2) {
         // Swap the characters
         let arr = s.split("");
         [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
