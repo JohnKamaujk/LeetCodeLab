@@ -18,4 +18,20 @@ Output: false
 * @return {boolean}
 */
 
-var isSubsequence = function (s, t) {};
+var isSubsequence = function (s, t) {
+  const sIndex = 0;
+  const tIndex = 0;
+
+  while (tIndex < t.length) {
+    if (s[sIndex] === t[tIndex]) {
+      sIndex++;
+    }
+
+    if (sIndex === s.length) {
+      return true;
+    }
+
+    tIndex++;
+  }
+  return false;
+};
