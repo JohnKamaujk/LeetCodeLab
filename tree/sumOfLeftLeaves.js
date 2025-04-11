@@ -27,17 +27,13 @@ The number of nodes in the tree is in the range [1, 1000].
 * @return {number}
 */
 var sumOfLeftLeaves = function (root) {
+  if (!root) return 0;
+
   let sum = 0;
 
-  const helper = (node, isLeft) => {
-    if (!node) return;
-    if (isLeft && !node.left && !node.right) {
-      sum += node.val;
-    }
-    helper(node.left, true);
-    helper(node.right, false);
-  };
+  if (root.left && !root.left.left && !root.left.right) {
+    sum += root.left.val;
+  }
 
-  helper(root, false);
-  return sum;
+  return sum + sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
 };
