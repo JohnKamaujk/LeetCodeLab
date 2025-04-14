@@ -25,7 +25,6 @@ Constraints:
 * @param {number[]} arr
 * @return {boolean}
 */
-
 var canThreePartsEqualSum = function (arr) {
   let sum = arr.reduce((acc, cur) => acc + cur, 0);
 
