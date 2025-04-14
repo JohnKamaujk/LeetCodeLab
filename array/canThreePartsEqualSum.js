@@ -21,4 +21,9 @@ Explanation: 3 + 3 = 6 = 5 - 2 + 2 + 5 + 1 - 9 + 4
 Constraints:
 3 <= arr.length <= 5 * 104
 -104 <= arr[i] <= 104
+
+* @param {number[]} arr
+* @return {boolean}
 */
+
+var canThreePartsEqualSum = function (arr) {};
