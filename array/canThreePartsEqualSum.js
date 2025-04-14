@@ -43,5 +43,5 @@ var canThreePartsEqualSum = function (arr) {
     }
   }
 
-  return count >= 3;
+  return count === 3;
 };
