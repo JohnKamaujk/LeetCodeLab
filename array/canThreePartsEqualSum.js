@@ -26,4 +26,22 @@ Constraints:
 * @return {boolean}
 */
 
-var canThreePartsEqualSum = function (arr) {};
+var canThreePartsEqualSum = function (arr) {
+  let sum = arr.reduce((acc, cur) => acc + cur, 0);
+
+  let partSum = sum / 3;
+
+  if (sum % 3 !== 0) return false;
+
+  let count = 0;
+  let tempSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    tempSum += arr[i];
+    if (tempSum === partSum) {
+      count++;
+      tempSum = 0;
+    }
+  }
+
+  return count >= 3;
+};
