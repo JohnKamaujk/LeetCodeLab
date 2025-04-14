@@ -116,6 +116,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0709 | [To Lower Case](/string/toLowerCase.js)                                     | `String`                                                                | Easy       |        |
 | 0728 | [Self Dividing Numbers](/math/selfDividingNumbers.js)                       | `Math`                                                                | Easy       |        |
 | 0905 | [Sort Array By Parity](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
+| 1013 | [Partition Array Into Three Parts With Equal Sum](/array/canThreePartsEqualSum.js)                   | `Array`,`Greedy`,                             | Easy     |        |
 | 1207 | [Unique Number of Occurrences](/array/uniqueOccurences.js)                   | `Array`,`Hash Table`,                                                     | Easy     |        |
 | 1208 | [Get Equal Substrings Within Budget](/string/equalSubstring.js)                   | `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`                | Medium     |        |
 | 1219 | [Path with Maximum Gold](/array/getMaximumGold.js)                                 | `Array`,`Backtracking`,`Matrix`                                         | Medium     |        |
