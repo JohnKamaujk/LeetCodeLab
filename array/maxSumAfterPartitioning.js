@@ -16,7 +16,6 @@ Example 3:
 Input: arr = [1], k = 1
 Output: 1
  
-
 Constraints:
 1 <= arr.length <= 500
 0 <= arr[i] <= 109
