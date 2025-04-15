@@ -27,4 +27,14 @@ The number of nodes in the tree is in the range [0, 100].
 * @param {TreeNode} root
 * @return {TreeNode}
 */
-var invertTree = function (root) {};
+var invertTree = function (root) {
+    if (!root) return null;
+
+    let temp = root.left;
+    root.left = root.right;
+    root.right = temp;
+
+    invertTree(root.left);
+    invertTree(root.right);
+    return root;
+};
