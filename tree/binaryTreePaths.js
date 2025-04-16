@@ -26,6 +26,16 @@ The number of nodes in the tree is in the range [1, 100].
 * @param {TreeNode} root
 * @return {string[]}
 */
+
+class TreeNode {
+  constructor(val, left = null, right = null) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
+  }
+}
+
+
 var binaryTreePaths = function (root) {
   let paths = [];
 
@@ -48,4 +58,30 @@ var binaryTreePaths = function (root) {
   return paths.map((path) => path.join("->"));
 };
 
-console.log(binaryTreePaths([1, 2, 3, null, 5]));
+function buildTree(arr) {
+  if (!arr.length) return null;
+
+  const root = new TreeNode(arr[0]);
+  const queue = [root];
+  let i = 1;
+
+  while (i < arr.length) {
+    const current = queue.shift();
+
+    if (arr[i] != null) {
+      current.left = new TreeNode(arr[i]);
+      queue.push(current.left);
+    }
+    i++;
+
+    if (i < arr.length && arr[i] != null) {
+      current.right = new TreeNode(arr[i]);
+      queue.push(current.right);
+    }
+    i++;
+  }
+
+  return root;
+}
+
+console.log(binaryTreePaths(buildTree([1, 2, 3, null, 5])));
