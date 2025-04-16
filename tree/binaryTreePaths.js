@@ -29,17 +29,23 @@ The number of nodes in the tree is in the range [1, 100].
 var binaryTreePaths = function (root) {
   let paths = [];
 
-  const traversal = (root, curr) => {
-    if (!root) return;
+  const traversal = (node, path) => {
+    if (!node) return;
 
-    if (!root.left && !root.right) {
-      paths.push(curr + root.val);
-      return;
+    path.push(node.val);
+
+    if (!node.left && !node.right) {
+      paths.push([...path]);
+    } else {
+      traversal(node.left, path);
+      traversal(node.right, path);
     }
 
-    traversal(root.left, curr + root.val + "->");
-    traversal(root.right, curr + root.val + "->");
+    path.pop(); // backtrack
   };
-  traversal(root, "");
-  return paths;
+
+  traversal(root, []);
+  return paths.map((path) => path.join("->"));
 };
+
+console.log(binaryTreePaths([1, 2, 3, null, 5]));
