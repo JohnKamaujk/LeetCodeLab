@@ -35,7 +35,6 @@ class TreeNode {
   }
 }
 
-
 var binaryTreePaths = function (root) {
   let paths = [];
 
