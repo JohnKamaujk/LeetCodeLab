@@ -26,4 +26,20 @@ The number of nodes in the tree is in the range [1, 100].
 * @param {TreeNode} root
 * @return {string[]}
 */
-var binaryTreePaths = function(root) {}
+var binaryTreePaths = function (root) {
+  let paths = [];
+
+  const traversal = (root, curr) => {
+    if (!root) return;
+
+    if (!root.left && !root.right) {
+      paths.push(curr + root.val);
+      return;
+    }
+
+    traversal(root.left, curr + root.val + "->");
+    traversal(root.right, curr + root.val + "->");
+  };
+  traversal(root, "");
+  return paths;
+};
