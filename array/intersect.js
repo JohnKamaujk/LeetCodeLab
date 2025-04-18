@@ -20,6 +20,7 @@ Constraints:
 * @return {number[]}
 */
 var intersect = function (nums1, nums2) {
+  if (nums1.length > nums2.length) return intersect(nums2, nums1);
   let freqMap = {};
   let result = [];
 
@@ -27,11 +28,11 @@ var intersect = function (nums1, nums2) {
     freqMap[num] = (freqMap[num] || 0) + 1;
   }
 
-  for(const num of nums2){
-    if(freqMap[num]>0){
-        result.push(num);
-        freqMap[num]--;
+  for (const num of nums2) {
+    if (freqMap[num] > 0) {
+      result.push(num);
+      freqMap[num]--;
     }
   }
-    return result;
+  return result;
 };
