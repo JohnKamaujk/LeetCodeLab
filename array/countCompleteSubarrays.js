@@ -1,0 +1,1 @@
+var countCompleteSubarrays = function(nums) {}
