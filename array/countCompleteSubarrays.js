@@ -20,4 +20,19 @@ Explanation: The array consists only of the integer 5, so any subarray is comple
 * @param {number[]} nums
 * @return {number}
 */
-var countCompleteSubarrays = function (nums) {};
+var countCompleteSubarrays = function (nums) {
+  let count = 0;
+  n = nums.length;
+  totalDistinct = new Set(nums).size;
+
+  for (let i = 0; i < n; i++) {
+    let freq = new Map();
+    for (let j = i; j < n; j++) {
+      freq.set(nums[j], (freq.get(nums[j]) || 0) + 1);
+      if (freq.size === totalDistinct) {
+        count++;
+      }
+    }
+  }
+  return count;
+};
