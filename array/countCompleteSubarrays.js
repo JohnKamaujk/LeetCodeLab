@@ -1,1 +1,5 @@
-var countCompleteSubarrays = function(nums) {}
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var countCompleteSubarrays = function (nums) {};
