@@ -71,7 +71,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0100 | [Same Tree](/tree/isSame.js)                          | `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`                                    | Easy      |        |
 | 0108 | [Convert Sorted Array To Binary Search Tree](/array/sortedArrayToBst.js)     |`Array`,`Divide and Conquer`, `Tree`, ``Binary Search Tree`, `Binary Tree`       | Easy      |        |
 | 0112 | [Path Sum](/tree/hasPathSum.js)     |`Breadth-First Search`,`Depth-First Search`, `Tree`, ``Binary Search Tree`, `Binary Tree`                             | Easy      |        |
-| 0118 | [Pascal Traingle](/array/)     |`Breadth-First Search`,`Depth-First Search`, `Tree`, ``Binary Search Tree`, `Binary Tree`                             | Easy      |        |
+| 0118 | [Pascal Traingle](/array/generate.js)     |`Array`, `Dynamic Programming`                                                             | Easy      |        |
 | 0119 | [Pascal Triangle II](/array/getRow.js)     |`Array`, `Dynamic Programming`                                                             | Easy      |        |
 | 0136 | [Single Number](/array/singleNumber.js)                                            | `Array`, `Bit Manipulation`                                             | Easy       |        |
 | 0151 | [Reverse Words in a String](/string/reverseWords.js)                              | `Two Pointers`, `Strings`                                               | Medium     |        |
