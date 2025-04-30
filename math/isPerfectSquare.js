@@ -18,4 +18,20 @@ Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an inte
 * @param {number} num
 * @return {boolean}
 */
-var isPerfectSquare = function (num) {};
+var isPerfectSquare = function (num) {
+  let left = 1,
+    right = num;
+
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    if (mid * mid == num) {
+      return true;
+    } else if (mid * mid < num) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+
+  return false;
+};
