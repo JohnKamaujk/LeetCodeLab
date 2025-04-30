@@ -11,4 +11,19 @@
  * @param {number} n
  * @return {number}
  */
-var guessNumber = function (n) {};
+var guessNumber = function (n) {
+  let pick = Math.floor(Math.random() * n) + 1;
+
+  let result = guess(pick);
+
+  while (result !== 0) {
+    if (result === -1) {
+      result = guess(pick - 1);
+    }
+    if (result === 1) {
+      result = guess(pick + 1);
+    }
+  }
+
+  return result;
+};
