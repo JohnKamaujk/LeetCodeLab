@@ -12,18 +12,19 @@
  * @return {number}
  */
 var guessNumber = function (n) {
-  let pick = Math.floor(Math.random() * n) + 1;
+  let left = 1,
+    right = n;
 
-  let result = guess(pick);
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    let result = guess(mid);
 
-  while (result !== 0) {
-    if (result === -1) {
-      result = guess(pick - 1);
-    }
-    if (result === 1) {
-      result = guess(pick + 1);
+    if (result === 0) {
+      return mid; // Correct guess
+    } else if (result === -1) {
+      right = mid - 1; // Guess is too high
+    } else {
+      left = mid + 1; // Guess is too low
     }
   }
-
-  return result;
 };
