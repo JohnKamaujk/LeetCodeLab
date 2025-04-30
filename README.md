@@ -101,6 +101,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0263 | [Ugly Number](/math/isUgly.js)                                                   | `Math`                                                                  | Easy       |        |
 | 0278 | [First Bad Version](/interactive/firstBadVersion.js)                       | `Binary Search`, `Interactive`                                                  | Easy       |        |
 | 0279 | [Perfect Squares](/math/numSquares.js)                                             | `Math`, `Dynamic Programming`,`Breadth-First Search`                    | Medium     |        |
+| 0292 | [Nim Game](/math/canWinNim.js)                                             | `Math`, `Brainteaser`,`Game Theory`                                                 | Easy   |        |
 | 0303 | [Range Sum Query - Immutable](/array/numArray.js)                          | `Array`, `Design`,`Prefix Sum`                                                     | Easy     |        |
 | 0326 | [Power Of Three](/math/isPowerOfThree.js)                          | `Math`, `Recursion`                                                               | Easy     |        |
 | 0338 | [Counting Bits](./dynamic_programming/countBits.js)                        | `Dynamic Programming`, `Bit Manipulation`                                          | Easy     |        |
