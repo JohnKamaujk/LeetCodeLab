@@ -109,6 +109,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0345 | [Reverse Vowels Of A String](/string/reverseVowels.js)                          | `String`, `Two Pointers`                                                  | Easy     |        |
 | 0349 | [Intersection of Two Array](/array/intersection.js)                                | `Array`, `Hash Table`, `Two Pointers`, `Binary Search`, `Sorting`       | Easy       |        |
 | 0350 | [Intersection of Two Array II](/array/intersect.js)                                | `Array`, `Hash Table`, `Two Pointers`, `Binary Search`, `Sorting`       | Easy       |        |
+| 0367 | [Intersection of Two Array II](/array/intersect.js)                                | `Array`, `Hash Table`, `Two Pointers`, `Binary Search`, `Sorting`       | Easy       |        |
 | 0392 | [Is Subsequence](/dynamic_programming/isSubsequence.js)                        | `Two Pointers`, `String`, `Dynamic Programming`                              | Easy       |        |
 | 0404 | [Sum Of Left Leaves](/tree/sumOfLeftLeaves.js)                            | `Tree`, `Depth First Search`, `Breadth First Search`, `Binary Tree`             | Easy       |        |
 | 0415 | [Add Strings](/string/addStrings.js)                                | `Math`, `String`, `Simulation`                                                  | Easy       |        |
