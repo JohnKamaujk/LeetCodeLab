@@ -30,4 +30,49 @@ dominoes[i] is either 'L', 'R', or '.'.
 * @param {string} dominoes
 * @return {string}
 */
-var pushDominoes = function (dominoes) {};
+var pushDominoes = function (dominoes) {
+  let dominoesArr = dominoes.split("");
+
+  let n = dominoesArr.length;
+
+  let force = 0;
+  let forcesArr = new Array(n).fill(0);
+
+  for (let i = 0; i < n; i++) {
+    if (dominoesArr[i] === "R") {
+      force = n;
+    } else if (dominoesArr[i] === "L") {
+      force = 0;
+    } else {
+      force = Math.max(force - 1, 0);
+    }
+
+    forcesArr[i] += force;
+  }
+
+  force = 0;
+  for (let i = n - 1; i >= 0; i--) {
+    if (dominoesArr[i] === "L") {
+      force = n;
+    } else if (dominoesArr[i] === "R") {
+      force = 0;
+    } else {
+      force = Math.max(force - 1, 0);
+    }
+
+    forcesArr[i] -= force;
+  }
+
+  let result = new String();
+  for (const f of forcesArr) {
+    if (f > 0) {
+      result.append("R");
+    } else if (f < 0) {
+      result.append("L");
+    } else {
+      result.append(".");
+    }
+  }
+
+  return result;
+};
