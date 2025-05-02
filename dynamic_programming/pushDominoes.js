@@ -66,11 +66,11 @@ var pushDominoes = function (dominoes) {
   let result = new String();
   for (const f of forcesArr) {
     if (f > 0) {
-      result.append("R");
+      result += "R";
     } else if (f < 0) {
-      result.append("L");
+      result += "L";
     } else {
-      result.append(".");
+      result += ".";
     }
   }
 
