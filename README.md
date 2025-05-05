@@ -139,6 +139,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2309 | [Greatest English Letter in Upper and Lower Case](/string/greatestLetter.js)       | `Hash Table`, `String`, `Enumeration`                                   | Easy     |        |
 | 2406 | [Divide Intervals Into Minimum Number of Groups](/array/minGroups.js)              | `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum`           | Medium     |        |
 | 2621 | [Sleep](/javascript/sleep.js)            | `JavaScript`                                                            | Easy       |        |
+| 2695 | [Array Wrapper](/javascript/arrayWrapper.js)                                        | `JavaScript`, `Array`                                                   | Easy       |        |
 | 2670 | [Find the Distinct Difference Array](/array/distinctDifferenceArray.js)            | `Array`,`Hash Table`                                                    | Easy       |        |
 | 2707 | [Extra Characters in a String](/string/minExtraChar.js)                           | `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie`          | Medium     |        |
 | 2799 | [Count Complete Subarrays in an Array](/string/minExtraChar.js)                     | `Array`, `Hash Table`, `Sliding Window`                                 | Medium     |        |
