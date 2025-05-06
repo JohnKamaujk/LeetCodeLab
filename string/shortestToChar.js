@@ -26,4 +26,28 @@ It is guaranteed that c occurs at least once in s.
 * @param {character} c
 * @return {number[]}
 */
-var shortestToChar = function (s, c) {};
+var shortestToChar = function (s, c) {
+  let n = s.length;
+  let answer = new Array(n).fill(0);
+  let prev = Infinity;
+
+  // First pass: from left to right
+  for (let i = 0; i < n; i++) {
+    if (s[i] === c) {
+      prev = i;
+    }
+    answer[i] = Math.abs(i - prev);
+  }
+  prev = Infinity;
+
+  // Second pass: from right to left
+  for (let i = n - 1; i >= 0; i--) {
+    if (s[i] === c) {
+      prev = i;
+    }
+    answer[i] = Math.min(answer[i], Math.abs(i - prev));
+  }
+  return answer;
+};
+
+console.log(shortestToChar("loveleetcode", "e")); // [3,2,1,0,1,0,0,1,2,2,1,0]
