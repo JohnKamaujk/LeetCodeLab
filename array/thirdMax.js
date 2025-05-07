@@ -32,4 +32,8 @@ Constraints:
 * @param {number[]} nums
 * @return {number}
 */
-var thirdMax = function (nums) {};
+var thirdMax = function (nums) {
+  return nums.sort((a, b) => b - a)[2] !== undefined
+    ? nums.sort((a, b) => b - a)[2]
+    : nums.sort((a, b) => b - a)[0];
+};
