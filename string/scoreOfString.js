@@ -21,12 +21,9 @@ The ASCII values of the characters in s are: 'z' = 122, 'a' = 97. So, the score 
 */
 var scoreOfString = function (s) {
   let sum = 0;
-  for (let i = 0; i < s.length; i++) {
-    if (i < s.length - 1) {
-      let difference = Math.abs(s.charCodeAt(i) - s.charCodeAt(i + 1));
-      sum += difference;
-    }
+  for (let i = 0; i < s.length - 1; i++) {
+    let difference = Math.abs(s.charCodeAt(i) - s.charCodeAt(i + 1));
+    sum += difference;
   }
   return sum;
 };
-
