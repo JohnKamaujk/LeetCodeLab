@@ -33,7 +33,24 @@ Constraints:
 * @return {number}
 */
 var thirdMax = function (nums) {
-  return nums.sort((a, b) => b - a)[2] !== undefined
-    ? nums.sort((a, b) => b - a)[2]
-    : nums.sort((a, b) => b - a)[0];
+  let firstMax = (secondMax = thirdMax = Number.MIN_SAFE_INTEGER);
+
+  for (const num of nums) {
+    if (num === firstMax || num === secondMax || num === thirdMax) {
+      continue;
+    }
+
+    if (num > firstMax) {
+      thirdMax = secondMax;
+      secondMax = firstMax;
+      firstMax = num;
+    } else if (num > secondMax) {
+      thirdMax = secondMax;
+      secondMax = num;
+    } else if (num > thirdMax) {
+      thirdMax = num;
+    }
+  }
+
+  return thirdMax > Number.MIN_SAFE_INTEGER ? thirdMax : firstMax;
 };
