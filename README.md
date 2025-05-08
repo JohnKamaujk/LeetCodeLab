@@ -125,7 +125,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0521 | [Longest Uncommon Subsequence I](/string/findLUSlength.js)                     | `String`,                                                               | Easy       |        |
 | 0541 | [Reverse String II](/string/reverseStr.js)                     | `String`, `Two   Pointers`                                                               | Easy       |        |
 | 0557 | [Reverse Words in a String III](/string/reverseWordsString.js)                      | `String`, `Two Pointers`                                                | Easy       |        |
-| 0594 | [Longest Harmonious Subsequence](/string/reverseWordsString.js)                     | `Array`, `Hash Table`, `Sliding Window`, `Sorting`, `Counting`          | Easy       |        |
+| 0594 | [Longest Harmonious Subsequence](/sliding_window/findLHS.js)                     | `Array`, `Hash Table`, `Sliding Window`, `Sorting`, `Counting`          | Easy       |        |
 | 0709 | [To Lower Case](/string/toLowerCase.js)                                     | `String`                                                                | Easy       |        |
 | 0728 | [Self Dividing Numbers](/math/selfDividingNumbers.js)                       | `Math`                                                                | Easy       |        |
 | 0821 | [Shortest Distance to a Character](/string//shortestToChar.js)          | `Two Pointers`,`String`,`Array`                                         | Easy       |        |
