@@ -31,4 +31,20 @@ Constraints:
 * @param {number[]} nums
 * @return {number}
 */
-var findLHS = function (nums) {};
+var findLHS = function (nums) {
+  nums.sort((a, b) => a - b);
+  let maxLength = 0;
+
+  let start = 0;
+  for (let i = 1; i < nums.length; i++) {
+    while (nums[i] - nums[start] > 1) {
+      start++;
+    }
+    if (nums[i] - nums[start] === 1) {
+      maxLength = Math.max(maxLength, i - start + 1);
+    }
+  }
+  return maxLength;
+};
+
+console.log(findLHS([1, 3, 2, 2, 5, 2, 3, 7])); // Output: 5
