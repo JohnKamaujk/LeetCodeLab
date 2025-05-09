@@ -27,4 +27,26 @@ There will be at least one valid answer for the given input.
 * @param {number[]} bobSizes
 * @return {number[]}
 */
-var fairCandySwap = function (aliceSizes, bobSizes) {};
+var fairCandySwap = function (aliceSizes, bobSizes) {
+  let aliceTotal = aliceSizes.reduce((acc, curr) => acc + curr, 0);
+  let bobTotal = bobSizes.reduce((acc, curr) => acc + curr, 0);
+  let diff = (aliceTotal - bobTotal) / 2;
+  let aliceSet = new Set(aliceSizes);
+  for (let bobSize of bobSizes) {
+    let aliceSize = bobSize + diff;
+    if (aliceSet.has(aliceSize)) {
+      return [aliceSize, bobSize];
+    }
+  }
+  // Kienyeji
+  //   for (let i = 0; i < aliceSizes.length; i++) {
+  //     for (let j = 0; j < bobSizes.length; j++) {
+  //       if (
+  //         aliceTotal - aliceSizes[i] + bobSizes[j] ===
+  //         bobTotal - bobSizes[j] + aliceSizes[i]
+  //       ) {
+  //         return [aliceSizes[i], bobSizes[j]];
+  //       }
+  //     }
+  //   }
+};
