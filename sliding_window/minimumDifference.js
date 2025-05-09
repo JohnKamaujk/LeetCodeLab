@@ -32,4 +32,24 @@ Constraints:
 * @param {number} k
 * @return {number}
 */
-var minimumDifference = function (nums, k) {};
+var minimumDifference = function (nums, k) {
+  nums.sort((a, b) => a - b);
+
+  let minimumDiff = Number.MAX_SAFE_INTEGER;
+
+  for (let i = 0; i + k - 1 < nums.length ; i++) {
+    let window = [];
+    let j = i;
+
+    while (window.length < k) {
+      window.push(nums[j]);
+      j++;
+    }
+    console.log(window);
+    minimumDiff = Math.min(minimumDiff, window[k - 1] - window[0]);
+  }
+
+  return minimumDiff;
+};
+
+console.log(minimumDifference([90], 1));
