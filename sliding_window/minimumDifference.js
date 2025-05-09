@@ -33,19 +33,14 @@ Constraints:
 * @return {number}
 */
 var minimumDifference = function (nums, k) {
+  if (k === 1) return 0;
   nums.sort((a, b) => a - b);
 
   let minimumDiff = Number.MAX_SAFE_INTEGER;
 
-  for (let i = 0; i + k - 1 < nums.length ; i++) {
-    let window = [];
-    let j = i;
-
-    while (window.length < k) {
-      window.push(nums[j]);
-      j++;
-    }
-    minimumDiff = Math.min(minimumDiff, window[k - 1] - window[0]);
+  for (let i = 0; i <= nums.length - k; i++) {
+    let diff = nums[i + k - 1] - nums[i];
+    minimumDiff = Math.min(minimumDiff, diff);
   }
 
   return minimumDiff;
