@@ -138,6 +138,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1221 | [Split a String in Balanced Strings](/string/balancedStringSplit.js)                | `String`,`Greedy`,`Counting`                                         | Easy          |        |
 | 1700 | [Number of Students Unable to Eat Lunch](/array/countStudents.js)                  | `Array`,`Stack`,`Queue`,`Simulation`                                    | Easy       |        |
 | 1791 | [Find Center of Star Graph](/graph/findCenter.js)                                  | `Graph`                                                                 | Medium     |        |
+| 1984 | [Minimu Differences Between Highest & Lowest of K Scores](/sliding_window/minimumDifference.js) | `Array`, `Sliding Window`, `Sorting`              | Easy     |        |
 | 2114 | [Maximum Number of Words Found in Sentences](/array/mostWordsFound.js)       |       `Array`, `String`                                                         | Easy     |        |
 | 2309 | [Greatest English Letter in Upper and Lower Case](/string/greatestLetter.js)       | `Hash Table`, `String`, `Enumeration`                                   | Easy     |        |
 | 2406 | [Divide Intervals Into Minimum Number of Groups](/array/minGroups.js)              | `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum`           | Medium     |        |
