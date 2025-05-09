@@ -45,7 +45,6 @@ var minimumDifference = function (nums, k) {
       window.push(nums[j]);
       j++;
     }
-    console.log(window);
     minimumDiff = Math.min(minimumDiff, window[k - 1] - window[0]);
   }
 
