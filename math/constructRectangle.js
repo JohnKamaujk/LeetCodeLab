@@ -27,10 +27,9 @@ Constraints:
 * @return {number[]}
 */
 var constructRectangle = function (area) {
-    for (let w = Math.floor(Math.sqrt(area)); w > 0; w--) {
-        if (area % w === 0) {
-            return [area / w, w];
-        }
+  for (let w = Math.floor(Math.sqrt(area)); w > 0; w--) {
+    if (area % w === 0) {
+      return [area / w, w];
     }
-    return [area, 1]; // Fallback in case no factors are found
+  }
 };
