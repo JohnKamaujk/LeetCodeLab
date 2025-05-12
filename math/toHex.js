@@ -20,4 +20,28 @@ Constraints:
 * @param {number} num
 * @return {string}
 */
-var toHex = function (num) {};
+var toHex = function (num) {
+  if (num === 0) {
+    return "0";
+  }
+
+  let hexString = "";
+
+  // Iterate over each hex digit from the most significant to least significant
+  for (let i = 7; i >= 0; i--) {
+    // Extract current hex digit from the number
+    const hexDigit = (num >> (4 * i)) & 0xf;
+
+    // Skip leading zeros
+    if (hexString.length > 0 || hexDigit !== 0) {
+      // Convert the current digit to its hex char representation
+      const hexChar =
+        hexDigit < 10
+          ? String.fromCharCode(hexDigit + "0".charCodeAt(0))
+          : String.fromCharCode(hexDigit - 10 + "a".charCodeAt(0));
+      hexString += hexChar;
+    }
+  }
+
+  return hexString;
+};
