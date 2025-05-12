@@ -114,6 +114,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0374 | [Guess Number Higher or Lower](/tree/guessNumber.js)                        |  `Binary Search`, `Interactive`                                          | Easy       |        |
 | 0392 | [Is Subsequence](/dynamic_programming/isSubsequence.js)                        | `Two Pointers`, `String`, `Dynamic Programming`                              | Easy       |        |
 | 0404 | [Sum Of Left Leaves](/tree/sumOfLeftLeaves.js)                            | `Tree`, `Depth First Search`, `Breadth First Search`, `Binary Tree`             | Easy       |        |
+| 0405 | [Convert a Number to a Hexadecimal](/math/toHex.js)                            | `Math`, `Bit Manipulation`                                              | Easy       |        |
 | 0414 | [Third Max Number](/array/thirdMax.js)                                | `Array`, `Sorting`                                                  | Easy       |        |
 | 0415 | [Add Strings](/string/addStrings.js)                                | `Math`, `String`, `Simulation`                                                  | Easy       |        |
 | 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
