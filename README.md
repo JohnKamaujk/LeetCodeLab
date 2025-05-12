@@ -118,6 +118,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0414 | [Third Max Number](/array/thirdMax.js)                                | `Array`, `Sorting`                                                  | Easy       |        |
 | 0415 | [Add Strings](/string/addStrings.js)                                | `Math`, `String`, `Simulation`                                                  | Easy       |        |
 | 0463 | [Island Perimeter](/array/islandPerimeter.js)                                      | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Easy       |        |
+| 0492 | [Construct The Rectangle](/math/constructRectangle.js)                                                     |  `Math`        | Easy      |        |
 | 0504 | [Base 7](/math/convertToBase7.js)                                           | `Math`                                                                  | Easy       |        |
 | 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap(Priority Queue)`                              | Easy       |        |
  0507 | [Perfect Number](/math/perfectNumber.js)                                           | `Math`                                                                  |Easy       |        |
