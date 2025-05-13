@@ -18,15 +18,15 @@ nums[i] is either 0 or 1.
 * @return {number}
 */
 var findMaxConsecutiveOnes = function (nums) {
+  nums = [...nums, 0];
+  let count = 0;
   let maxCount = 0;
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] === 1) {
-      let count = 1;
-      while (i < nums.length - 1 && nums[i + 1] === 1) {
-        count++;
-        i++;
-      }
+  for (const num of nums) {
+    if (num === 1) {
+      count++;
+    } else {
       maxCount = Math.max(maxCount, count);
+      count = 0;
     }
   }
   return maxCount;
