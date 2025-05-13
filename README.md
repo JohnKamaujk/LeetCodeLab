@@ -136,6 +136,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0838 | [Push Dominoes](/dynamic_programming/pushDominoes.js)                       | `Two Pointers`,`String`,`Dynamic Programming`                                | Easy       |        |
 | 0905 | [Sort Array By Parity](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
 | 1013 | [Partition Array Into Three Parts With Equal Sum](/array/canThreePartsEqualSum.js)                   | `Array`,`Greedy`,                             | Easy     |        |
+| 1025 | [Divisor Game](/dynamic_programming/divisorGame.js)                   | `Math`,`Dynamic Programming`, `BrainTeaser`, `Game Theory`                       | Easy     |        |
 | 1207 | [Unique Number of Occurrences](/array/uniqueOccurences.js)                   | `Array`,`Hash Table`,                                                     | Easy     |        |
 | 1208 | [Get Equal Substrings Within Budget](/string/equalSubstring.js)                   | `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`                | Medium     |        |
 | 1219 | [Path with Maximum Gold](/array/getMaximumGold.js)                                 | `Array`,`Backtracking`,`Matrix`                                         | Medium     |        |
