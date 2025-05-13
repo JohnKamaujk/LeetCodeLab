@@ -17,4 +17,17 @@ nums[i] is either 0 or 1.
 * @param {number[]} nums
 * @return {number}
 */
-var findMaxConsecutiveOnes = function (nums) {};
+var findMaxConsecutiveOnes = function (nums) {
+  let maxCount = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 1) {
+      let count = 1;
+      while (i < nums.length - 1 && nums[i + 1] === 1) {
+        count++;
+        i++;
+      }
+      maxCount = Math.max(maxCount, count);
+    }
+  }
+  return maxCount;
+};
