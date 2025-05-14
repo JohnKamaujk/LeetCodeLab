@@ -34,4 +34,15 @@ There is only one optimal division for the given input.
 * @param {number[]} nums
 * @return {string}
 */
-var optimalDivision = function (nums) {};
+var optimalDivision = function (nums) {
+  const length = nums.length;
+  const numsStr = nums.join("/");
+
+  if (length > 2) {
+    const firstSlashIdx = numsStr.indexOf("/") + 1;
+    return `${numsStr.slice(0, firstSlashIdx)}(${numsStr.slice(
+      firstSlashIdx
+    )})`;
+  }
+  return numsStr;
+};
