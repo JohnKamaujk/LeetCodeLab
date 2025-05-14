@@ -128,6 +128,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0520 | [Detect Capital](/string/detectCapital.js)                                    | `String`,                                                               | Easy       |        |
 | 0521 | [Longest Uncommon Subsequence I](/string/findLUSlength.js)                     | `String`,                                                               | Easy       |        |
 | 0541 | [Reverse String II](/string/reverseStr.js)                     | `String`, `Two   Pointers`                                                               | Easy       |        |
+| 0553 | [Optimal Division](/dynamic_programming/optimalDivision.js)                      | `Array`, `Math`, `Dynamic Programming`                                  | Easy       |        |
 | 0557 | [Reverse Words in a String III](/string/reverseWordsString.js)                      | `String`, `Two Pointers`                                                | Easy       |        |
 | 0594 | [Longest Harmonious Subsequence](/sliding_window/findLHS.js)                     | `Array`, `Hash Table`, `Sliding Window`, `Sorting`, `Counting`          | Easy       |        |
 | 0704 | [Binary Search](/binary_search/search.js)                                     | `Array`, `Binary Search`                                                | Easy       |        |
