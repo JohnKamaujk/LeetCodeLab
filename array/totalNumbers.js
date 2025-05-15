@@ -30,4 +30,38 @@ Constraints:
 * @param {number[]} digits
 * @return {number}
 */
-var totalNumbers = function (digits) {};
+var totalNumbers = function (digits) {
+  const uniqueNumbers = new Set();
+  const length = digits.length;
+
+  for (let onesDigitIdx = 0; onesDigitIdx < length; onesDigitIdx++) {
+    if (onesDigitIdx % 2 === 1) {
+      continue;
+    }
+    for (let tensDigitIdx = 0; tensDigitIdx < length; tensDigitIdx++) {
+      if (tensDigitIdx === onesDigitIdx) {
+        continue;
+      }
+      for (
+        let hundredsDigitIdx = 0;
+        hundredsDigitIdx < length;
+        hundredsDigitIdx++
+      ) {
+        if (
+          hundredsDigitIdx === 0 ||
+          hundredsDigitIdx === tensDigitIdx ||
+          hundredsDigitIdx === onesDigitIdx
+        ) {
+          continue;
+        }
+        const number =
+          digits[hundredsDigitIdx] * 100 +
+          digits[tensDigitIdx] * 10 +
+          digits[onesDigitIdx];
+        uniqueNumbers.add(number);
+      }
+    }
+  }
+
+  return uniqueNumbers.size;
+};
