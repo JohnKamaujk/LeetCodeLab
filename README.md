@@ -112,6 +112,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0350 | [Intersection of Two Array II](/array/intersect.js)                                | `Array`, `Hash Table`, `Two Pointers`, `Binary Search`, `Sorting`       | Easy       |        |
 | 0367 | [Valid Perfect Square](/math/isPerfectSquare.js)                                | `Math`, `Binary Search`                                                 | Easy       |        |
 | 0374 | [Guess Number Higher or Lower](/tree/guessNumber.js)                        |  `Binary Search`, `Interactive`                                          | Easy       |        |
+| 0383 | [Ransom Note](/hash_table/ransomNote.js)                        |  `Hash Table`, `String`, `Counting`                                                    | Easy       |        |
 | 0392 | [Is Subsequence](/dynamic_programming/isSubsequence.js)                        | `Two Pointers`, `String`, `Dynamic Programming`                              | Easy       |        |
 | 0404 | [Sum Of Left Leaves](/tree/sumOfLeftLeaves.js)                            | `Tree`, `Depth First Search`, `Breadth First Search`, `Binary Tree`             | Easy       |        |
 | 0405 | [Convert a Number to a Hexadecimal](/math/toHex.js)                            | `Math`, `Bit Manipulation`                                              | Easy       |        |
