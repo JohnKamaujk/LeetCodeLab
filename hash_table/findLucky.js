@@ -27,8 +27,7 @@ Constraints:
 */
 var findLucky = function (arr) {
   const freq = new Map();
-  const luckyNums = new Array();
-
+  
   for (const num of arr) {
     if (freq.has(num)) {
       freq.set(num, freq.get(num) + 1);
@@ -37,13 +36,15 @@ var findLucky = function (arr) {
     }
   }
 
+  let luckyNum = -1;
+
   for (const [key, value] of freq.entries()) {
     if (key === value) {
-      luckyNums.push(key);
+      if (key > luckyNum) {
+        luckyNum = key;
+      }
     }
   }
 
-  if (luckyNums.length === 0) return -1;
-
-  return Math.max(...luckyNums);
+  return luckyNum;
 };
