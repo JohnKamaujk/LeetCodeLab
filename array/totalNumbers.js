@@ -35,7 +35,7 @@ var totalNumbers = function (digits) {
   const length = digits.length;
 
   for (let onesDigitIdx = 0; onesDigitIdx < length; onesDigitIdx++) {
-    if (onesDigitIdx % 2 === 1) {
+    if (digits[onesDigitIdx] % 2 === 1) {
       continue;
     }
     for (let tensDigitIdx = 0; tensDigitIdx < length; tensDigitIdx++) {
@@ -48,7 +48,7 @@ var totalNumbers = function (digits) {
         hundredsDigitIdx++
       ) {
         if (
-          hundredsDigitIdx === 0 ||
+          digits[hundredsDigitIdx] === 0 ||
           hundredsDigitIdx === tensDigitIdx ||
           hundredsDigitIdx === onesDigitIdx
         ) {
