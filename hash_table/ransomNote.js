@@ -24,26 +24,19 @@ ransomNote and magazine consist of lowercase English letters.
 * @return {boolean}
 */
 var canConstruct = function (ransomNote, magazine) {
-  const freq = new Map();
-
-  for (const char of ransomNote) {
-    if (freq.has(char)) {
-      freq.set(char, freq.get(char) + 1);
-    } else {
-      freq.set(char, 1);
-    }
-  }
+  const letterCount = new Array(26).fill(0);
 
   for (const char of magazine) {
-    if (freq.has(char)) {
-      freq.set(char, freq.get(char) - 1);
-    }
+    letterCount[char.charCodeAt(0) - "a".charCodeAt(0)]++;
   }
-  for (const [key, value] of freq.entries()) {
-    if (value > 0) {
+
+  for (const char of ransomNote) {
+    const index = char.charCodeAt(0) - "a".charCodeAt(0);
+    letterCount[index]--;
+    // frequency count goes negative, we do not have enough of this character in the magazine
+    if (letterCount[index] < 0) {
       return false;
     }
   }
-
   return true;
 };
