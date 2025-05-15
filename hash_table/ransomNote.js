@@ -23,4 +23,27 @@ ransomNote and magazine consist of lowercase English letters.
 * @param {string} magazine
 * @return {boolean}
 */
-var canConstruct = function (ransomNote, magazine) {};
+var canConstruct = function (ransomNote, magazine) {
+  const freq = new Map();
+
+  for (const char of ransomNote) {
+    if (freq.has(char)) {
+      freq.set(char, freq.get(char) + 1);
+    } else {
+      freq.set(char, 1);
+    }
+  }
+
+  for (const char of magazine) {
+    if (freq.has(char)) {
+      freq.set(char, freq.get(char) - 1);
+    }
+  }
+  for (const [key, value] of freq.entries()) {
+    if (value > 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
