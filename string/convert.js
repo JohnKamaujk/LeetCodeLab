@@ -34,4 +34,19 @@ s consists of English letters (lower-case and upper-case), ',' and '.'.
 * @param {number} numRows
 * @return {string}
 */
-var convert = function (s, numRows) {};
+var convert = function (s, numRows) {
+  if (numRows === 1) return s;
+
+  let result = new Array(numRows).fill("");
+  let row = 0;
+  let goingDown = false;
+
+  for (const char of s) {
+    result[row] += char;
+    if (row === 0 || row === numRows - 1) {
+      goingDown = !goingDown;
+    }
+    row += goingDown ? 1 : -1;
+  }
+  return result.join("");
+};
