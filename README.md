@@ -13,7 +13,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0003 | [Longest Substring Without Repeating Characters](/strings/longestSubstring.js)     | `Hash Table`,`String`,`Sliding Window`                                  | Medium     |        |
 | 0004 | [Median of Two Sorted Arrays](/array/medianArrays.js)                              | `Array`,`Binary Search`,`Divide and Conquer`                            | Hard       |        |
 | 0005 | [Longest Palindromic Substring](/strings/longestPalindrome.js)                     | `String`,`Two Pointers`,`Dynamic Programming`                           | Medium     |        |
-| 0006 | [Zigzag Conversion](/strings/zigzagConversion.js)                                  | `String`                                                                | Medium     |        |
+| 0006 | [Zigzag Conversion](/string/convert.js)                                  | `String`                                                                | Medium     |        |
 | 0007 | [Reverse Integer](/math/reverse.js)                                                | `Math`                                                                  | Medium     |        |
 | 0008 | [String to Integer (atoi)](/string/atoi.js)                                       | `String`                                                                | Medium     |        |
 | 0009 | [Palindrome Number](/README_EN.md)                                                 | `Math`                                                                  | Easy       |        |
