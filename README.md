@@ -161,6 +161,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2903 | [Find Indices With Index and Value Difference I](/array/findIndices.js)            | `Array`, `Two Pointers`                                                   | Easy     |        |
 | 2960 | [Count Tested Devices After Test Operations](/array/countTestedDevices.js)          | `Array`, `Simulation`, `Count`                                            | Easy     |        |
 | 2965 | [Find Missing and Repeated Values](/array/findMissingAndRepeatedValues.js)          | `Array`, `Hash Table`, `Math`, `Matrix`                                   | Easy     |        |
+| 3024 | [Type of Triangle](/math/triangleType.js)                            | `Math`,`Array`, `Sorting`                                                      | Easy       |        |
 | 3034 | [Find the K-th Character in String Game I](/math/kthCharacter.js)                  | `Math`,`Bit Manipulation`,`Recursion`, `Simulation`                     | Easy       |        |
 | 3065 | [Minimum Operations to Exceed Threshold Value](/array/minOperations.js)            | `Array`                                                                 | Easy       |        |
 | 3074 | [Apple Redistribution into Boxes](/array/minimumBoxes.js)                          | `Array`,`Greedy`,`Sorting`                                              | Medium     |        |
