@@ -41,4 +41,24 @@ queries[i].length == 2
 * @param {number[][]} queries
 * @return {boolean}
 */
-var isZeroArray = function (nums, queries) {};
+var isZeroArray = function (nums, queries) {
+  for (const query of queries) {
+    const [l, r] = query;
+    for (let i = l; i <= r; i++) {
+      if (num[i] > 0) {
+        for (const query of queries) {
+          const [l, r] = query;
+          for (let i = l; i <= r; i++) {
+            if (nums[i] > 0) {
+              nums[i]--;
+            }
+          }
+        }
+
+        return nums.every((num) => num === 0);
+      }
+    }
+  }
+
+  return nums.every((num) => num === 0);
+};
