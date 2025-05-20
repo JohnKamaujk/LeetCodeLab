@@ -34,4 +34,38 @@ Constraints:
 * @param {number[]} digits
 * @return {number[]}
 */
-var findEvenNumbers = function (digits) {};
+var findEvenNumbers = function (digits) {
+  let digitCounter = new Array(10).fill(0);
+
+  for (let digit of digits) {
+    digitCounter[digit]++;
+  }
+
+  let result = [];
+
+  // Iterate from 100 to 998 (only 3-digit even numbers)
+  for (let i = 100; i < 1000; i += 2) {
+    let str = String(i);
+    let localCounter = new Array(10).fill(0);
+
+    // Count digits in current number
+    for (let char of str) {
+      localCounter[parseInt(char)]++;
+    }
+
+    // Check if we can build the number from input digits
+    let canConstruct = true;
+    for (let j = 0; j < 10; j++) {
+      if (localCounter[j] > digitCounter[j]) {
+        canConstruct = false;
+        break;
+      }
+    }
+
+    if (canConstruct) {
+      result.push(i);
+    }
+  }
+
+  return result;
+};
