@@ -42,14 +42,25 @@ queries[i].length == 2
 * @return {boolean}
 */
 var isZeroArray = function (nums, queries) {
-  for (const query of queries) {
-    const [l, r] = query;
-    for (let i = l; i <= r; i++) {
-      if (nums[i] > 0) {
-        nums[i]--;
-      }
-    }
+  const n = nums.length;
+
+  const differenceArray = Array(n + 1).fill(0);
+
+  // Apply the queries to the difference array
+  for (const [left, right] of queries) {
+    differenceArray[left]++;
+    differenceArray[right + 1]--;
   }
 
-  return nums.every((num) => num === 0);
+  let currentSum = 0;
+
+  for (let i = 0; i < n; i++) {
+    currentSum += differenceArray[i];
+    if (nums[i] > currentSum) {
+      // Check if current element in nums is greater than current sum
+      return false; // If yes, return false as it's not possible to make it zero
+    }
+  }
+  return true;
 };
+
