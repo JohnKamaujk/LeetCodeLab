@@ -173,6 +173,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3318 | [Find X-Sum of All K-Long Subarrays I](/array/findXSum.js)                        | `Array`, `Hash Table`, `Sliding Window`, `Heap`                         | Easy     |        |
 | 3340 | [Check Balanced String](/string/isBalanced.js)                                 | `String`                                                                | Easy     |        |
 | 3345 | [Smallest Divisible Digit Product I](/string/isBalanced.js)                         | `Math`                                                                | Easy     |        |
+| 3355 | [Zero Array Transformation I](/array//zeroArray.js)    | `Array`,`Prefix Sum`                                                                      | Easy     |        |
 | 3407 | [Substring Matching Pattern](/string/hasMatch.js)                                   | `String`, `String Matching`                                               | Easy     |        |
 | 3411 | [Maximum SubArray With Equal Products](/array/maxLength)  | `Array`, `Math`, `Sliding Window`, `Enumeration`, `Number Theory`                                   | Easy     |        |
 | 3421 | [Find Students Who Improved](/database/find_students_who_improved.sql)              | `Sql`,                                                                    | Easy     |        |
