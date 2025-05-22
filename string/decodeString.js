@@ -28,4 +28,49 @@ All the integers in s are in the range [1, 300].
 * @param {string} s
 * @return {string}
 */
-var decodeString = function (s) {};
+var decodeString = function (s) {
+  function stringToInteger(str) {
+    let ans = 0;
+    for (let ch of str) {
+      ans *= 10;
+      ans += parseInt(ch);
+    }
+    return ans;
+  }
+
+  function decode(s) {
+    let ans = "";
+    let prev = 0;
+    let repetitions = 0;
+    let depth = 0;
+
+    for (let i = 0; i < s.length; i++) {
+      if (depth === 0 && s[i] >= "a" && s[i] <= "z") {
+        ans += s[i];
+        prev = i + 1;
+      }
+
+      if (s[i] === "[") {
+        depth++;
+        if (depth === 1) {
+          repetitions = stringToInteger(s.slice(prev, i));
+          prev = i + 1;
+        }
+      } else if (s[i] === "]") {
+        depth--;
+        if (depth === 0) {
+          while (repetitions > 0) {
+            ans += decode(s.slice(prev, i));
+            repetitions--;
+          }
+          prev = i + 1;
+        }
+      }
+    }
+
+    return ans;
+  }
+
+  return decode(s);
+};
+
