@@ -29,48 +29,36 @@ All the integers in s are in the range [1, 300].
 * @return {string}
 */
 var decodeString = function (s) {
-  function stringToInteger(str) {
-    let ans = 0;
-    for (let ch of str) {
-      ans *= 10;
-      ans += parseInt(ch);
-    }
-    return ans;
-  }
+  let i = 0;
 
-  function decode(s) {
-    let ans = "";
-    let prev = 0;
-    let repetitions = 0;
-    let depth = 0;
+  function helper() {
+    let result = "";
 
-    for (let i = 0; i < s.length; i++) {
-      if (depth === 0 && s[i] >= "a" && s[i] <= "z") {
-        ans += s[i];
-        prev = i + 1;
-      }
-
-      if (s[i] === "[") {
-        depth++;
-        if (depth === 1) {
-          repetitions = stringToInteger(s.slice(prev, i));
-          prev = i + 1;
+    while (i < s.length && s[i] !== "]") {
+      if (isNaN(s[i])) {
+        // Append regular characters
+        result += s[i];
+        i++;
+      } else {
+        // Parse number (repetition count)
+        let k = 0;
+        while (!isNaN(s[i])) {
+          k = k * 10 + Number(s[i]);
+          i++;
         }
-      } else if (s[i] === "]") {
-        depth--;
-        if (depth === 0) {
-          while (repetitions > 0) {
-            ans += decode(s.slice(prev, i));
-            repetitions--;
-          }
-          prev = i + 1;
-        }
+
+        i++; // skip '['
+        let decoded = helper(); // decode the substring inside brackets
+        i++; // skip ']'
+
+        result += decoded.repeat(k);
       }
     }
 
-    return ans;
+    return result;
   }
 
-  return decode(s);
+  return helper();
 };
+
 
