@@ -37,7 +37,7 @@ var backspaceCompare = function (s, t) {
       }
     }
 
-    stack.join();
+    return stack.join("");
   };
 
   return build(s) === build(t);
