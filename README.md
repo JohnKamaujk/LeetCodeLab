@@ -139,6 +139,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0728 | [Self Dividing Numbers](/math/selfDividingNumbers.js)                       | `Math`                                                                | Easy       |        |
 | 0821 | [Shortest Distance to a Character](/string//shortestToChar.js)          | `Two Pointers`,`String`,`Array`                                         | Easy       |        |
 | 0838 | [Push Dominoes](/dynamic_programming/pushDominoes.js)                       | `Two Pointers`,`String`,`Dynamic Programming`                                | Easy       |        |
+| 0844 | [Back String Compare](/string/backspaceCompare.js)                       | `Two Pointers`,`String`,`Stack`, `Simulation`                                | Easy       |        |
 | 0905 | [Sort Array By Parity](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
 | 1013 | [Partition Array Into Three Parts With Equal Sum](/array/canThreePartsEqualSum.js)                   | `Array`,`Greedy`,                             | Easy     |        |
 | 1025 | [Divisor Game](/dynamic_programming/divisorGame.js)                   | `Math`,`Dynamic Programming`, `BrainTeaser`, `Game Theory`                       | Easy     |        |
