@@ -35,7 +35,7 @@ var backspaceCompare = function (s, t) {
   }
   for (let i = 0; i < t.length; i++) {
     if (t[i] === "#") {
-      t = s.slice(0, i - 1) + t.slice(i + 1);
+      t = t.slice(0, i - 1) + t.slice(i + 1);
       i--;
     }
   }
