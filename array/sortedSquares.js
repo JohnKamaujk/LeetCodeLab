@@ -19,4 +19,10 @@ nums is sorted in non-decreasing order.
 * @param {number[]} nums
 * @return {number[]}
 */
-var sortedSquares = function (nums) {};
+var sortedSquares = function (nums) {
+  const absoluteNums = nums.map((num) => Math.abs(num));
+
+  const squaredNums = absoluteNums.map((num) => num * num);
+  squaredNums.sort((a, b) => a - b);
+  return squaredNums;
+};
