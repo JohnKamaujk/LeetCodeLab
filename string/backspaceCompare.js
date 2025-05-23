@@ -27,18 +27,18 @@ s and t only contain lowercase letters and '#' characters.
 * @return {boolean}
 */
 var backspaceCompare = function (s, t) {
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === "#") {
-      s = s.slice(0, i - 1) + s.slice(i + 1);
-      i--;
+  const build = (str) => {
+    const stack = [];
+    for (const char of str) {
+      if (char === "#") {
+        stack.pop();
+      } else {
+        stack.push(char);
+      }
     }
-  }
-  for (let i = 0; i < t.length; i++) {
-    if (t[i] === "#") {
-      t = t.slice(0, i - 1) + t.slice(i + 1);
-      i--;
-    }
-  }
 
-  return s === t;
+    stack.join();
+  };
+
+  return build(s) === build(t);
 };
