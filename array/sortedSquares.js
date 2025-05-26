@@ -20,9 +20,23 @@ nums is sorted in non-decreasing order.
 * @return {number[]}
 */
 var sortedSquares = function (nums) {
-  const absoluteNums = nums.map((num) => Math.abs(num));
+  const result = new Array(nums.length);
+  let left = 0;
+  let right = nums.length - 1;
+  let currIndex = nums.length - 1;
 
-  const squaredNums = absoluteNums.map((num) => num * num);
-  squaredNums.sort((a, b) => a - b);
-  return squaredNums;
+  while (left <= right) {
+    if (nums[right] ** 2 > nums[left] ** 2) {
+      result[currIndex] = nums[right] ** 2;
+      right--;
+    } else {
+      result[currIndex] = nums[left] ** 2;
+      left++;
+    }
+    currIndex--;
+  }
+
+  return result;
 };
+
+console.log(sortedSquares([-7, -3, 2, 3, 11]));
