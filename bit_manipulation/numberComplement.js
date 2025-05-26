@@ -20,26 +20,11 @@ Constraints:
 * @return {number}
 */
 var findComplement = function (num) {
-  let binary = "";
-  while (num > 0) {
-    binary = (num % 2) + binary;
-    num = Math.floor(num / 2);
-  }
+  const bits = Math.floor(Math.log2(num)) + 1;
 
-  let complementBinary = "";
-  for (let i = 0; i < binary.length; i++) {
-    if (binary[i] === "0") {
-      complementBinary += "1";
-    } else {
-      complementBinary += "0";
-    }
-  }
+  // Create a bitmask with all bits set to 1 up to the length of the input number's binary representation
+  const bitmask = (1 << bits) - 1;
 
-  let complementNum = 0;
-  for (let i = 0; i < complementBinary.length; i++) {
-    complementNum +=
-      parseInt(complementBinary[i]) *
-      Math.pow(2, complementBinary.length - 1 - i);
-  }
-  return complementNum;
+  // Return the bitwise XOR of the input number and the bitmask ( effectively flipping all bits )
+  return num ^ bitmask;
 };
