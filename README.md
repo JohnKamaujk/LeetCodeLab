@@ -141,7 +141,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0838 | [Push Dominoes](/dynamic_programming/pushDominoes.js)                       | `Two Pointers`,`String`,`Dynamic Programming`                                | Easy       |        |
 | 0844 | [Back String Compare](/string/backspaceCompare.js)                       | `Two Pointers`,`String`,`Stack`, `Simulation`                                | Easy       |        |
 | 0905 | [Sort Array By Parity](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
-| 0977 | [Sorted Squares](/array/sortArrayByParity.js)                                | `Array`, `Two Pointers`,`Sorting`                                       | Easy       |        |
+| 0977 | [Sorted Squares](/array/sortedSquares.js)                                | `Array`, `Two Pointers`,`Sorting`                                                | Easy       |        |
 | 1013 | [Partition Array Into Three Parts With Equal Sum](/array/canThreePartsEqualSum.js)                   | `Array`,`Greedy`,                             | Easy     |        |
 | 1025 | [Divisor Game](/dynamic_programming/divisorGame.js)                   | `Math`,`Dynamic Programming`, `BrainTeaser`, `Game Theory`                       | Easy     |        |
 | 1045 | [Customers Who Bought All Products](/database/customer_who_bought_all_products.sql)                   |`Databases`                                       | Easy     |        |
