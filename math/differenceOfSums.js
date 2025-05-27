@@ -37,4 +37,16 @@ Constraints:
 * @param {number} m
 * @return {number}
 */
-var differenceOfSums = function (n, m) {};
+var differenceOfSums = function (n, m) {
+  let num1 = [];
+  let num2 = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % m === 0) {
+      num2.push(i);
+    } else {
+      num1.push(i);
+    }
+  }
+
+  return num1.reduce((a, b) => a + b, 0) - num2.reduce((a, b) => a + b, 0);
+};
