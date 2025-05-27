@@ -163,7 +163,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2670 | [Find the Distinct Difference Array](/array/distinctDifferenceArray.js)            | `Array`,`Hash Table`                                                    | Easy       |        |
 | 2707 | [Extra Characters in a String](/string/minExtraChar.js)                           | `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie`          | Medium     |        |
 | 2799 | [Count Complete Subarrays in an Array](/string/minExtraChar.js)                     | `Array`, `Hash Table`, `Sliding Window`                                 | Medium     |        |
-| 2894 | [Divisible and Non-divisible Sums Difference](/math/differenceOfSums.js)                     | `Math`                                 | Easy     |        |
+| 2894 | [Divisible and Non-divisible Sums Difference](/math/differenceOfSums.js)                     | `Math`                                          | Easy     |        |
 | 2903 | [Find Indices With Index and Value Difference I](/array/findIndices.js)            | `Array`, `Two Pointers`                                                   | Easy     |        |
 | 2960 | [Count Tested Devices After Test Operations](/array/countTestedDevices.js)          | `Array`, `Simulation`, `Count`                                            | Easy     |        |
 | 2965 | [Find Missing and Repeated Values](/array/findMissingAndRepeatedValues.js)          | `Array`, `Hash Table`, `Math`, `Matrix`                                   | Easy     |        |
