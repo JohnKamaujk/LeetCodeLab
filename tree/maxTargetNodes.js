@@ -42,4 +42,46 @@ The input is generated such that edges1 and edges2 represent valid trees.
 * @param {number} k
 * @return {number[]}
 */
-var maxTargetNodes = function (edges1, edges2, k) {};
+var maxTargetNodes = function (edges1, edges2, k) {
+        const buildGraph = (edges) => {
+          const n = edges.length + 1;
+          const graph = Array.from({ length: n }, () => []);
+          for (const [u, v] of edges) {
+            graph[u].push(v);
+            graph[v].push(u);
+          }
+          return graph;
+        };
+
+        const dfs = (graph, node, parent, depth) => {
+          if (depth < 0) return 0;
+          let count = 1;
+          for (const neighbor of graph[node]) {
+            if (neighbor !== parent) {
+              count += dfs(graph, neighbor, node, depth - 1);
+            }
+          }
+          return count;
+        };
+
+        const graph1 = buildGraph(edges1);
+        const graph2 = buildGraph(edges2);
+
+        let maxReachableInGraph2 = 0;
+        if (k > 0) {
+          for (let i = 0; i < graph2.length; i++) {
+            maxReachableInGraph2 = Math.max(
+              maxReachableInGraph2,
+              dfs(graph2, i, -1, k - 1)
+            );
+          }
+        }
+
+        const result = [];
+        for (let i = 0; i < graph1.length; i++) {
+          const reachableInGraph1 = dfs(graph1, i, -1, k);
+          result.push(reachableInGraph1 + maxReachableInGraph2);
+        }
+
+        return result;
+};
