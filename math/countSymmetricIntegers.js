@@ -22,4 +22,32 @@ Constraints:
 * @param {number} high
 * @return {number}
 */
-var countSymmetricIntegers = function (low, high) {};
+var countSymmetricIntegers = function (low, high) {
+  const numLength = high.toString().length;
+
+  const n = Math.floor(numLength / 2);
+
+  console.log(n);
+
+  let count = 0;
+
+  for (let i = low; i <= high; i++) {
+    const str = i.toString();
+    if (str.length % 2 === 0) {
+      const firstHalf = str.slice(0, n);
+      const secondHalf = str.slice(n);
+      const sumFirstHalf = firstHalf
+        .split("")
+        .reduce((acc, digit) => acc + parseInt(digit), 0);
+      const sumSecondHalf = secondHalf
+        .split("")
+        .reduce((acc, digit) => acc + parseInt(digit), 0);
+      if (sumFirstHalf === sumSecondHalf) {
+        count++;
+      }
+    }
+  }
+  return count;
+};
+
+console.log(countSymmetricIntegers(1200, 1230)); // Output: 4
