@@ -26,6 +26,7 @@ Output: 3
 Constraints:
 2 <= s.length <= 500
 The string s consists of characters '0' and '1' only.
+
 * @param {string} s
 * @return {number}
 */
