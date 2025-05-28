@@ -151,6 +151,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1219 | [Path with Maximum Gold](/array/getMaximumGold.js)                                 | `Array`,`Backtracking`,`Matrix`                                         | Medium     |        |
 | 1221 | [Split a String in Balanced Strings](/string/balancedStringSplit.js)                | `String`,`Greedy`,`Counting`                                         | Easy          |        |
 | 1394 | [Find Lucky Number in an Array](/hash_table/findLucky.js)                | `Array`,`Hash Table`,`Counting`                                              | Easy          |        |
+| 1534 | [Count Good Triplets](/array/countGoodTriplets.js)                | `Array`, `Enumeration`                                                        | Easy          |        |
 | 1700 | [Number of Students Unable to Eat Lunch](/array/countStudents.js)                  | `Array`,`Stack`,`Queue`,`Simulation`                                    | Easy       |        |
 | 1791 | [Find Center of Star Graph](/graph/findCenter.js)                                  | `Graph`                                                                 | Medium     |        |
 | 1984 | [Minimu Differences Between Highest & Lowest of K Scores](/sliding_window/minimumDifference.js) | `Array`, `Sliding Window`, `Sorting`              | Easy     |        |
