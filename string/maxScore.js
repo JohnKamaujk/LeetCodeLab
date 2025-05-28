@@ -32,7 +32,7 @@ The string s consists of characters '0' and '1' only.
 */
 var maxScore = function (s) {
   let maxScore = 0;
-  for (let i = 0; i < s.length; i++) {
+  for (let i = 0; i < s.length - 1; i++) {
     const left = s.slice(0, i + 1);
     const right = s.slice(i + 1);
     const score =
@@ -41,3 +41,4 @@ var maxScore = function (s) {
   }
   return maxScore;
 };
+
