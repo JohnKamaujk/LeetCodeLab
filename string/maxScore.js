@@ -31,14 +31,25 @@ The string s consists of characters '0' and '1' only.
 * @return {number}
 */
 var maxScore = function (s) {
-  let maxScore = 0;
-  for (let i = 0; i < s.length - 1; i++) {
-    const left = s.slice(0, i + 1);
-    const right = s.slice(i + 1);
-    const score =
-      (left.match(/0/g) || []).length + (right.match(/1/g) || []).length;
-    maxScore = Math.max(maxScore, score);
-  }
-  return maxScore;
+    let totalOnes = 0;
+    for (let ch of s) {
+      if (ch === "1") totalOnes++;
+    }
+
+    let maxScore = 0;
+    let leftZeros = 0;
+    let rightOnes = totalOnes;
+
+    for (let i = 0; i < s.length - 1; i++) {
+      if (s[i] === "0") {
+        leftZeros++;
+      } else {
+        rightOnes--;
+      }
+
+      maxScore = Math.max(maxScore, leftZeros + rightOnes);
+    }
+
+    return maxScore;
 };
 
