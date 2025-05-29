@@ -146,6 +146,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1013 | [Partition Array Into Three Parts With Equal Sum](/array/canThreePartsEqualSum.js)                   | `Array`,`Greedy`,                             | Easy     |        |
 | 1025 | [Divisor Game](/dynamic_programming/divisorGame.js)                   | `Math`,`Dynamic Programming`, `BrainTeaser`, `Game Theory`                       | Easy     |        |
 | 1045 | [Customers Who Bought All Products](/database/customer_who_bought_all_products.sql)                   |`Databases`                                       | Easy     |        |
+| 1128 | [Number of Equivalent Domino Pairs](/array/equivalentDominos.js)                   |`Array`, `Hash Table`, `Counting`                                         | Easy     |        |
 | 1207 | [Unique Number of Occurrences](/array/uniqueOccurences.js)                   | `Array`,`Hash Table`,                                                     | Easy     |        |
 | 1208 | [Get Equal Substrings Within Budget](/string/equalSubstring.js)                   | `Strings`,`Binary Search`,`Sliding Window`, `Prefix Sum`                | Medium     |        |
 | 1219 | [Path with Maximum Gold](/array/getMaximumGold.js)                                 | `Array`,`Backtracking`,`Matrix`                                         | Medium     |        |
