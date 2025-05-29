@@ -47,7 +47,7 @@ var maxScore = function (s) {
         rightOnes--;
       }
 
-      maxScore = Math.max(maxScore, leftZeros + ri ghtOnes);
+      maxScore = Math.max(maxScore, leftZeros + rightOnes);
     }
 
     return maxScore;
