@@ -20,33 +20,15 @@ dominoes[i].length == 2
 * @return {number}
 */
 var numEquivDominoPairs = function (dominoes) {
+  let map = new Map();
   let count = 0;
 
-  for (let i = 0; i < dominoes.length - 1; i++) {
-    let a1 = dominoes[i][0];
-    let b1 = dominoes[i][1];
-    let key1 = a1 < b1 ? `${a1},${b1}` : `${b1},${a1}`;
-
-    for (let j = i + 1; j < dominoes.length; j++) {
-      let a2 = dominoes[j][0];
-      let b2 = dominoes[j][1];
-      let key2 = a2 < b2 ? `${a2},${b2}` : `${b2},${a2}`;
-
-      if (key1 === key2) {
-        count++;
-      }
-    }
+  for (let [a, b] of dominoes) {
+    let key = a < b ? `${a},${b}` : `${b},${a}`;
+    let val = map.get(key) || 0;
+    count += val;
+    map.set(key, val + 1);
   }
 
   return count;
 };
-
-console.log(
-  numEquivDominoPairs([
-    [1, 2],
-    [1, 2],
-    [1, 1],
-    [1, 2],
-    [2, 2],
-  ])
-);
