@@ -153,6 +153,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1394 | [Find Lucky Number in an Array](/hash_table/findLucky.js)                | `Array`,`Hash Table`,`Counting`                                              | Easy          |        |
 | 1422 | [Maximum Score After Splitting A String](/string/maxScore.js)                | `String`,`Prefix Sum`                                                | Easy          |        |
 | 1534 | [Count Good Triplets](/array/countGoodTriplets.js)                | `Array`, `Enumeration`                                                        | Easy          |        |
+| 1550 | [Three Consecutive Odds](/array/threeConsecutiveOdds.js)                | `Array`                                                              | Easy          |        |
 | 1700 | [Number of Students Unable to Eat Lunch](/array/countStudents.js)                  | `Array`,`Stack`,`Queue`,`Simulation`                                    | Easy       |        |
 | 1791 | [Find Center of Star Graph](/graph/findCenter.js)                                  | `Graph`                                                                 | Medium     |        |
 | 1984 | [Minimu Differences Between Highest & Lowest of K Scores](/sliding_window/minimumDifference.js) | `Array`, `Sliding Window`, `Sorting`              | Easy     |        |
