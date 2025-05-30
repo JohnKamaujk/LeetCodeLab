@@ -24,16 +24,13 @@ s and t consist of lowercase English letters.
 * @return {character}
 */
 var findTheDifference = function (s, t) {
-    let map = new Map()
-    for (let char of t) {
-        map.set(char, (map.get(char) || 0) + 1);
-    }
-    for (let char of s) {
-        map.set(char, (map.get(char) || 0) - 1);
-    }
-    for (let [key, value] of map) {
-        if (value > 0) {
-            return key; // Return the character that has a count greater than 0
-        }
-    }
+  let charcodeSum = 0;
+  for (let i = 0; i < t.length; i++) {
+    charcodeSum += t.charCodeAt(i);
+  }
+  for (let i = 0; i < s.length; i++) {
+    charcodeSum -= s.charCodeAt(i);
+  }
+
+  return String.fromCharCode(charcodeSum);
 };
