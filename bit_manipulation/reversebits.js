@@ -21,4 +21,8 @@ The input must be a binary string of length 32
 * @param {number} n - a positive integer
 * @return {number} - a positive integer
 */
-var reverseBits = function (n) {};
+var reverseBits = function (n) {
+    let nStr= n.toString(2).padStart(32, '0');
+    let reversedStr = nStr.split('').reverse().join('');
+    return parseInt(reversedStr, 2);
+};
