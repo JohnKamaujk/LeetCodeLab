@@ -161,6 +161,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2094 | [Finding 3-Digit Even Numbers](/hash_table/findEven.js)       |       `Array`, `Hash Table`, `Sorting`, `Enumeration`                                          | Easy     |        |
 | 2114 | [Maximum Number of Words Found in Sentences](/array/mostWordsFound.js)       |       `Array`, `String`                                                         | Easy     |        |
 | 2309 | [Greatest English Letter in Upper and Lower Case](/string/greatestLetter.js)       | `Hash Table`, `String`, `Enumeration`                                   | Easy     |        |
+| 2396 | [Strictly Palindromic Number](/math/strictlyPalindromic.js)       | `Math`, `Two Pointers`, `Brainteaser`                                                | Medium     |        |
 | 2406 | [Divide Intervals Into Minimum Number of Groups](/array/minGroups.js)              | `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum`           | Medium     |        |
 | 2621 | [Sleep](/javascript/sleep.js)            | `JavaScript`                                                            | Easy       |        |
 | 2695 | [Array Wrapper](/javascript/arrayWrapper.js)                                        | `JavaScript`, `Array`                                                   | Easy       |        |
