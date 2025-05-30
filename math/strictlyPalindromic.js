@@ -25,4 +25,31 @@ Constraints:
 * @param {number} n
 * @return {boolean}
 */
-var isStrictlyPalindromic = function (n) {};
+var isStrictlyPalindromic = function (n) {
+  for (let base = 2; base <= n - 2; n++) {
+    if (!isPalindrome(n.toString(base))) {
+      return false;
+    }
+  }
+  return true;
+};
+
+/**
+ * Checks if a string is a palindrome.
+ *
+ * @param {string} str - The string to check.
+ * @returns {boolean} - A boolean indicating whether the string is a palindrome or not.
+ */
+function isPalindrome(str) {
+  let left = 0;
+  let right = str.length - 1;
+
+  while (left < right) {
+    if (str[left] !== str[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
+  return true;
+}
