@@ -116,6 +116,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0367 | [Valid Perfect Square](/math/isPerfectSquare.js)                                | `Math`, `Binary Search`                                                 | Easy       |        |
 | 0374 | [Guess Number Higher or Lower](/tree/guessNumber.js)                        |  `Binary Search`, `Interactive`                                          | Easy       |        |
 | 0383 | [Ransom Note](/hash_table/ransomNote.js)                        |  `Hash Table`, `String`, `Counting`                                                    | Easy       |        |
+| 0389 | [Find the Difference](/hash_table/findTheDifference.js)                      |  `Hash Table`, `String`, `Bit Manipulation`, `Sorting`                    | Easy       |        |
 | 0392 | [Is Subsequence](/dynamic_programming/isSubsequence.js)                        | `Two Pointers`, `String`, `Dynamic Programming`                              | Easy       |        |
 | 0394 | [Decode String](/string/decodeString.js)                        | `String`, `Stack`, `Recursion`                                                           | Medium       |        |
 | 0404 | [Sum Of Left Leaves](/tree/sumOfLeftLeaves.js)                            | `Tree`, `Depth First Search`, `Breadth First Search`, `Binary Tree`             | Easy       |        |
