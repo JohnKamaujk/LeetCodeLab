@@ -22,7 +22,11 @@ The input must be a binary string of length 32
 * @return {number} - a positive integer
 */
 var reverseBits = function (n) {
-    let nStr= n.toString(2).padStart(32, '0');
-    let reversedStr = nStr.split('').reverse().join('');
-    return parseInt(reversedStr, 2);
+  let result = 0;
+  for (let i = 0; i < 32; i++) {
+    result <<= 1; // shift result to left
+    result |= n & 1; // get the last bit of n and add it to result
+    n >>>= 1; // unsigned right shift n
+  }
+  return result >>> 0; // convert to unsigned 32-bit
 };
