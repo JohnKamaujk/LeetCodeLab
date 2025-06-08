@@ -18,13 +18,13 @@ Constraints:
 * @return {number[]}
 */
 var lexicalOrder = function (n) {
-  let res = [];
+  const result = [];
 
-  function dfs(curr) {
-    if (curr > n) return;
-    res.push(curr);
+  function dfs(current) {
+    if (current > n) return;
+    result.push(current);
     for (let i = 0; i <= 9; i++) {
-      let next = curr * 10 + i;
+      const next = current * 10 + i;
       if (next > n) return;
       dfs(next);
     }
@@ -34,5 +34,5 @@ var lexicalOrder = function (n) {
     dfs(i);
   }
 
-  return res;
+  return result;
 };
