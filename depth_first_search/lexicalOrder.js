@@ -18,11 +18,21 @@ Constraints:
 * @return {number[]}
 */
 var lexicalOrder = function (n) {
+  let res = [];
 
-  let result = [];
-  for (let i = 1; i <= n; i++) {
-    result.push(i);
+  function dfs(curr) {
+    if (curr > n) return;
+    res.push(curr);
+    for (let i = 0; i <= 9; i++) {
+      let next = curr * 10 + i;
+      if (next > n) return;
+      dfs(next);
+    }
   }
-  result.sort((a, b) => a.toString().localeCompare(b.toString()));
-  return result;
+
+  for (let i = 1; i <= 9; i++) {
+    dfs(i);
+  }
+
+  return res;
 };
