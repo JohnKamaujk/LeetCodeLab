@@ -17,4 +17,32 @@ Constraints:
 * @param {number} k
 * @return {number}
 */
-var findKthNumber = function (n, k) {};
+var findKthNumber = function (n, k) {
+  function getCount(prefix, n) {
+    let count = 0;
+    let curr = prefix;
+    let next = prefix + 1;
+    while (curr <= n) {
+      count += Math.min(n + 1, next) - curr;
+      curr *= 10;
+      next *= 10;
+    }
+    return count;
+  }
+
+  let curr = 1;
+  k--;
+
+  while (k > 0) {
+    const count = getCount(curr, n);
+    if (k >= count) {
+      k -= count;
+      curr += 1;
+    } else {
+      k--;
+      curr *= 10;
+    }
+  }
+
+  return curr;
+};
