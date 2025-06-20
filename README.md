@@ -195,6 +195,6 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3407 | [Substring Matching Pattern](/string/hasMatch.js)                                   | `String`, `String Matching`                                               | Easy     |        |
 | 3411 | [Maximum SubArray With Equal Products](/array/maxLength)  | `Array`, `Math`, `Sliding Window`, `Enumeration`, `Number Theory`                                   | Easy     |        |
 | 3421 | [Find Students Who Improved](/database/find_students_who_improved.sql)              | `Sql`,                                                                    | Easy     |        |
-| 3443 | [Maximum Manhattan Distance After K Changes](/hash_table/maxManhattanDistance.js)         | `Hash Table`, `Math`, `String`, `Counting`                  | Easy     |        |
+| 3443 | [Maximum Manhattan Distance After K Changes](/math/maxManhattanDistance.js)         | `Hash Table`, `Math`, `String`, `Counting`                  | Easy     |        |
 | 3483 | [Unique 3-Digit Even Numbers](/array/totalNumbers.js)           | `Array`, `Hash Table`, `Recursion`, `Enumeration`                                        | Easy     |        |
 | 3502 | [Minimum Cost to Reach Every Position](/array/minCosts.js)              | `Array`,                                                                  | Easy     |        |
