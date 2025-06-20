@@ -42,4 +42,32 @@ s consists of only 'N', 'S', 'E', and 'W'.
 * @param {number} k
 * @return {number}
 */
-var maxDistance = function (s, k) {};
+var maxDistance = function (s, k) {
+  // Helper function to calculate the maximum possible distance
+  const calc = (a, b) => {
+    let maxDistance = 0;
+    let currentDistance = 0;
+    let substitutionCount = 0;
+
+    for (const char of s) {
+      if (char === a || char === b) {
+        ++currentDistance;
+      } else if (substitutionCount < k) {
+        ++currentDistance;
+        ++substitutionCount;
+      } else {
+        --currentDistance;
+      }
+      maxDistance = Math.max(maxDistance, currentDistance);
+    }
+    return maxDistance;
+  };
+
+  const maxSE = calc("S", "E");
+  const maxSW = calc("S", "W");
+  const maxNE = calc("N", "E");
+  const maxNW = calc("N", "W");
+
+  // Return the highest of all calculated distances
+  return Math.max(maxSE, maxSW, maxNE, maxNW);
+};
