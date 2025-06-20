@@ -31,14 +31,13 @@ n == nums.length
 * @return {number}
 */
 var maximumDifference = function (nums) {
+  let minNum = nums[0];
   let maxDiff = -1;
-  for (let i = 0; i < nums.length - 1; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] < nums[j]) {
-        maxDiff = Math.max(maxDiff, nums[j] - nums[i]);
-      }
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] > minNum) {
+      maxDiff = Math.max(maxDiff, nums[i] - minNum);
     }
+    minNum = Math.min(minNum, nums[i]);
   }
   return maxDiff;
 };
-
