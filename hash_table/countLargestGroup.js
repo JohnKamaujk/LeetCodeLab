@@ -23,4 +23,20 @@ Constraints:
 * @param {number} n
 * @return {number}
 */
-var countLargestGroup = function (n) {};
+var countLargestGroup = function (n) {
+  let groups = new Array(46).fill(0);
+
+  for (let i = 1; i <= n; i++) {
+    let sum = 0;
+    let num = i;
+    while (num > 0) {
+      sum += num % 10;
+      num = Math.floor(num / 10);
+    }
+
+    groups[sum - 1] = (groups[sum - 1] || 0) + 1;
+  }
+
+  const max = Math.max(...groups);
+  return groups.filter((g) => g === max).length;
+};
