@@ -32,4 +32,29 @@ word consists only of lowercase English letters.
 * @param {number} k
 * @return {number}
 */
-var minimumDeletions = function (word, k) {};
+var minimumDeletions = function (word, k) {
+  // Create an array to store the frequency of each letter in the word
+  const frequency = Array(26).fill(0);
+
+  for (const ch of word) {
+    frequency[ch.charCodeAt(0) - 97]++;
+  }
+
+  const nums = frequency.filter((count) => count > 0);
+
+  // Helper function to calculate deletions needed for a given target value v
+  const f = (v) => {
+    let deletions = 0;
+    for (const x of nums) {
+      if (x < v) {
+        deletions += x;
+      } else if (x > v + k) {
+        deletions += x - v - k;
+      }
+    }
+    return deletions;
+  };
+
+  // Calculate the minimum deletions required by considering all possible target frequencies
+  return Math.min(...Array.from({ length: word.length + 1 }, (_, i) => f(i)));
+};
