@@ -157,6 +157,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1219 | [Path with Maximum Gold](/array/getMaximumGold.js)                                 | `Array`,`Backtracking`,`Matrix`                                         | Medium     |        |
 | 1221 | [Split a String in Balanced Strings](/string/balancedStringSplit.js)                | `String`,`Greedy`,`Counting`                                         | Easy          |        |
 | 1394 | [Find Lucky Number in an Array](/hash_table/findLucky.js)                | `Array`,`Hash Table`,`Counting`                                              | Easy          |        |
+| 1399 | [Count Largest Group](/hash_table/countLargestGroup.js)                |`Hash Table`, `Math`                                                               | Easy          |        |
 | 1422 | [Maximum Score After Splitting A String](/string/maxScore.js)                | `String`,`Prefix Sum`                                                | Easy          |        |
 | 1534 | [Count Good Triplets](/array/countGoodTriplets.js)                | `Array`, `Enumeration`                                                        | Easy          |        |
 | 1550 | [Three Consecutive Odds](/array/threeConsecutiveOdds.js)                | `Array`                                                              | Easy          |        |
