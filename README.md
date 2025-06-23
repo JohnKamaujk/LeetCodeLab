@@ -87,10 +87,8 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0169 | [Majority Element](/array/majorityElement.js)                                      | `Array`, `Hash Table`, `Sorting`, `Divide and Conquer`, `Counting`      | Easy       |        |
 | 0190 | [Reverse Bits](/bit_manipulation/reversebits.js)                                   | `Bit Manipulation`, `Divide and Conquer`                                | Easy       |        |
 | 0191 | [Number Of 1 Bits](/bit_manipulation/hammingWeight.js)                            | `Bit Manipulation`, `Divide and Conquer`                                | Easy       |        |
- 0192 | [Word Frequency](/shell/word_frequency.sh)                                       | 
-`Shell`                                                                 | Easy       |        |
-| 0193 | [Valid Phone Numbers](/shell/valid_phone.sh)                                       | 
-`Shell`                                                                 | Easy       |        |
+ 0192 | [Word Frequency](/shell/word_frequency.sh)                                       | `Shell`                                                                 | Easy       |        |
+| 0193 | [Valid Phone Numbers](/shell/valid_phone.sh)                                       | `Shell`                                                                 | Easy       |        |
 | 0197 | [Rising Temperature](/database/rising_temperature.sql)                | `Database`                                                              | Easy       |        |
 | 0200 | [Number of Islands](/array/numIslands.js)                                          | `Array`, `Depth-First Search`, `Breadth-First Search`, `Matrix`        | Medium     |        |
 | 0205 | [Isomorphic Strings](/string/isIsomorphic.js)                                | `Hash Table`, `String`                                                          | Easy     |        |
