@@ -170,7 +170,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2309 | [Greatest English Letter in Upper and Lower Case](/string/greatestLetter.js)       | `Hash Table`, `String`, `Enumeration`                                   | Easy     |        |
 | 2396 | [Strictly Palindromic Number](/math/strictlyPalindromic.js)       | `Math`, `Two Pointers`, `Brainteaser`                                                | Medium     |        |
 | 2406 | [Divide Intervals Into Minimum Number of Groups](/array/minGroups.js)              | `Array`,`Greedy`,`Sorting`,`Two Pointers`,`Heap`,`Prefix Sum`           | Medium     |        |
-| 2434 | [Using a Robot to Print the Lexicographically Smallest String](/array/minGroups.js)              | `Hash Table`,`String`,`Stack`,`Greedy`               | Medium     |        |
+| 2434 | [Using a Robot to Print the Lexicographically Smallest String](/stack/robotWithString.js)              | `Hash Table`,`String`,`Stack`,`Greedy`               | Medium     |        |
 | 2621 | [Sleep](/javascript/sleep.js)            | `JavaScript`                                                            | Easy       |        |
 | 2695 | [Array Wrapper](/javascript/arrayWrapper.js)                                        | `JavaScript`, `Array`                                                   | Easy       |        |
 | 2670 | [Find the Distinct Difference Array](/array/distinctDifferenceArray.js)            | `Array`,`Hash Table`                                                    | Easy       |        |
