@@ -37,4 +37,46 @@ s consists of only English lowercase letters.
 * @param {string} s
 * @return {string}
 */
-var robotWithString = function (s) {};
+var robotWithString = function (s) {
+    let characterCount = new Array(128).fill(0);
+
+    // Counting occurrences of each character in the string
+    for (let character of s) {
+      characterCount[character.charCodeAt(0)] += 1;
+    }
+
+    // Initialize with the charCode of 'a', intending to find the smallest lexicographical character
+    let minCharCodeIndex = "a".charCodeAt(0);
+
+    let resultArray = [];
+
+    // Use a stack to keep track of characters processed
+    let charStack = [];
+
+    for (let character of s) {
+      // Decrease the count for this character as it is being processed
+      characterCount[character.charCodeAt(0)] -= 1;
+
+      // Find the next character that still has occurrences left
+      while (
+        minCharCodeIndex <= "z".charCodeAt(0) &&
+        characterCount[minCharCodeIndex] == 0
+      ) {
+        minCharCodeIndex += 1;
+      }
+
+      // Push the current character onto the stack
+      charStack.push(character);
+
+      // As long as the stack is not empty and the last character on the stack is less
+      // or equal to the current minimum, add it to the result array
+      while (
+        charStack.length > 0 &&
+        charStack[charStack.length - 1].charCodeAt(0) <= minCharCodeIndex
+      ) {
+        resultArray.push(charStack.pop());
+      }
+    }
+
+    return resultArray.join("");
+};
