@@ -36,4 +36,23 @@ nums is sorted in ascending order.
 * @param {number[]} nums
 * @return {string[]}
 */
-var summaryRanges = function (nums) {};
+var summaryRanges = function (nums) {
+  let result = [];
+  let start = nums[0];
+  for (let i = 0; i < nums.length; i++) {
+    let end = nums[i];
+    if (nums[i] + 1 == nums[i + 1]) {
+      continue;
+    } else {
+      if (start == end) {
+        result.push(start.toString());
+        start = nums[i + 1];
+      } else {
+        result.push(start + "->" + end);
+        start = nums[i + 1];
+      }
+    }
+  }
+ return result;
+};
+
