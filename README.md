@@ -84,7 +84,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0183 | [Customers Who Never Order](/database/customer_who_never_order.sql)                | `Database`                                                              | Easy       |        |
 | 0184 | [Duplicate Emails](/database/duplicate_emails.sql)                                 | `Database`                                                              | Easy       |        |
 | 0185 | [Customers Who Never Order](/database/customer_who_never_order.sql)                | `Database`                                                              | Easy       |        |
-| 0190 | [Reverse Bits](/bit_manipulation/reversebits.js)                            | 
+| 0190 | [Reverse Bits](/bit_manipulation/reversebits.js)        | 
 `Bit Manipulation`, `Divide and Conquer`                                | Easy       |        |
 | 0191 | [Number Of 1 Bits](/bit_manipulation/hammingWeight.js)                            | 
 `Bit Manipulation`, `Divide and Conquer`                                | Easy       |        |
