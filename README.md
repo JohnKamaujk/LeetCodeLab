@@ -99,7 +99,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0219 | [Contains Duplicate II](/array/containsNearbyDuplicate.js)                          | `Array`, `Hash Table`, `Sliding Window`                                 | Easy       |        |
 | 0226 | [Invert Binary Tree](/array/containsNearbyDuplicate.js)                          | `Tree`, `Breadth-First Search`, `Depth-First Search`, `Binary Tree`     | Easy       |        |
 | 0228 | [Summary Ranges](/array/summaryRanges.js)                          | `Array`     | 
-                                                               |         Easy       |        |
+                                                                     |  Easy       |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
 | 0234 | [Palindrome Linked List](/linked_list/isPalindrome.js)                            | `Linked List`, `Recursion`, `Two Pointers`, `Stack`                     | Easy       |        |
 | 0257 | [Binary Tree Paths](/tree/binaryTreePaths.js)                                       | `String`,`Tree`, `Backtracking`, `Depth-First Search`, `Binary Tree`   | Easy       |        |
