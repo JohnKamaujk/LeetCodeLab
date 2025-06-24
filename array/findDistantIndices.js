@@ -34,23 +34,26 @@ key is an integer from the array nums.
 * @return {number[]}
 */
 var findKDistantIndices = function (nums, key, k) {
-  let keyIndices = [];
   let result = [];
+  let j = 0;
   for (let i = 0; i < nums.length; i++) {
-    if (nums[i] === key) {
-      keyIndices.push(i);
-    }
-  }
-
-  for (const idx of keyIndices) {
-    for (let i = 0; i < nums.length; i++) {
-      if (Math.abs(i - idx) <= k && !result.includes(i)) {
-        result.push(i);
+    while (nums[i] === key && j < i + k + 1 && j < nums.length) {
+      if (Math.abs(i - j) <= k && !result.includes(j)) {
+        result.push(j);
       }
+      j++;
     }
   }
 
-  return result;
+  //   for (const idx of keyIndices) {
+  //     for (let i = 0; i < nums.length; i++) {
+  //       if (Math.abs(i - idx) <= k && !result.includes(i)) {
+  //         result.push(i);
+  //       }
+  //     }
+  //   }
+
+    return result;
 };
 
 console.log(findKDistantIndices([3, 4, 9, 1, 3, 9, 5], 9, 1));
