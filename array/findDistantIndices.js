@@ -38,7 +38,7 @@ var findKDistantIndices = function (nums, key, k) {
   let j = 0;
   for (let i = 0; i < nums.length; i++) {
     while (nums[i] === key && j < i + k + 1 && j < nums.length) {
-      if (Math.abs(i - j) <= k && !result.includes(j)) {
+      if (Math.abs(i - j) <= k) {
         result.push(j);
       }
       j++;
