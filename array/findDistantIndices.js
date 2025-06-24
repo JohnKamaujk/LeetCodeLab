@@ -45,15 +45,5 @@ var findKDistantIndices = function (nums, key, k) {
     }
   }
 
-  //   for (const idx of keyIndices) {
-  //     for (let i = 0; i < nums.length; i++) {
-  //       if (Math.abs(i - idx) <= k && !result.includes(i)) {
-  //         result.push(i);
-  //       }
-  //     }
-  //   }
-
-    return result;
+  return result;
 };
-
-console.log(findKDistantIndices([3, 4, 9, 1, 3, 9, 5], 9, 1));
