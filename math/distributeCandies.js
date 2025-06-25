@@ -21,4 +21,30 @@ Constraints:
 * @param {number} limit
 * @return {number}
 */
-var distributeCandies = function (n, limit) {};
+var distributeCandies = function (n, limit) {
+  // Helper function to compute combinations of 2 from n
+  const combinationsOfTwo = (num) => (num * (num - 1)) / 2;
+
+  // If the number of candies is more than three times the limit
+  // it's not possible to distribute the candies fairly, so return 0
+  if (n > 3 * limit) {
+    return 0;
+  }
+
+  // Calculate basic combination count for candies + 2
+  let answer = combinationsOfTwo(n + 2);
+
+  // If there are more candies than the limit, adjust the number
+  // of combinations by subtracting impossible distributions
+  if (n > limit) {
+    answer -= 3 * combinationsOfTwo(n - limit + 1);
+  }
+
+  // If the number of candies minus 2 is at least double the limit,
+  // adjust the number of combinations by adding back some distributions
+  if (n - 2 >= 2 * limit) {
+    answer += 3 * combinationsOfTwo(n - 2 * limit);
+  }
+
+  return answer;
+};
