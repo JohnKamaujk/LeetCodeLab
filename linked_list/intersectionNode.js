@@ -60,4 +60,14 @@ intersectVal == listA[skipA] == listB[skipB] if listA and listB intersect.
  * @param {ListNode} headB
  * @return {ListNode}
  */
-var getIntersectionNode = function (headA, headB) {};
+var getIntersectionNode = function (headA, headB) {
+  let pointerA = headA;
+  let pointerB = headB;
+
+  while (pointerA !== pointerB) {
+    pointerA = pointerA.next ? pointerA.next : headB;
+    pointerB = pointerB.next ? pointerB.next : headA;
+  }
+
+  return pointerA
+};
