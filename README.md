@@ -77,6 +77,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0119 | [Pascal Triangle II](/array/getRow.js)     |`Array`, `Dynamic Programming`                                                             | Easy      |        |
 | 0136 | [Single Number](/array/singleNumber.js)                                            | `Array`, `Bit Manipulation`                                             | Easy       |        |
 | 0151 | [Reverse Words in a String](/string/reverseWords.js)                              | `Two Pointers`, `Strings`                                               | Medium     |        |
+| 0160 | [Intersection of Two Linked Lists](/linked_list/intersectionNode.js)                | `Two Pointers`, `Hash Table`, `Linked List`                               | Easy     |        |
 | 0169 | [Majority Element](/array/majorityElement.js)                                      | `Array`, `Hash Table`, `Sorting`, `Divide and Conquer`, `Counting`      | Easy       |        |
 | 0175 | [Combine Two Tables](/database/combine_tables.sql)                                 | `Database`                                                              | Easy       |        |
 | 0181 | [Employees Earning More Than Their Managers](/database/employees_earning_more.sql) | `Database`                                                              | Easy       |        |
