@@ -64,10 +64,12 @@ var getIntersectionNode = function (headA, headB) {
   let pointerA = headA;
   let pointerB = headB;
 
+  if (!pointerA || !pointerB) return null;
+
   while (pointerA !== pointerB) {
-    pointerA = pointerA.next ? pointerA.next : headB;
-    pointerB = pointerB.next ? pointerB.next : headA;
+    pointerA = pointerA ? pointerA.next : headB;
+    pointerB = pointerB ? pointerB.next : headA;
   }
 
-  return pointerA
+  return pointerA;
 };
