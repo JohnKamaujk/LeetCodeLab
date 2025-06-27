@@ -33,4 +33,34 @@ The tree is guaranteed to be complete.
  * @param {TreeNode} root
  * @return {number}
  */
-var countNodes = function (root) {};
+var countNodes = function (root) {
+  const getDepth = (node) => {
+    let depth = 0;
+    while (node !== null) {
+      depth++;
+      node = node.left;
+    }
+    return depth;
+  };
+
+  if (root === null) {
+    return 0;
+  }
+
+  // Calculate the depth of the left and right subtrees.
+  const leftDepth = getDepth(root.left);
+  const rightDepth = getDepth(root.right);
+
+  // Check if the left and right subtrees have the same depth.
+  if (leftDepth === rightDepth) {
+    // If depths are equal, left subtree is a perfect binary tree.
+    // Calculate the number of nodes in the left subtree as 2^leftDepth - 1
+    // Count the nodes in the right subtree recursively.
+    return (1 << leftDepth) + countNodes(root.right);
+  } else {
+    // If depths are not equal, right subtree is a perfect binary tree.
+    // Calculate the number of nodes in the right subtree as 2^rightDepth - 1
+    // Count the nodes in the left subtree recursively.
+    return (1 << rightDepth) + countNodes(root.left);
+  }
+};
