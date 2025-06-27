@@ -94,6 +94,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0205 | [Isomorphic Strings](/string/isIsomorphic.js)                                | `Hash Table`, `String`                                                          | Easy     |        |
 | 0206 | [Reverse Linked List](/linked_list/reverseList.js)                                | `Linked List`, `Recursion`                                                | Easy     |        |
 | 0219 | [Contains Duplicate II](/array/containsNearbyDuplicate.js)                          | `Array`, `Hash Table`, `Sliding Window`                                 | Easy       |        |
+| 0222 | [Count Complete Tree Nodes](/tree/countNodes.js)                      | `Tree`, `Binary Search`, `Bit Manipulation`, `Binary Tree`                      | Easy       |        |
 | 0226 | [Invert Binary Tree](/array/containsNearbyDuplicate.js)                          | `Tree`, `Breadth-First Search`, `Depth-First Search`, `Binary Tree`     | Easy       |        |
 | 0228 | [Summary Ranges](/array/summaryRanges.js)                          | `Array`     |                                                      Easy       |        |
 | 0231 | [Power of Two](/math/isPowerTwo.js)                                                | `Math`, `Recursion`, `Bit Manipulation`                                 | Easy       |        |
