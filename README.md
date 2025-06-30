@@ -192,6 +192,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3085 | [Minimum Deletions to Make String K-Special](/string/minDeletions.js)           | `Hash Table`, `String`, `Greedy`,`Sorting`, `Counting`  | Medium     |        |
 | 3110 | [Score of a String](/string/scoreOfString.js)                                |`Array`                                                                 | Easy     |          |
 | 3122 | [Minimum Number of Operations to Satisfy Conditions](/array/minimumOperations.js)    |`Array`                                                                 | Easy     |          |
+| 3174 | [Clear Digits](/string/clearDigits.js)    |`String`,`Simulation`, `Stack`                                                                 | Easy     |          |
 | 3216 | [Lexicographically Smallest String After a Swap](/string/getSmallesString.js)    |`String`, `Greedy`                                                      | Easy     |          |
 | 3309 | [Maximum Possible Number by Binary Concatenation](/array/maximumHappinessSum.js)    | `Array`,`Bit Manipulation`,`Enumeration`        | Easy     |        |
 | 3318 | [Find X-Sum of All K-Long Subarrays I](/array/findXSum.js)                        | `Array`, `Hash Table`, `Sliding Window`, `Heap`                         | Easy     |        |
