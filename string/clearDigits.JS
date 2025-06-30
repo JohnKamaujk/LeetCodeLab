@@ -35,7 +35,7 @@ var clearDigits = function (s) {
   let stack = [];
 
   for (const char of s) {
-    if (/\d/.test(char)) {
+    if (!isNaN(char)) {
       if (stack.length > 0) {
         stack.pop(); // Remove the closest non-digit character
       }
