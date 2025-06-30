@@ -31,4 +31,17 @@ The input is generated such that it is possible to delete all digits.
 * @param {string} s
 * @return {string}
 */
-var clearDigits = function (s) {};
+var clearDigits = function (s) {
+  let stack = [];
+
+  for (const char of s) {
+    if (/\d/.test(char)) {
+      if (stack.length > 0) {
+        stack.pop(); // Remove the closest non-digit character
+      }
+    } else {
+      stack.push(char); // Add non-digit characters to the stack
+    }
+  }
+  return stack.join("");
+};
