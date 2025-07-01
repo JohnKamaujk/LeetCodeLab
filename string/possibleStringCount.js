@@ -34,11 +34,10 @@ word consists only of lowercase English letters.
 */
 var possibleStringCount = function (word) {
   let count = 1;
-  let sortedWord = word.split("").sort().join("");
   let charOccurence = 1;
 
-  for (let i = 0; i < sortedWord.length; i++) {
-    if (sortedWord[i] == sortedWord[i + 1]) {
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] == word[i + 1]) {
       charOccurence++;
     } else {
       if (charOccurence > 1) {
