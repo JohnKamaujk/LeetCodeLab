@@ -196,6 +196,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3216 | [Lexicographically Smallest String After a Swap](/string/getSmallesString.js)    |`String`, `Greedy`                                                      | Easy     |          |
 | 3309 | [Maximum Possible Number by Binary Concatenation](/array/maximumHappinessSum.js)    | `Array`,`Bit Manipulation`,`Enumeration`        | Easy     |        |
 | 3318 | [Find X-Sum of All K-Long Subarrays I](/array/findXSum.js)                        | `Array`, `Hash Table`, `Sliding Window`, `Heap`                         | Easy     |        |
+| 3330 | [Find the Original Typed String I](/string/possibleStringCount.js)                  | `String`                                                                  | Easy     |        |
 | 3340 | [Check Balanced String](/string/isBalanced.js)                                 | `String`                                                                | Easy     |        |
 | 3345 | [Smallest Divisible Digit Product I](/string/isBalanced.js)                         | `Math`                                                                | Easy     |        |
 | 3355 | [Zero Array Transformation I](/array/zeroArray.js)    | `Array`,`Prefix Sum`                                                                      | Easy     |        |
