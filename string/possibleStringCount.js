@@ -38,7 +38,7 @@ var possibleStringCount = function (word) {
   let charOccurence = 1;
 
   for (let i = 0; i < sortedWord.length; i++) {
-    if (char[i] == char[i + 1]) {
+    if (sortedWord[i] == sortedWord[i + 1]) {
       charOccurence++;
     } else {
       if (charOccurence > 1) {
