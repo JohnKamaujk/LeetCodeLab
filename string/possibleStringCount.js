@@ -32,4 +32,20 @@ word consists only of lowercase English letters.
 * @param {string} word
 * @return {number}
 */
-var possibleStringCount = function (word) {};
+var possibleStringCount = function (word) {
+  let count = 1;
+  let sortedWord = word.split("").sort().join("");
+  let charOccurence = 1;
+
+  for (let i = 0; i < sortedWord.length; i++) {
+    if (char[i] == char[i + 1]) {
+      charOccurence++;
+    } else {
+      if (charOccurence > 1) {
+        count += charOccurence - 1;
+      }
+      charOccurence = 1;
+    }
+  }
+  return count;
+};
