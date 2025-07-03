@@ -182,6 +182,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 2894 | [Divisible and Non-divisible Sums Difference](/math/differenceOfSums.js)                     | `Math`, `Enumeration`                           | Easy     |        |
 | 2903 | [Find Indices With Index and Value Difference I](/array/findIndices.js)            | `Array`, `Two Pointers`                                                   | Easy     |        |
 | 2929 | [Distribute Candies Among Children II](/math/distributeCandies.js)            | `Math`, `Combinatronics`, `Enumeration`                                   | Easy     |        |
+| 2942 | [Find Words Containing Character](/array/findWordsContaining.js)          | `Array`, `String`                                                                  | Easy     |        |
 | 2960 | [Count Tested Devices After Test Operations](/array/countTestedDevices.js)          | `Array`, `Simulation`, `Count`                                            | Easy     |        |
 | 2965 | [Find Missing and Repeated Values](/array/findMissingAndRepeatedValues.js)          | `Array`, `Hash Table`, `Math`, `Matrix`                                   | Easy     |        |
 | 3024 | [Type of Triangle](/math/triangleType.js)                            | `Math`,`Array`, `Sorting`                                                      | Easy       |        |
