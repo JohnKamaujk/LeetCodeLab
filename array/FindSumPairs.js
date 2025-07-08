@@ -60,7 +60,6 @@ FindSumPairs.prototype.add = function (index, val) {
   const oldValue = this.nums2[index];
   const newValue = oldValue + val;
 
-  // Update the frequency map
   this.counter.set(oldValue, this.counter.get(oldValue) - 1);
   if (this.counter.get(oldValue) === 0) {
     this.counter.delete(oldValue);
@@ -68,7 +67,6 @@ FindSumPairs.prototype.add = function (index, val) {
 
   this.counter.set(newValue, (this.counter.get(newValue) || 0) + 1);
 
-  // Update the value in nums2
   this.nums2[index] = newValue;
 };
 
