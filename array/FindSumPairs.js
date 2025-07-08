@@ -41,29 +41,61 @@ At most 1000 calls are made to add and count each.
 * @param {number[]} nums1
 * @param {number[]} nums2
 */
-var FindSumPairs = function(nums1, nums2) {
-    
+var FindSumPairs = function (num1, num2) {
+  nums1 = num1;
+  nums2 = num2;
+
+  counter = new Map();
+
+  for (let i = 0; i < nums2.length; i++) {
+    if (!counter.has(nums2[i])) {
+      counter.set(nums2[i], 0);
+    } else {
+      counter.set(nums2[i], counter.get(nums2[i]) + 1);
+    }
+  }
 };
 
-/** 
- * @param {number} index 
+/**
+ * @param {number} index
  * @param {number} val
  * @return {void}
  */
-FindSumPairs.prototype.add = function(index, val) {
-    
+FindSumPairs.prototype.add = function (index, val) {
+  const oldValue = nums2[index];
+  const newValue = oldValue + val;
+  if (counter.get(oldValue) > 1) {
+    counter.set(oldValue, counter.get(oldValue) - 1);
+  } else {
+    counter.delete(oldValue);
+  }
+  if (!counter.has(newValue)) {
+    counter.set(newValue, 1);
+  } else {
+    counter.set(newValue, counter.get(newValue) + 1);
+  }
+  nums2[index] = newValue;
 };
 
-/** 
+/**
  * @param {number} tot
  * @return {number}
  */
-FindSumPairs.prototype.count = function(tot) {
-    
+FindSumPairs.prototype.count = function (tot) {
+  let count = 0;
+
+  for (let i = 0; i < nums1.length; i++) {
+    let target = tot - nums1[i];
+    if (counter.has(target)) {
+      count += counter.get(target);
+    }
+  }
+  return count;
 };
 
 /** 
-* Your FindSumPairs object will be instantiated and called as such:
+* Your FindSumPair
+s object will be instantiated and called as such:
 * var obj = new FindSumPairs(nums1, nums2)
 * obj.add(index,val)
 * var param_2 = obj.count(tot)
