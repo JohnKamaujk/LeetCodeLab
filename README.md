@@ -164,6 +164,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1700 | [Number of Students Unable to Eat Lunch](/array/countStudents.js)                  | `Array`,`Stack`,`Queue`,`Simulation`                                    | Easy       |        |
 | 1752 | [Check if Array Is Sorted and Rotated](/array/check.js)                  | `Array`                                                                 | Easy       |        |
 | 1791 | [Find Center of Star Graph](/graph/findCenter.js)                                  | `Graph`                                                                 | Medium     |        |
+| 1865 | [Finding Pairs With a Certain Sum](/array/FindSumPairs.js)                          | `Array`, `Hash Table`, `Design`                                         | Medium     |        |
 | 1984 | [Minimu Differences Between Highest & Lowest of K Scores](/sliding_window/minimumDifference.js) | `Array`, `Sliding Window`, `Sorting`              | Easy     |        |
 | 2016 | [Maximum Difference Between Increasing Elements](/array/maxDiffIncreasingEl.js)       |       `Array`                                                 | Easy     |        |
 | 2094 | [Finding 3-Digit Even Numbers](/hash_table/findEven.js)       |       `Array`, `Hash Table`, `Sorting`, `Enumeration`                                          | Easy     |        |
