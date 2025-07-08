@@ -42,17 +42,12 @@ At most 1000 calls are made to add and count each.
 * @param {number[]} nums2
 */
 var FindSumPairs = function (num1, num2) {
-  nums1 = num1;
-  nums2 = num2;
+  this.nums1 = num1;
+  this.nums2 = num2;
+  this.counter = new Map();
 
-  counter = new Map();
-
-  for (let i = 0; i < nums2.length; i++) {
-    if (!counter.has(nums2[i])) {
-      counter.set(nums2[i], 0);
-    } else {
-      counter.set(nums2[i], counter.get(nums2[i]) + 1);
-    }
+  for (let num of num2) {
+    this.counter.set(num, (this.counter.get(num) || 0) + 1);
   }
 };
 
@@ -62,19 +57,19 @@ var FindSumPairs = function (num1, num2) {
  * @return {void}
  */
 FindSumPairs.prototype.add = function (index, val) {
-  const oldValue = nums2[index];
+  const oldValue = this.nums2[index];
   const newValue = oldValue + val;
-  if (counter.get(oldValue) > 1) {
-    counter.set(oldValue, counter.get(oldValue) - 1);
+  if (this.counter.get(oldValue) > 1) {
+    this.counter.set(oldValue, this.counter.get(oldValue) - 1);
   } else {
-    counter.delete(oldValue);
+    this.counter.delete(oldValue);
   }
-  if (!counter.has(newValue)) {
-    counter.set(newValue, 1);
+  if (!this.counter.has(newValue)) {
+    this.counter.set(newValue, 1);
   } else {
-    counter.set(newValue, counter.get(newValue) + 1);
+    this.counter.set(newValue, this.counter.get(newValue) + 1);
   }
-  nums2[index] = newValue;
+  this.nums2[index] = newValue;
 };
 
 /**
@@ -84,15 +79,14 @@ FindSumPairs.prototype.add = function (index, val) {
 FindSumPairs.prototype.count = function (tot) {
   let count = 0;
 
-  for (let i = 0; i < nums1.length; i++) {
-    let target = tot - nums1[i];
-    if (counter.has(target)) {
-      count += counter.get(target);
+  for (let i = 0; i < this.nums1.length; i++) {
+    let target = tot - this.nums1[i];
+    if (this.counter.has(target)) {
+      count += this.counter.get(target);
     }
   }
   return count;
 };
-
 /** 
 * Your FindSumPair
 s object will be instantiated and called as such:
