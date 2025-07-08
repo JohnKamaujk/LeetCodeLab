@@ -59,16 +59,16 @@ var FindSumPairs = function (num1, num2) {
 FindSumPairs.prototype.add = function (index, val) {
   const oldValue = this.nums2[index];
   const newValue = oldValue + val;
-  if (this.counter.get(oldValue) > 1) {
-    this.counter.set(oldValue, this.counter.get(oldValue) - 1);
-  } else {
+
+  // Update the frequency map
+  this.counter.set(oldValue, this.counter.get(oldValue) - 1);
+  if (this.counter.get(oldValue) === 0) {
     this.counter.delete(oldValue);
   }
-  if (!this.counter.has(newValue)) {
-    this.counter.set(newValue, 1);
-  } else {
-    this.counter.set(newValue, this.counter.get(newValue) + 1);
-  }
+
+  this.counter.set(newValue, (this.counter.get(newValue) || 0) + 1);
+
+  // Update the value in nums2
   this.nums2[index] = newValue;
 };
 
