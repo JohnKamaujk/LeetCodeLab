@@ -32,4 +32,39 @@ words[i] consists of English letters (both lowercase and uppercase).
 * @param {string[]} words
 * @return {string[]}
 */
-var findWords = function (words) {};
+var findWords = function (words) {
+  let result = [];
+
+  let rows = [
+    new Set("qwertyuiop".split("")),
+    new Set("asdfghjkl".split("")),
+    new Set("zxcvbnm".split("")),
+  ];
+
+  for (let word of words) {
+    let lowerWord = word.toLowerCase();
+    let rowIndex = -1;
+
+    for (let i = 0; i < rows.length; i++) {
+      if (rows[i].has(lowerWord[0])) {
+        rowIndex = i;
+        break;
+      }
+    }
+
+    if (rowIndex === -1) continue;
+
+    let canBeTyped = true;
+    for (let char of lowerWord) {
+      if (!rows[rowIndex].has(char)) {
+        canBeTyped = false;
+        break;
+      }
+    }
+
+    if (canBeTyped) {
+      result.push(word);
+    }
+  }
+  return result;
+};
