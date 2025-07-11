@@ -46,4 +46,32 @@ endTime[i] <= startTime[i + 1] where i lies in the range [0, n - 2].
 * @param {number[]} endTime
 * @return {number}
 */
-var maxFreeTime = function (eventTime, k, startTime, endTime) {};
+var maxFreeTime = function (eventTime, k, startTime, endTime) {
+  const gaps = [];
+  // Initial gap before first meeting
+  gaps.push(startTime[0]);
+
+  // Gaps between meetings
+  for (let i = 0; i < startTime.length - 1; i++) {
+    gaps.push(startTime[i + 1] - endTime[i]);
+  }
+
+  // Final gap after last meeting
+  gaps.push(eventTime - endTime[endTime.length - 1]);
+
+  // Sliding window to find max sum of at most (k + 1) gaps
+  let start = 0;
+  let acc = 0;
+  let max = 0;
+
+  for (let end = 0; end < gaps.length; end++) {
+    acc += gaps[end];
+    if (end - start >= k + 1) {
+      acc -= gaps[start];
+      start++;
+    }
+    max = Math.max(max, acc);
+  }
+
+  return max;
+};
