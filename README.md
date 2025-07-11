@@ -128,6 +128,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0476 | [Number Complement](/bit_manipulation/numberComplement.js)                                         | `Bit Manipulation`        | Easy       |        |
 | 0485 | [Max Consecutive Ones](/array//maxConsecutiveOnes.js)                               | `Array`                                                                 | Easy       |        |
 | 0492 | [Construct The Rectangle](/math/constructRectangle.js)                                                     |  `Math`        | Easy      |        |
+| 0500 | [Keyboard Row](/hash_table/findWords.js)                                           | `Array`, `Hash Table`, `String`                                         | Easy       |        |
 | 0504 | [Base 7](/math/convertToBase7.js)                                           | `Math`                                                                  | Easy       |        |
 | 0506 | [Relative Ranks](/array/relativeRanks.js)                                           | `Array`, `Sorting`, `Heap(Priority Queue)`                              | Easy       |        |
  0507 | [Perfect Number](/math/perfectNumber.js)                                           | `Math`                                                                  |Easy       |        |
