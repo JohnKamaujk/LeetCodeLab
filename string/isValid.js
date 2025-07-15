@@ -41,4 +41,9 @@ word consists of English uppercase and lowercase letters, digits, '@', '#', and 
 * @param {string} word
 * @return {boolean}
 */
-var isValid = function (word) {};
+var isValid = function (word) {
+  const pattern = /^[A-Za-z0-9]{3,}$/;
+  const hasVowel = /[aeiouAEIOU]/;
+  const hasConsonant = /[bcdfghjklmnpqrstvwxyz]/i;
+  return pattern.test(word) && hasVowel.test(word) && hasConsonant.test(word);
+};
