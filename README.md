@@ -195,6 +195,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3085 | [Minimum Deletions to Make String K-Special](/string/minDeletions.js)           | `Hash Table`, `String`, `Greedy`,`Sorting`, `Counting`  | Medium     |        |
 | 3110 | [Score of a String](/string/scoreOfString.js)                                |`Array`                                                                 | Easy     |          |
 | 3122 | [Minimum Number of Operations to Satisfy Conditions](/array/minimumOperations.js)    |`Array`                                                                 | Easy     |          |
+| 3136 | [Valid Word](/string/isValid.js)    |`String`                                                                | Easy     |          |
 | 3174 | [Clear Digits](/string/clearDigits.js)    |`String`,`Simulation`, `Stack`                                                                 | Easy     |          |
 | 3216 | [Lexicographically Smallest String After a Swap](/string/getSmallesString.js)    |`String`, `Greedy`                                                      | Easy     |          |
 | 3304 | [Find the K-th Character in String Game I](/math/kthCharacter.js)    | `Math`,`Bit Manipulation`,`Recursion`, `Simulation`                              | Easy     |        |
