@@ -31,4 +31,26 @@ s contains at least one character with an odd frequency and one with an even fre
 * @param {string} s
 * @return {number}
 */
-var maxDifference = function (s) {};
+var maxDifference = function (s) {
+  let maxOdd = 0;
+  let minEven = 0;
+
+  let freqMap = new freqMap();
+
+  for (const char of s) {
+    freqMap.set(char, (freqMap.get(char) || 0) + 1);
+  }
+
+  let freqValues = [...freqMap.values()]
+
+  for (const freq of freqValues) {
+    if (freq % 2 === 1) {
+      maxOdd = Math.max(maxOdd, freq);
+    } else {
+      if (minEven === 0 || freq < minEven) {
+        minEven = freq;
+      }
+    }
+  }
+  return maxOdd - minEven;
+};
