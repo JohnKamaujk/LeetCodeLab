@@ -210,6 +210,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 3411 | [Maximum SubArray With Equal Products](/array/maxLength)  | `Array`, `Math`, `Sliding Window`, `Enumeration`, `Number Theory`                                   | Easy     |        |
 | 3421 | [Find Students Who Improved](/database/find_students_who_improved.sql)              | `Sql`,                                                                    | Easy     |        |
 | 3439 | [Reschedule Meetings for Maximum Free Time I](/array/maxFreeTime.js)              | `Array`, `Hash Table`, `Sliding Window`                                 | Medium     |        |
+| 3442 | [Maximum Difference Between Even and Odd Frequency I](/string/maxDiff.js)         | `Hash Table`, `String`, `Counting`                                        | Easy     |        |
 | 3443 | [Maximum Manhattan Distance After K Changes](/math/maxManhattanDistance.js)         | `Hash Table`, `Math`, `String`, `Counting`                  | Easy     |        |
 | 3483 | [Unique 3-Digit Even Numbers](/array/totalNumbers.js)           | `Array`, `Hash Table`, `Recursion`, `Enumeration`                                        | Easy     |        |
 | 3502 | [Minimum Cost to Reach Every Position](/array/minCosts.js)              | `Array`,                                                                  | Easy     |        |
