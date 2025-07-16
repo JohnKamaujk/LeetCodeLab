@@ -35,7 +35,7 @@ var maxDifference = function (s) {
   let maxOdd = 0;
   let minEven = 0;
 
-  let freqMap = new freqMap();
+  let freqMap = new Map()
 
   for (const char of s) {
     freqMap.set(char, (freqMap.get(char) || 0) + 1);
