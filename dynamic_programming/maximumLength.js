@@ -34,4 +34,24 @@ Constraints:
 * @param {number[]} nums
 * @return {number}
 */
-var maximumLength = function (nums) {};
+var maximumLength = function (nums) {
+  const k = 2; // modulus base 'k'
+  const f = Array.from({ length: k }, () => Array(k).fill(0)); // Create a 2D array of size k x k, initialized to 0
+  let ans = 0; // store the maximum subarray length
+
+  for (let x of nums) {
+    x %= k; // Take modulus of current number to classify based on remainder
+
+    // Iterate through possible remainders
+    for (let j = 0; j < k; ++j) {
+      const y = (j - x + k) % k; // Calculate adjusted index for modular arithmetic to handle negative results
+
+      // Update the subarray length for the current remainder configuration
+      f[x][y] = f[y][x] + 1;
+
+      ans = Math.max(ans, f[x][y]);
+    }
+  }
+
+  return ans;
+};
