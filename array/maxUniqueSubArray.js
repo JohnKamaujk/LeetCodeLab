@@ -22,6 +22,37 @@ Constraints:
 * @param {number[]} nums
 * @return {number}
 */
-var maximumUniqueSubarray = function(nums) {
-    
+
+let frequency = new Array(10001).fill(0);
+
+var maximumUniqueSubarray = function (nums) {
+  const numsSize = nums.length;
+
+  // Create an array to store the prefix sum of nums
+  let prefixSum = new Array(numsSize + 1);
+  prefixSum[0] = 0;
+
+  for (let i = 0; i < numsSize; ++i) {
+    prefixSum[i + 1] = prefixSum[i] + nums[i];
+  }
+
+  let maxSum = 0;
+
+  let startIndex = 0;
+
+  for (let i = 1; i <= numsSize; ++i) {
+    let currentValue = nums[i - 1];
+
+    // Update the startIndex to be the maximum of the current startIndex or the
+    // last index where currentValue was found (to maintain uniqueness in subarray)
+    startIndex = Math.max(startIndex, frequency[currentValue]);
+
+    // Calculate the maxSum by considering the current unique subarray sum
+    maxSum = Math.max(maxSum, prefixSum[i] - prefixSum[startIndex]);
+
+    // Update the index in frequency array to the current position for currentValue
+    frequency[currentValue] = i;
+  }
+
+  return maxSum;
 };
