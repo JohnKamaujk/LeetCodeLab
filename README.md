@@ -162,6 +162,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1422 | [Maximum Score After Splitting A String](/string/maxScore.js)                | `String`,`Prefix Sum`                                                | Easy          |        |
 | 1534 | [Count Good Triplets](/array/countGoodTriplets.js)                | `Array`, `Enumeration`                                                        | Easy          |        |
 | 1550 | [Three Consecutive Odds](/array/threeConsecutiveOdds.js)                | `Array`                                                              | Easy          |        |
+| 1695 | [Maximum Erasure Value](/array/maxUniqueSubArray.js)                  | `Array`,`Hash Table`,`Sliding Window`,`Weekly Contest 220`                          | Medium       |        |
 | 1700 | [Number of Students Unable to Eat Lunch](/array/countStudents.js)                  | `Array`,`Stack`,`Queue`,`Simulation`                                    | Easy       |        |
 | 1752 | [Check if Array Is Sorted and Rotated](/array/check.js)                  | `Array`                                                                 | Easy       |        |
 | 1791 | [Find Center of Star Graph](/graph/findCenter.js)                                  | `Graph`                                                                 | Medium     |        |
