@@ -31,14 +31,25 @@ s consists only of lowercase English letters.
 */
 var makeFancyString = function (s) {
   let result = "";
+  let count = 1;
 
-  for (let i = 0; i < s.length; i++) {
-    const len = result.length;
-    if (len >= 2 && result[len - 1] === s[i] && result[len - 2] === s[i]) {
-      continue; // skip appending if it makes 3 consecutive same chars
+  for (let i = 1; i < s.length; i++) {
+    // Always include the first character
+    result += s[i - 1];
+
+    // Count consecutive characters
+    if (s[i] === s[i - 1]) {
+      count++;
+    } else {
+      count = 1;
     }
-    result += s[i];
+
+    // Append current character only if not the third or more repetition
+    if (count < 3) {
+      result += s[i];
+    }
   }
 
-  return result;
+  return result.length ? result : s;
 };
+
