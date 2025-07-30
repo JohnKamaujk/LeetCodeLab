@@ -29,4 +29,16 @@ s consists only of lowercase English letters.
 * @param {string} s
 * @return {string}
 */
-var makeFancyString = function (s) {};
+var makeFancyString = function (s) {
+  let result = "";
+
+  for (let i = 0; i < s.length; i++) {
+    const len = result.length;
+    if (len >= 2 && result[len - 1] === s[i] && result[len - 2] === s[i]) {
+      continue; // skip appending if it makes 3 consecutive same chars
+    }
+    result += s[i];
+  }
+
+  return result;
+};
