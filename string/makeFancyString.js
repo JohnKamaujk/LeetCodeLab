@@ -52,4 +52,3 @@ var makeFancyString = function (s) {
 
   return result.length ? result : s;
 };
-
