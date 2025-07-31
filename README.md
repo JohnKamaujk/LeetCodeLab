@@ -170,6 +170,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 1957 | [Delete Characters to Make Fancy String](/string/makeFancyString.js)                 | `String`, `Biweekly Contest 58`                   | Easy     |        |
 | 1984 | [Minimu Differences Between Highest & Lowest of K Scores](/sliding_window/minimumDifference.js) | `Array`, `Sliding Window`, `Sorting`              | Easy     |        |
 | 2016 | [Maximum Difference Between Increasing Elements](/array/maxDiffIncreasingEl.js)       |       `Array`                                                 | Easy     |        |
+| 2044 | [Count Number of Maximum Bitwise-OR Subsets](/array//countMaxOrSubsets.js)       |   `Array`, `Backtracking`, `Bit Manipulation`, `Enumeration`              | Medium     |        |
 | 2094 | [Finding 3-Digit Even Numbers](/hash_table/findEven.js)       |       `Array`, `Hash Table`, `Sorting`, `Enumeration`                                          | Easy     |        |
 | 2114 | [Maximum Number of Words Found in Sentences](/array/mostWordsFound.js)       |       `Array`, `String`                                                         | Easy     |        |
 | 2200 | [Find All K-Distant Indices in an Array](/array/findDistantIndices.js)       |       `Array`, `Two Pointers`                                                   | Easy     |        |
