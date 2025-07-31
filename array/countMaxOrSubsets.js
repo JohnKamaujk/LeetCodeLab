@@ -35,4 +35,36 @@ Constraints:
 * @param {number[]} nums
 * @return {number}
 */
-var countMaxOrSubsets = function (nums) {};
+var countMaxOrSubsets = function (nums) {
+  let totalElements = nums.length;
+  // Variable to store the maximum OR value across all subsets.
+  let maxOrValue = 0;
+  // Calculate the maximum OR value by iterating through the array.
+  for (let i = 0; i < totalElements; i++) {
+    maxOrValue |= nums[i];
+  }
+  // A count of subsets that have the maximum OR value.
+  let maxOrSubsetsCount = 0;
+
+  // Recursive helper function to perform depth-first search.
+  function dfs(currentOr, depth) {
+    // If this is the end of the array, check if the current OR is the maximum OR.
+    if (depth == totalElements) {
+      if (currentOr == maxOrValue) {
+        // Increment the count if the current OR is equal to max OR.
+        maxOrSubsetsCount++;
+      }
+      return;
+    }
+    // case when the current number is not taken
+    dfs(currentOr, depth + 1);
+    // case when the current number is taken, it is ORed with the currentOr.
+    dfs(currentOr | nums[depth], depth + 1);
+  }
+
+  // Start the depth-first search with an initial OR value of 0 and at depth 0.
+  dfs(0, 0);
+
+  // Return the number of subsets that have the maximum OR value.
+  return maxOrSubsetsCount;
+};
