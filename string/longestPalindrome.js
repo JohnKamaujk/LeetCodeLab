@@ -25,16 +25,18 @@ var longestPalindrome = function (s) {
   let length = 0;
 
   for (const char of s) {
-    freqMap.has(char)
-      ? freqMap.set(char, freqMap.get(char) + 1)
-      : freqMap.set(char, 1);
+    freqMap.set(char, (freqMap.get(char) || 0) + 1);
   }
 
-  const counts = Array.from(freqMap.values());
-
-  for (const count of counts) {
-    length += count % 2 === 0 ? count : count - 1;
+  let hasOdd = false;
+  for (const count of freqMap.values()) {
+    if (count % 2 === 0) {
+      length += count;
+    } else {
+      length += count - 1;
+      hasOdd = true;
+    }
   }
 
-  return length < s.length ? length + 1 : length;
+  return hasOdd ? length + 1 : length;
 };
