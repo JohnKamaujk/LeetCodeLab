@@ -20,6 +20,21 @@ s consists of lowercase and/or uppercase English letters only.
 * @param {string} s
 * @return {number}
 */
-var longestPalindrome = function(s) {
-    
+var longestPalindrome = function (s) {
+  const freqMap = new Map();
+  let length = 0;
+
+  for (const char of s) {
+    freqMap.has(char)
+      ? freqMap.set(char, freqMap.get(char) + 1)
+      : freqMap.set(char, 1);
+  }
+
+  const counts = Array.from(freqMap.values());
+
+  for (const count of counts) {
+    length += count % 2 === 0 ? count : count - 1;
+  }
+
+  return length < s.length ? length + 1 : length;
 };
