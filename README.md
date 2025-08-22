@@ -121,6 +121,7 @@ Press <kbd>Control</kbd>+<kbd>F</kbd>(or <kbd>Command</kbd>+<kbd>F</kbd> on the 
 | 0394 | [Decode String](/string/decodeString.js)                        | `String`, `Stack`, `Recursion`                                                           | Medium       |        |
 | 0404 | [Sum Of Left Leaves](/tree/sumOfLeftLeaves.js)                            | `Tree`, `Depth First Search`, `Breadth First Search`, `Binary Tree`             | Easy       |        |
 | 0405 | [Convert a Number to a Hexadecimal](/math/toHex.js)                            | `Math`, `Bit Manipulation`                                              | Easy       |        |
+| 0409 | [Longest Palindrome](/string/longestPalindrome.js)                            | `Hash Table`, `String`, `Greedy`                                              | Easy       |        |
 | 0414 | [Third Max Number](/array/thirdMax.js)                                | `Array`, `Sorting`                                                               | Easy       |        |
 | 0415 | [Add Strings](/string/addStrings.js)                                | `Math`, `String`, `Simulation`                                                  | Easy       |        |
 | 0440 | [K-th Smallest in Lexicographical Order](/depth_first_search/findKthNum.js)                                                     | `Trie`        | Hard       |        |
