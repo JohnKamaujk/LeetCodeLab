@@ -22,6 +22,17 @@ Constraints:
 * @param {number[]} nums
 * @return {number}
 */
-var largestPerimeter = function(nums) {
-    
+var largestPerimeter = function (nums) {
+  nums.sort((a, b) => b - a);
+
+  for (let i = 2; i < nums.length; i++) {
+    const side1 = nums[i];
+    const side2 = nums[i - 1];
+    const side3 = nums[i - 2];
+
+    if (side1 + side2 > side3) {
+      return side1 + side2 + side3;
+    }
+  }
+  return 0;
 };
