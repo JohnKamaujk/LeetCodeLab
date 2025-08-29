@@ -21,6 +21,12 @@ The product difference is (9 * 8) - (2 * 4) = 64.
 * @param {number[]} nums
 * @return {number}
 */
-var maxProductDifference = function(nums) {
-    
+var maxProductDifference = function (nums) {
+  let sortedNums = nums.sort((b, a) => b - a);
+
+  const [w, x, ...rest] = sortedNums;
+  const [y, z] = rest.slice(-2);
+
+  return y * z - w * x;
 };
+
