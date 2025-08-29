@@ -25,5 +25,19 @@ Constraints:
 * @return {number[]}
 */
 var frequencySort = function(nums) {
+    const freqMap = new Map();
     
+    for (const num of nums) {
+        freqMap.set(num, (freqMap.get(num) || 0) + 1);
+    }
+    
+    return nums.sort((a, b) => {
+        const freqA = freqMap.get(a);
+        const freqB = freqMap.get(b);
+    
+        if (freqA === freqB) {
+        return b - a; // Sort in decreasing order if frequencies are the same
+        }
+        return freqA - freqB; // Sort by frequency in increasing order
+    });   
 };
