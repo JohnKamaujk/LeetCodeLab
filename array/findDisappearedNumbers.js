@@ -12,6 +12,14 @@ Output: [2]
 * @param {number[]} nums
 * @return {number[]}
 */
-var findDisappearedNumbers = function(nums) {
-    
+var findDisappearedNumbers = function (nums) {
+  let array = new Array();
+
+  for (let i = 1; i <= nums.length; i++) {
+    if (!nums.includes(i)) {
+      array.push(i);
+    }
+  }
+
+  return array;
 };
