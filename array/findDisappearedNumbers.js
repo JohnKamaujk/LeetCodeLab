@@ -13,13 +13,21 @@ Output: [2]
 * @return {number[]}
 */
 var findDisappearedNumbers = function (nums) {
-  let array = new Array();
+  for (let i = 0; i < nums.length; i++) {
+    let index = Math.abs(nums[i]) - 1;
 
-  for (let i = 1; i <= nums.length; i++) {
-    if (!nums.includes(i)) {
-      array.push(i);
+    if (nums[index] > 0) {
+      nums[index] = -nums[index];
     }
   }
 
-  return array;
+  let result = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > 0) {
+      result.push(i + 1);
+    }
+  }
+
+  return result;
 };
