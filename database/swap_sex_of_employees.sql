@@ -45,3 +45,9 @@
 -- Explanation: 
 -- (1, A) and (3, C) were changed from 'm' to 'f'.
 -- (2, B) and (4, D) were changed from 'f' to 'm'.
+
+UPDATE Salary
+SET sex = CASE
+            WHEN sex = 'm' THEN 'f'
+            ELSE 'm'
+          END;
